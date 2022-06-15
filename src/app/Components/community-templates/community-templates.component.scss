@@ -10,7 +10,7 @@
 
         .community-temp-portfolio-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             margin: 12px;
@@ -18,7 +18,7 @@
 
         .portfolio-card {
             flex-basis: 299px;
-            min-height: 232px;
+            min-height: 270px;
             transition: all 0.1s ease-in;
             margin: 14px 0;
             box-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%);
