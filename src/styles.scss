@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #ffc158;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #ffc158;
+  }

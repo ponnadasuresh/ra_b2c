@@ -1,0 +1,36 @@
+    #superso-ui {
+        .superso__homebanner__container {
+            padding-top: 16%;
+
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 600;
+                line-height: 80px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .banner-btns {
+                margin-top: 62px;
+                margin-bottom: 12px;
+                button.btn1 {
+                    background: #000;
+                    border-radius: 30px;
+                    padding: 16px 32px 17px;
+                    a{
+                        color: #fff;
+                        font-size: 21px;
+                        font-weight: 500;
+                    }
+                }
+                span{
+                    a{
+                    color: rgb(155, 154, 151);
+                    font-size: 15px;
+                }
+                }
+            }
+        }
+    }
