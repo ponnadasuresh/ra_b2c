@@ -15,6 +15,7 @@ import { HomeVideoComponent } from './Components/home-video/home-video.component
 import { HomeFeaturesSectionComponent } from './Components/home-features-section/home-features-section.component';
 import { NotionCreatorsComponent } from './Components/notion-creators/notion-creators.component';
 import {MatCardModule} from '@angular/material/card';
+import { WebsiteZerofrictionComponent } from './Components/website-zerofriction/website-zerofriction.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {MatCardModule} from '@angular/material/card';
     HomeVideoComponent,
     HomeFeaturesSectionComponent,
     NotionCreatorsComponent,
+    WebsiteZerofrictionComponent,
   ],
   imports: [
     BrowserModule,
