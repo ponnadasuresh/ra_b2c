@@ -16,6 +16,8 @@ import { HomeFeaturesSectionComponent } from './Components/home-features-section
 import { NotionCreatorsComponent } from './Components/notion-creators/notion-creators.component';
 import {MatCardModule} from '@angular/material/card';
 import { WebsiteZerofrictionComponent } from './Components/website-zerofriction/website-zerofriction.component';
+import { WebsiteBuilderComponent } from './Components/website-builder/website-builder.component';
+import { CommunityTemplatesComponent } from './Components/community-templates/community-templates.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { WebsiteZerofrictionComponent } from './Components/website-zerofriction/
     HomeFeaturesSectionComponent,
     NotionCreatorsComponent,
     WebsiteZerofrictionComponent,
+    WebsiteBuilderComponent,
+    CommunityTemplatesComponent,
   ],
   imports: [
     BrowserModule,
