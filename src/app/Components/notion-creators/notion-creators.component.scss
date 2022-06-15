@@ -7,5 +7,31 @@
             line-height: 54px;
             // margin: 5% 0;
         }
+
+        .notioncreators-portfolio-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 12px;
+        }
+
+        .portfolio-card {
+            flex-basis: 299px;
+            transition: all 0.1s ease-in;
+            margin: 14px 0;
+            img {
+                border-radius: 8px;
+            }
+            &:hover{
+                transition: all 0.1s ease-in;
+                transform: translateY(-8px); 
+                box-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%);
+            }
+            .mat-card-title{
+                text-align: center;
+                margin: 12px 0;
+            }
+        }
     }
 }
