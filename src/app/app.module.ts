@@ -13,6 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { HomeBannerComponent } from './Components/home-banner/home-banner.component';
 import { HomeVideoComponent } from './Components/home-video/home-video.component';
 import { HomeFeaturesSectionComponent } from './Components/home-features-section/home-features-section.component';
+import { NotionCreatorsComponent } from './Components/notion-creators/notion-creators.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { HomeFeaturesSectionComponent } from './Components/home-features-section
     MenuBarComponent,
     HomeBannerComponent,
     HomeVideoComponent,
-    HomeFeaturesSectionComponent
+    HomeFeaturesSectionComponent,
+    NotionCreatorsComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { HomeFeaturesSectionComponent } from './Components/home-features-section
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
