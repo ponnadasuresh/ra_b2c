@@ -15,3 +15,13 @@
   }
   
 }
+
+@media (max-width:600px){
+  #superso-ui{
+    .superso__homebanner__container{
+      h1{
+          padding-top: 20%;
+      }
+    } 
+  } 
+}

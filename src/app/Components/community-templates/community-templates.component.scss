@@ -80,6 +80,9 @@
             }
             .portfolio-card{
                 max-width: 90%;
+                img.arrow_viewmore{
+                    right: 0;
+                }
             }
             .community-temp-portfolio-container {
                 flex-direction: column;
@@ -87,3 +90,4 @@
         }
     }
 }
+
