@@ -1,6 +1,6 @@
 #superso-ui {
-    .community-temp-container {
-        h1.community-temp-title {
+    .notioncreators-container {
+        h1.notioncreators-title {
             font-weight: 600;
             font-size: 2.8rem;
             max-width: 610px;
@@ -8,30 +8,31 @@
             // margin: 5% 0;
         }
 
-        .community-temp-portfolio-container {
+        .notioncreators-portfolio-container {
             display: flex;
-            // justify-content: center;
-            // align-items: center;
+            justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
             margin: 12px;
         }
 
         .portfolio-card {
-            max-width: 300px;
-            margin: 11px;
+            flex-basis: 299px;
+            min-height: 232px;
             transition: all 0.1s ease-in;
+            margin: 14px 0;
             box-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%);
 
             img {
-                border-radius: 20%;
+                border-radius: 8px;
                 display: block;
-                min-width: 252px;
-                min-height: 170px;
-                object-fit: contain;
+                min-width: 282px;
+                min-height: 162px;
+                object-fit: cover;
             }
 
             img.arrow_viewmore {
-                position: relative;
+                position: absolute;
                 top: -110px;
                 object-fit: none;
                 filter: opacity(0.2);
@@ -45,19 +46,9 @@
             }
 
             .mat-card-title {
+                font-size: 20px;
+                font-weight: 600;
                 margin: 12px 0;
-
-                a {
-                    font-size: 20px;
-                    font-weight: 600;
-                    color: #000;
-
-                }
-
-                .grey-font {
-                    color: #8f9ba8;
-                    font-size: 17px;
-                }
             }
 
             .arrow_viewmore_title {
@@ -69,20 +60,20 @@
     }
 }
 
-
+// MObile responsive
 @media (max-width:600px) {
-
     #superso-ui {
-        .community-temp-container {
-            h1.community-temp-title {
+        .notioncreators-container {
+            h1.notioncreators-title {
                 font-size: 2rem;
                 max-width: 100%;
+                line-height: 47px;
+                // margin: 5% 0;
             }
-            .portfolio-card{
-                max-width: 90%;
-            }
-            .community-temp-portfolio-container {
-                flex-direction: column;
+            .notioncreators-portfolio-container{
+                .portfolio-card {
+                    flex-basis: 100%;
+                }   
             }
         }
     }

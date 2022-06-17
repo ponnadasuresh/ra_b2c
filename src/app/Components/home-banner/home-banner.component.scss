@@ -6,6 +6,7 @@
                 font-size: 3.5rem;
                 font-weight: 600;
                 line-height: 80px;
+                max-width: 48%;
             }
 
             p {
@@ -15,22 +16,52 @@
             .banner-btns {
                 margin-top: 62px;
                 margin-bottom: 12px;
+
                 button.btn1 {
                     background: #000;
                     border-radius: 30px;
                     padding: 16px 32px 17px;
-                    a{
+
+                    a {
                         color: #fff;
                         font-size: 21px;
                         font-weight: 500;
                     }
                 }
-                span{
-                    a{
-                    color: rgb(155, 154, 151);
-                    font-size: 15px;
-                }
+
+                span {
+                    a {
+                        color: rgb(155, 154, 151);
+                        font-size: 15px;
+                    }
                 }
             }
         }
+    }
+
+
+// Mobile Responsive
+
+@media screen and (max-width: 600px) {
+        #superso-ui {
+            .superso__homebanner__container {
+                padding-top: 6%;
+                .banner-btns{
+                    display: flex;
+                    flex-direction: column;
+                    width: 220px;
+                    margin-top: 22px;
+                    span{
+                        margin-left: 0 !important;
+                        margin-top: 12px;
+                    }
+                }
+                h1 {
+                    max-width: 100%;
+                    font-size: 2rem;
+                    line-height: 59px;
+                }
+            }
+        }
+
     }

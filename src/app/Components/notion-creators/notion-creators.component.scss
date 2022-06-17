@@ -1,42 +1,28 @@
 #superso-ui {
     .notioncreators-container {
-        h1.notioncreators-title {
-            font-weight: 600;
-            font-size: 2.8rem;
-            max-width: 610px;
-            line-height: 54px;
-            // margin: 5% 0;
-        }
-
         .notioncreators-portfolio-container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             flex-wrap: wrap;
-            margin: 12px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            max-width: 610px;
+
+            line-height: 47px;
+            font-weight: 600;
         }
 
         .portfolio-card {
-            flex-basis: 299px;
-            min-height: 232px;
-            transition: all 0.1s ease-in;
-            margin: 14px 0;
+            margin: 14px;
+            flex-basis: 22%;
             box-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%);
+            background: #fff;
+            padding: 1%;
+            transition: all 0.1s ease-in;
 
             img {
                 border-radius: 8px;
-                display: block;
-    min-width: 282px;
-    min-height: 162px;
-    object-fit: cover;
-            }
-
-            img.arrow_viewmore {
-                position: absolute;
-                top: -110px;
-                object-fit: none;
-                filter: opacity(0.2);
-                right: -90px;
             }
 
             &:hover {
@@ -45,17 +31,48 @@
                 box-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%);
             }
 
-            .mat-card-title {
+            .portfolio-card-title {
                 font-size: 20px;
                 font-weight: 600;
                 margin: 12px 0;
             }
+        }
+    }
+}
 
-            .arrow_viewmore_title {
-                position: absolute;
-                bottom: 30px;
-                // left: 100px;
+
+@media (max-width:600px) {
+    // #superso-ui {
+    //     .notioncreators-container {
+
+    //         h1 {
+    //             font-size: 2rem;
+    //             max-width: 100%;
+    //             line-height: 47px;
+    //             font-weight: 600;
+    //         }
+    //                   .portfolio-card {
+    //             padding: 5%;
+    //         }
+
+    //     }
+    // }
+
+    #superso-ui {
+        .notioncreators-container {
+            .notioncreators-portfolio-container {
+                flex-direction: column;
+            }
+
+            h1 {
+                max-width: 100%;
+            }
+
+            .portfolio-card {
+                padding: 5%;
+
             }
         }
     }
+
 }

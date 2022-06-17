@@ -18,6 +18,11 @@ import {MatCardModule} from '@angular/material/card';
 import { WebsiteZerofrictionComponent } from './Components/website-zerofriction/website-zerofriction.component';
 import { WebsiteBuilderComponent } from './Components/website-builder/website-builder.component';
 import { CommunityTemplatesComponent } from './Components/community-templates/community-templates.component';
+import { BeautifulLandingPagesComponent } from './Components/beautiful-landing-pages/beautiful-landing-pages.component';
+import { GetstartedFirstsiteComponent } from './Components/getstarted-firstsite/getstarted-firstsite.component';
+import { SuperFooterCornersComponent } from './Components/super-footer-corners/super-footer-corners.component';
+import { FooterChatboxComponent } from './Components/footer-chatbox/footer-chatbox.component';
+import { BkupcompComponent } from './Components/bkupcomp/bkupcomp.component';
 
 
 @NgModule({
@@ -32,6 +37,11 @@ import { CommunityTemplatesComponent } from './Components/community-templates/co
     WebsiteZerofrictionComponent,
     WebsiteBuilderComponent,
     CommunityTemplatesComponent,
+    BeautifulLandingPagesComponent,
+    GetstartedFirstsiteComponent,
+    SuperFooterCornersComponent,
+    FooterChatboxComponent,
+    BkupcompComponent,
   ],
   imports: [
     BrowserModule,

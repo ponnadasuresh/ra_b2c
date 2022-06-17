@@ -1,0 +1,41 @@
+#superso-ui {
+    .footer-chat-box-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 4%;
+        width: 90%;
+
+        .footer-chat-box-clm {
+            .bxs-message-square-dots{
+                box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%);
+                border-radius: 50%;
+                font-size: 2.4rem;
+                color: #7f7f7f;
+                padding: 12px;
+            }
+            .super-badge {
+                a {
+                    color: #000;
+                    padding: 9px;
+                    transition: all .2s ease-in;
+                    display: inline-flex;
+                    background: #fff;
+                    &:hover{
+                    
+                    transition: all .2s ease-in;
+                    padding: 9px;
+                    border-radius: 44px;
+                    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%);
+                    color: #000;
+                }
+
+                    img {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
