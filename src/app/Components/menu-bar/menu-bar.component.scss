@@ -1,10 +1,9 @@
-
+#superso-ui{
 .navbar {
     position: fixed;
     width: 100%;
     top: 0;
-    box-shadow: none;
-    transition: all 2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background: #fffffff7;
     z-index: 1;
     .nav-container {
@@ -66,6 +65,8 @@
         }
     }
 }
+}
+
 .navbar.active {
     box-shadow: 0 0 5px 1px #dad0d0 !important;   
 }

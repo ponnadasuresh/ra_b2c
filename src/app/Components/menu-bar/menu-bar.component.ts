@@ -1,5 +1,6 @@
-import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener, Inject } from '@angular/core';
 import * as $ from 'jquery';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-menu-bar',
@@ -8,19 +9,21 @@ import * as $ from 'jquery';
 })
 export class MenuBarComponent implements OnInit {
 
-  constructor(private el: ElementRef  ) { }
+  constructor(@Inject(DOCUMENT) private document: Document  ) { }
 
 @HostListener("document:scroll")
 scrollfunction(){
-  if(document.body.scrollHeight > 10){
+  if(this.document.documentElement.scrollTop > 0){
     $(".navbar").addClass("active");
-    console.log('added')
   }
-  else if(document.body.scrollHeight  == 0)
+  else{
     $(".navbar").removeClass("active");
-    console.log('removed');
-  
+  }
 }
+
+
+
+
 
 
 
