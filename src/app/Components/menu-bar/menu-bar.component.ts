@@ -14,10 +14,10 @@ export class MenuBarComponent implements OnInit {
 @HostListener("document:scroll")
 scrollfunction(){
   if(this.document.documentElement.scrollTop > 0){
-    $(".navbar").addClass("active");
+    $(".wrapper").addClass("active");
   }
   else{
-    $(".navbar").removeClass("active");
+    $(".wrapper").removeClass("active");
   }
 }
 
