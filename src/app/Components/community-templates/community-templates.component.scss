@@ -75,19 +75,22 @@
     #superso-ui {
         .community-temp-container {
             h1.community-temp-title {
-                font-size: 2rem;
                 max-width: 100%;
+                font-size: 1.4rem;
+                line-height: 37px;
             }
-            .portfolio-card{
+
+            .portfolio-card {
                 max-width: 90%;
-                img.arrow_viewmore{
+
+                img.arrow_viewmore {
                     right: 0;
                 }
             }
+
             .community-temp-portfolio-container {
                 flex-direction: column;
             }
         }
     }
 }
-

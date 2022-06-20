@@ -94,6 +94,9 @@
 
 
   @media (max-width:600px) {
+    .banner-animation-container {
+        top: -50px;
+    }
     .banner-animation-container .banner-animation-container-inner {
         font-size: 2rem;
     }
@@ -106,28 +109,3 @@
 
     }
   }
-
-
-
-
-
-
-
-//   div animation
-
-// data-aos="fade-left" data-aos-duration="12000"
-
-// data-aos="slide-right" data-aos-duration="18000"
-
-// data-aos="fade-left" data-aos-duration="18000"
-
-//  data-aos="zoom-in-down" data-aos-duration="18000"
-
-// data-aos="zoom-in-down" data-aos-duration="18000"
-
-// data-aos="slide-right" data-aos-duration="18000"
-
-// data-aos="zoom-in-up" data-aos-duration="18000"
-
-
-// data-aos="slide-right" data-aos-duration="18000"

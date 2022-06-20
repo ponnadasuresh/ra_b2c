@@ -1,6 +1,6 @@
     #superso-ui {
         .superso__homebanner__container {
-            padding-top: 16%;
+            padding-top: 20%;
 
             h1 {
                 font-size: 3.5rem;
@@ -40,22 +40,29 @@
     }
 
 
-// Mobile Responsive
+    // Mobile Responsive
 
-@media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
         #superso-ui {
             .superso__homebanner__container {
                 padding-top: 6%;
-                .banner-btns{
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.7rem;
+                }
+
+                .banner-btns {
                     display: flex;
                     flex-direction: column;
                     width: 220px;
-                    margin-top: 22px;
-                    span{
-                        margin-left: 0 !important;
-                        margin-top: 12px;
+                    margin-top: 25px;
+
+                    span {
+                        margin-top: 22px;
                     }
                 }
+
                 h1 {
                     max-width: 100%;
                     font-size: 2rem;
@@ -66,4 +73,3 @@
         }
 
     }
-

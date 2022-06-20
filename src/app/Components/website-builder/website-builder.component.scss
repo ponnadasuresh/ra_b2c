@@ -39,10 +39,13 @@
         .website-builder-container {
             .websitebuilder-maintitle {
                 max-width: 100%;
-                font-size: 2rem;
+                font-size: 1.4rem;
+                line-height: 37px;
             }
+
             .websitebuilder-pages {
                 flex-direction: column;
+
                 .websitebuilder-pages-clm {
                     .websitebuilder-pages-title {
                         max-width: 100%;
@@ -50,14 +53,11 @@
                         color: #000;
                         font-weight: 600;
                         margin: 12px 0;
-    
+
                     }
-    
+
                 }
             }
         }
     }
 }
-
-
-

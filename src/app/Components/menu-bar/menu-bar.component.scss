@@ -78,6 +78,7 @@
     background: #fff;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 // .sign-in-btn {
@@ -366,7 +367,9 @@ nav .content .links {
     .wrapper nav {
         padding: 0 10px;
     }
-
+    .content .logo img {
+       display: none;
+    }
     .content .logo a {
         font-size: 27px;
     }
@@ -382,5 +385,37 @@ nav .content .links {
 
     .wrapper .search-box input {
         padding-right: 30px;
+    }
+}
+
+
+@media (max-width:500px){
+    .content .logo {
+        background-image:url("/assets/images/new_ra_logo.png");
+        width: 36px;
+        height: 49px;
+        background-position: left center;
+        background-size: cover;
+        margin-left: -17px;
+    }
+    .content .logo img{
+        opacity: 0;
+    }
+    .get-started-btn{
+        width: 140px;
+        padding: 9px;
+    }
+}
+
+
+@media (max-width:600px){
+    .logo img {
+        max-width: 212px;
+    }
+    .get-started-btn{
+        width: 162px;
+    }
+    .action-btn {
+        margin-left: auto;
     }
 }

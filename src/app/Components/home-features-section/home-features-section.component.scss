@@ -41,23 +41,27 @@
 
             .home-faeture-maintitle {
                 h1 {
-                    font-size: 2rem;
-                    line-height: 47px;
+                    font-size: 1.4rem;
+                    line-height: 37px;
                     max-width: 100%;
                     margin: 40px 0;
                 }
 
-                .home-features-card {
+                .home-features-card {   
                     .home-features {
                         flex-basis: 38%;
+                        min-height: 152px;
                     }
-                    .home-features{
+
+                    .home-features {
                         .subtitle {
-                        width:100%;
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+
                     }
-                    }
-                    
-                    
+
+
                 }
             }
         }

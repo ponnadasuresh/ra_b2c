@@ -2,3 +2,14 @@
     padding: 0px 7%;
 }
 
+
+
+.parent {
+    scroll-snap-type: y mandatory;
+    
+  }
+  
+  section {
+    scroll-snap-align: start;
+    position: relative;
+  }

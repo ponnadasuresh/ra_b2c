@@ -42,13 +42,14 @@
     #superso-ui {
         .beauland-page-container {
             flex-direction: column;
+
             .beauland-clm {
                 margin: 5% 0;
 
                 h1 {
-                    font-size: 2rem;
+                    font-size: 1.4rem;
+                    line-height: 37px;
                     max-width: 100%;
-                    line-height: 44px;
                     margin-bottom: 40px;
                 }
             }

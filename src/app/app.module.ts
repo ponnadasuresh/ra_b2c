@@ -23,6 +23,7 @@ import { GetstartedFirstsiteComponent } from './Components/getstarted-firstsite/
 import { SuperFooterCornersComponent } from './Components/super-footer-corners/super-footer-corners.component';
 import { FooterChatboxComponent } from './Components/footer-chatbox/footer-chatbox.component';
 import { BkupcompComponent } from './Components/bkupcomp/bkupcomp.component';
+import { BannerTextAnimationComponent } from './Components/banner-text-animation/banner-text-animation.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { BkupcompComponent } from './Components/bkupcomp/bkupcomp.component';
     SuperFooterCornersComponent,
     FooterChatboxComponent,
     BkupcompComponent,
+    BannerTextAnimationComponent,
   ],
   imports: [
     BrowserModule,
