@@ -1,15 +1,14 @@
 .layout-padding{
     padding: 0px 7%;
 }
-
-
-
-.parent {
-    scroll-snap-type: y mandatory;
-    
-  }
+// .parent {
+//     overflow: scroll;
+//     scroll-snap-type: y mandatory;
+//   }
   
-  section {
-    scroll-snap-align: start;
-    position: relative;
-  }
+//   section {
+//     height: 100vh;
+//     scroll-snap-align: start;
+//     position: relative;
+//   }
+  
