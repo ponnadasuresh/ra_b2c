@@ -7,19 +7,18 @@ body {
   scroll-behavior: smooth;
   }
 
-  // html{
-  //    scrolling css 
-  //   height: auto;
-  //   scroll-snap-type:  y mandatory;
-    
-  // }
+  html{
+    //  scrolling css 
+    height: auto;
+    // scroll-snap-type:  y mandatory;
+  }
 
   // scrolling css to a top of the div
-  // .lp-section{
-  //   position: relative;
-  //   scroll-snap-align: center;
-  //   // padding-top: 5%;
-  // }
+  .lp-section{
+    position: relative;
+    scroll-snap-align: center;
+    // padding-top: 5%;
+  }
 
 
 body {
@@ -28,11 +27,16 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+p{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
 
 }
 
@@ -86,3 +90,24 @@ body::-moz-selection {
 }
 
 
+
+
+// owl-carousel styling
+.owl-carousel {
+  .owl-nav {
+      [class*=owl-] {
+          color: #FFF;
+          padding: 12px !important;
+          background: #fdc917 !important;
+          border-radius: 6%;
+          margin-top: -30px !important;
+      }
+  }
+}
+
+
+@media (max-width:600px) {
+  p{
+    font-size: 1rem;
+  }
+}

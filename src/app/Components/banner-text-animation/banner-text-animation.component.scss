@@ -6,6 +6,7 @@
 }
   
   .banner-animation-container {
+    width: 100%;
     padding: 0;
     display: inline-block;
     position: relative;
@@ -17,7 +18,7 @@
     height: 50px;
     float: left;
     color: black;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right:12px;
   }
   .banner-animation-container b {
@@ -97,9 +98,10 @@
 
   @media (max-width:600px) {
     .banner-animation-container {
-        top: -50px;
+      display: flex;
         p{
           opacity: 0;
+    display: none;
         }
     }
     .banner-animation-container .banner-animation-container-inner {

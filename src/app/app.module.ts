@@ -24,7 +24,9 @@ import { SuperFooterCornersComponent } from './Components/super-footer-corners/s
 import { FooterChatboxComponent } from './Components/footer-chatbox/footer-chatbox.component';
 import { BkupcompComponent } from './Components/bkupcomp/bkupcomp.component';
 import { BannerTextAnimationComponent } from './Components/banner-text-animation/banner-text-animation.component';
+import { CarePartnerComponent } from './Components/care-partner/care-partner.component';
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { BannerTextAnimationComponent } from './Components/banner-text-animation
     FooterChatboxComponent,
     BkupcompComponent,
     BannerTextAnimationComponent,
+    CarePartnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { BannerTextAnimationComponent } from './Components/banner-text-animation
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

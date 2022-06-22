@@ -78,14 +78,9 @@
     background: #fff;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
 }
 
-// .sign-in-btn {
-//     background: #F5F6FA;
-//     border-radius: 24px;
-//     margin: 0 14px;
-// }
 
 .wrapper nav {
     position: relative;
@@ -331,9 +326,9 @@ nav .content .links {
         cursor: pointer;
     }
 
-    .content .links li a.desktop-link {
-        display: none;
-    }
+    // .content .links li a.desktop-link {
+    //     display: none;
+    // }
 
     /* dropdown responsive code start */
     .content .links ul,
