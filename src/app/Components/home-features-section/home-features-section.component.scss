@@ -1,6 +1,7 @@
 #super-ui {
     .home-feature-container {
         padding-top: 5%;
+        margin-top: -7%;
 
         .home-faeture-maintitle {
             h1 {
@@ -16,13 +17,8 @@
                 flex-wrap: wrap;
 
                 .home-features {
-                    flex-basis: 15%;
-                    min-height: 192px;
-                    margin: 22px 9px;
-
                     .subtitle {
                         font-size: 22px;
-                        width: min-content;
                         font-weight: 600;
                         line-height: normal;
                         margin-top: 43px;
@@ -66,4 +62,31 @@
             }
         }
     }
+    // .home-features span:before {
+    //     transform: translate(0, 0) !important;   
+    // }
+}
+
+
+
+// .home-features span:before {
+//     content: "";
+//     display: block;
+//     background: #ede3e3;
+//     padding: 12px;
+//     border-radius: 50%;
+//     width: 64px;
+//     height: 64px;
+//     position: absolute;
+//     transform: translate(64px, -1px);
+//     z-index: -1;
+//     transition: 300ms;
+// }
+
+.home-features-link{
+    flex-basis: 15%;
+    min-height: 192px;
+    margin: 22px 9px;
+    text-align: center;
+    color: #000;
 }

@@ -16,7 +16,9 @@
   .banner-animation-container p {
     height: 50px;
     float: left;
-    margin-right: 0.3em;
+    color: black;
+    margin-top: 5%;
+    margin-right:12px;
   }
   .banner-animation-container b {
     float: left;
@@ -96,6 +98,9 @@
   @media (max-width:600px) {
     .banner-animation-container {
         top: -50px;
+        p{
+          opacity: 0;
+        }
     }
     .banner-animation-container .banner-animation-container-inner {
         font-size: 2rem;

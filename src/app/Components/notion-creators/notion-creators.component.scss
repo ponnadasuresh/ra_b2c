@@ -21,6 +21,23 @@
             padding: 1%;
             transition: all 0.1s ease-in;
 
+            .book-now-btn {
+                width: 120px;
+                background: black;
+                border: black;
+                padding: 13px;
+                border-radius: 50px;
+                text-align: center;
+                color: #fff;
+                font-size: 1rem;
+                // margin: 0 auto;
+                // display: block;
+            }
+
+            hr.btn-seprator {
+                margin: 22px 0;
+            }
+
             img {
                 border-radius: 8px;
             }
@@ -35,6 +52,41 @@
                 font-size: 20px;
                 font-weight: 600;
                 margin: 12px 0;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5%;
+                align-items: center;
+
+                a {
+                    color: #000;
+                }
+
+                i {
+                    color: #c5c5c4;
+                }
+            }
+
+            .subscription-price-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .price {
+                    .validation-time {
+                        font-size: 1rem;
+                        .rupee-icon {
+                            color: #000;
+                            font-size: 0.8rem;
+                        }
+                    }
+                    .paln-amount {
+                        font-size: 2rem;
+                        font-weight: 500;
+                    }
+                    .rupee-icon {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
