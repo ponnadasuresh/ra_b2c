@@ -1,92 +1,51 @@
+@import '/src/custom_styles/variables.scss';
+@import '/src/custom_styles/mixins.scss';
+
 #super-ui {
     .home-feature-container {
         padding-top: 5%;
         margin-top: -7%;
-
-        .home-faeture-maintitle {
+        .home-feature-maintitle {
             h1 {
-                font-weight: 600;
-                font-size: 2.8rem;
+                @include main-headings;
                 max-width: 560px;
-                line-height: 54px;
-                margin-bottom: 62px;
-            }
-
-            .home-features-card {
-                display: flex;
-                flex-wrap: wrap;
-
-                .home-features {
-                    .subtitle {
-                        font-size: 22px;
-                        font-weight: 600;
-                        line-height: normal;
-                        margin-top: 43px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media (max-width:600px) {
-    #super-ui {
-        .home-feature-container {
-            padding-top: 5%;
-
-            .home-faeture-maintitle {
-                h1 {
-                    font-size: 1.4rem;
-                    line-height: 37px;
+                @media #{$bp-mobiles} {
+                    font-size: $Variable_readyassist_fs_24px;
                     max-width: 100%;
                     margin: 40px 0;
                 }
+            }
+            .home-features-card {
+                @include flex_fw_ai_jc(wrap, inherit, inherit);
+                .home-features-link{
+                    flex-basis: 15%;
+                    min-height: 192px;
+                    margin: 22px 9px;
+                    text-align: center;
+                    color: #000;
+                }
 
-                .home-features-card {   
-                    .home-features {
+                .home-features {
+                    @media #{$bp-mobiles}{
                         flex-basis: 38%;
                         min-height: 152px;
                     }
-
-                    .home-features {
-                        .subtitle {
+                    .subtitle {
+                        font-size: $Variable_readyassist_fs_22px;
+                        font-weight: $Variable_readyassist_fw_500;
+                        margin: $Variable_readyassist_marign_32px 0;
+                        line-height: $Variable_readyassist_22px;
+                         @media #{$bp-mobiles}{
                             width: 100%;
-                            font-size: 1rem;
+                            font-size: $Variable_readyassist_fs_16px;
                         }
-
                     }
-
-
                 }
             }
         }
     }
-    // .home-features span:before {
-    //     transform: translate(0, 0) !important;   
-    // }
 }
 
 
 
-// .home-features span:before {
-//     content: "";
-//     display: block;
-//     background: #ede3e3;
-//     padding: 12px;
-//     border-radius: 50%;
-//     width: 64px;
-//     height: 64px;
-//     position: absolute;
-//     transform: translate(64px, -1px);
-//     z-index: -1;
-//     transition: 300ms;
-// }
 
-.home-features-link{
-    flex-basis: 15%;
-    min-height: 192px;
-    margin: 22px 9px;
-    text-align: center;
-    color: #000;
-}

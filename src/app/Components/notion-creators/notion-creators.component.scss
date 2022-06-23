@@ -1,37 +1,42 @@
+@import '/src/custom_styles/variables.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/buttons.scss';
+
 #superso-ui {
     .notioncreators-container {
         .notioncreators-portfolio-container {
-            display: flex;
-            flex-wrap: wrap;
+            @media #{$bp-mobiles} {
+                flex-direction: column;
+            }
+
+            @include flex_fw_ai_jc(wrap, inherit, initial)
         }
 
         h1 {
-            font-size: 2rem;
+            @include main-headings;
             max-width: 610px;
 
-            line-height: 47px;
-            font-weight: 600;
+            @media #{$bp-mobiles} {
+                max-width: 100%;
+                font-size: $Variable_readyassist_fs_24px;
+            }
         }
 
         .portfolio-card {
-            margin: 14px;
+            margin: $Variable_readyassist_marign_14px;
             flex-basis: 22%;
-            box-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%);
-            background: #fff;
-            padding: 1%;
+            @include readyassisy_card;
             transition: all 0.1s ease-in;
 
+            @media #{$bp-mobiles} {
+                padding: 5%;
+            }
+
             .book-now-btn {
-                width: 120px;
-                background: black;
-                border: black;
-                padding: 13px;
-                border-radius: 50px;
-                text-align: center;
-                color: #fff;
-                font-size: 1rem;
-                // margin: 0 auto;
-                // display: block;
+                @include btn-dark;
+                min-width: 122px;
+                min-height: 42px;
+                color: $Variable_readyassist_fc_white;
             }
 
             hr.btn-seprator {
@@ -49,84 +54,46 @@
             }
 
             .portfolio-card-title {
-                font-size: 20px;
-                font-weight: 600;
+                font-size: $Variable_readyassist_fs_21px;
+                font-weight: $Variable_readyassist_fw_600;
                 margin: 12px 0;
-                display: flex;
-                justify-content: space-between;
+                @include flex_fw_ai_jc(nowrap, center, space-between);
                 margin-top: 5%;
-                align-items: center;
-
-                a {
-                    color: #000;
+                .title {
+                    a {
+                        font-size: $Variable_readyassist_fs_20px;
+                        color: $Variable_readyassist_fc_black;
+                    }
                 }
-
                 i {
-                    color: #c5c5c4;
+                    color: var(--info-icon);
+                    font-size: $Variable_readyassist_fs_20px;
                 }
             }
 
             .subscription-price-card {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include flex_fw_ai_jc(nowrap, center, space-between);
 
                 .price {
                     .validation-time {
-                        font-size: 1rem;
+                        font-size: $Variable_readyassist_fs_16px;
+
                         .rupee-icon {
-                            color: #000;
-                            font-size: 0.8rem;
+                            color: $Variable_readyassist_fc_black;
+                            font-size: $Variable_readyassist_fs_14px;
                         }
                     }
+
                     .paln-amount {
-                        font-size: 2rem;
-                        font-weight: 500;
+                        font-size: $Variable_readyassist_fs_32px;
+                        font-weight: $Variable_readyassist_fw_500;
                     }
+
                     .rupee-icon {
-                        font-size: 1rem;
+                        font-size: $Variable_readyassist_fs_16px;
                     }
                 }
             }
         }
     }
-}
-
-
-@media (max-width:600px) {
-    // #superso-ui {
-    //     .notioncreators-container {
-
-    //         h1 {
-    //             font-size: 2rem;
-    //             max-width: 100%;
-    //             line-height: 47px;
-    //             font-weight: 600;
-    //         }
-    //                   .portfolio-card {
-    //             padding: 5%;
-    //         }
-
-    //     }
-    // }
-
-    #superso-ui {
-        .notioncreators-container {
-            .notioncreators-portfolio-container {
-                flex-direction: column;
-            }
-
-            h1 {
-                max-width: 100%;
-                font-size: 1.4rem;
-                line-height: 37px;
-            }
-
-            .portfolio-card {
-                padding: 5%;
-
-            }
-        }
-    }
-
 }

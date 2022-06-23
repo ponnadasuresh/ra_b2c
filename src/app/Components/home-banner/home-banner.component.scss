@@ -1,91 +1,101 @@
+@import '/src/custom_styles/variables.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/buttons.scss';
+
+#superso-ui {
+    .superso__homebanner__container {
+        padding-top: 14%;
+
+        h1 {
+            font-size: $Variable_readyassist_fs_40px;
+            font-weight: $Variable_readyassist_fw_600;
+            line-height: 80px;
+
+            span {
+                opacity: 0;
+            }
+        }
+
+        p {
+            font-size: $Variable_readyassist_navlink_fs_18px;
+        }
+
+        .banner-btns {
+            // margin-top: 62px;
+            // margin-bottom: 12px;
+            @include margin($Variable_readyassist_marign_62px, $Variable_readyassist_marign_12px);
+
+            button.btn1 {
+                @include btn-dark;
+
+                a {
+                    color: $Variable_readyassist_link__fc_white;
+                    font-size: $Variable_readyassist_fs_21px;
+                    font-weight: $Variable_readyassist_fw_500;
+                    display: block;
+                    padding: 16px 25px;
+                }
+            }
+
+            span {
+                a {
+                    color: rgb(155, 154, 151);
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+// Mobile Responsive
+
+@media screen and (max-width: 600px) {
     #superso-ui {
         .superso__homebanner__container {
-            padding-top: 14%;
+            padding-top: 6%;
 
             h1 {
-                font-size: 3.5rem;
-                font-weight: 600;
-                line-height: 80px;
-                span{
-                    opacity: 0;
+                span {
+                    opacity: 1;
+                    font-size: 2rem;
                 }
             }
 
             p {
-                font-size: 18px;
+                font-size: 1rem;
+                line-height: 1.7rem;
             }
 
             .banner-btns {
-                margin-top: 62px;
-                margin-bottom: 12px;
+                display: flex;
+                flex-direction: column;
+                width: 220px;
+                margin-top: 25px;
 
                 button.btn1 {
-                    background: #000;
-                    border-radius: 30px;
-                    padding: 16px 32px 17px;
+                    width: 200px;
+                    height: 59px;
+                    padding: 0;
 
                     a {
-                        color: #fff;
-                        font-size: 21px;
-                        font-weight: 500;
+                        font-size: 1rem;
                     }
                 }
 
                 span {
-                    a {
-                        color: rgb(155, 154, 151);
-                        font-size: 15px;
-                    }
+                    margin-top: 22px;
+                    margin-left: 0;
                 }
+            }
+
+            h1 {
+                max-width: 100%;
+                font-size: 2rem;
+                line-height: 59px;
+                padding-top: 31%;
             }
         }
     }
 
-
-    // Mobile Responsive
-
-    @media screen and (max-width: 600px) {
-        #superso-ui {
-            .superso__homebanner__container {
-                padding-top: 6%;
-                h1{
-                    span{
-                        opacity: 1;
-                        font-size: 2rem;
-                    }
-                }
-
-                p {
-                    font-size: 1rem;
-                    line-height: 1.7rem;
-                }
-
-                .banner-btns {
-                    display: flex;
-                    flex-direction: column;
-                    width: 220px;
-                    margin-top: 25px;
-                    button.btn1{
-                        width: 200px;
-                        height: 59px;
-                        padding: 0;
-                        a{
-                            font-size: 1rem;
-                        }
-                    }
-
-                    span {
-                        margin-top: 22px;
-                    }
-                }
-
-                h1 {
-                    max-width: 100%;
-                    font-size: 2rem;
-                    line-height: 59px;
-                    padding-top: 31%;
-                }
-            }
-        }
-
-    }
+}

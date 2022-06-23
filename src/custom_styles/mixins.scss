@@ -1,0 +1,30 @@
+@import '/src/custom_styles/variables.scss';
+
+
+@mixin main-headings {
+    font-size: $Variable_readyassist_fs_32px;
+    line-height: 47px;
+    font-weight: $Variable_readyassist_fw_600;
+}
+
+@mixin margin($Variable_readyassist_marigntop, $Variable_readyassist_marignbottom) {
+    margin-top: $Variable_readyassist_marigntop;
+    margin-bottom: $Variable_readyassist_marignbottom;
+}
+
+@mixin readyresist_navbarlinks {
+    font-size: $Variable_readyassist_navlink_fs_18px;
+    color: $Variable_readyassist_fc_litegrey;
+}
+@mixin readyassisy_card {
+    box-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%);
+    background: $Variable_readyassist_layout__bgwhite;
+    padding: 1%;
+}
+
+@mixin flex_fw_ai_jc($fw, $ai, $jc) {
+    display: flex;
+    flex-wrap: $fw;
+    align-items: $ai;
+    justify-content: $jc;
+}

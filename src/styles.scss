@@ -1,6 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+:root {
+  --text-color-grey: #8F9BA8;
+  --info-icon: #c5c5c4;
+  --text-color-yellow: #fdc917;
+  --bg-color: #fec602;
+  --border:#5c5252;
+  --border--white:#fff;
+}
+
 html,
 body {
   height: 100%;
@@ -100,11 +109,14 @@ body::-moz-selection {
           padding: 12px !important;
           background: #fdc917 !important;
           border-radius: 6%;
-          margin-top: -30px !important;
+        
+          // margin-top: -30px !important;
       }
   }
 }
-
+.owl-theme .owl-nav{
+  margin-top: 70px !important;
+}
 
 @media (max-width:600px) {
   p{

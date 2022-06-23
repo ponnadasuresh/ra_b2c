@@ -1,80 +1,59 @@
+@import '/src/custom_styles/variables.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/buttons.scss';
+
 #superso-ui {
     .carepartner-container {
         h1.carepartner-maintitle {
-            font-weight: 600;
-            font-size: 2.8rem;
             max-width: 610px;
-            line-height: 54px;
+            @include main-headings;
+            @media #{$bp-mobiles} {
+                max-width: 100%;
+                font-size: $Variable_readyassist_fs_22px;
+            }
         }
 
         span {
             margin: 62px 0;
-            color: #8F9BA8;
+            color: var(--text-color-grey);
         }
 
         .carepartner-testimonial-card {
-            display: flex;
-            margin: 72px 0;
-            justify-content: center;
-            align-items: start;
+            margin-top: 5rem;
+            @include flex_fw_ai_jc(nowrap, inherit, center);
+
+            @media #{$bp-mobiles} {
+                flex-direction: column;
+            }
 
             .carepartner-testimonial-clm {
                 flex: 1 1;
 
                 .carepartner-brand {
-
                     img {
                         max-width: 69%;
-                        box-shadow: 9px 6px 12px 3px #ececec
+                        box-shadow: 9px 6px 12px 3px #ececec;
+
+                        @media #{$bp-mobiles} {
+                            max-width: 100%;
+                            margin-bottom: 52px;
+                        }
                     }
                 }
 
                 h3.carepartner-testimonial-card-title {
-                    font-weight: 600;
-                    font-size: 1.8rem;
-                    margin-bottom: 52px;
+                    font-weight: $Variable_readyassist_fw_500;
+                    font-size: $Variable_readyassist_fs_32px;
+                    margin-bottom: $Variable_readyassist_marign_52px;
                 }
-
                 .carepartner-testimonial-description {
                     position: relative;
                     min-height: 165px;
-
                     .carepartner-partner-name {
                         position: absolute;
                         top: 0;
                         bottom: 0;
                     }
-                }
-            }
-
-        }
-
-    }
-}
-
-@media (max-width:600px) {
-    #superso-ui {
-        .carepartner-container {
-            h1.carepartner-maintitle {
-                font-weight: 600;
-                max-width: 100%;
-                font-size: 1.4rem;
-                line-height: 37px;
-
-            }
-
-            .carepartner-testimonial-card {
-                flex-direction: column;
-
-                .carepartner-testimonial-clm {
-                    flex: 1 1;
-                    .carepartner-brand{
-                    img {
-                        max-width: 100%;
-                        box-shadow: 9px 6px 12px 3px #ececec;
-                        margin-bottom: 52px;
-                    }
-                }
                 }
             }
         }
