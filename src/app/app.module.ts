@@ -27,6 +27,7 @@ import { BannerTextAnimationComponent } from './Components/banner-text-animation
 import { CarePartnerComponent } from './Components/care-partner/care-partner.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { RecentPopularNewsComponent } from './Components/recent-popular-news/recent-popular-news.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BkupcompComponent,
     BannerTextAnimationComponent,
     CarePartnerComponent,
+    RecentPopularNewsComponent,
   ],
   imports: [
     BrowserModule,

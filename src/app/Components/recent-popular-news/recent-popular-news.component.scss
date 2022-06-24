@@ -1,0 +1,37 @@
+@import '/src/custom_styles/variables.scss';
+@import '/src/custom_styles/mixins.scss';
+
+// min-height: 470px;
+
+#superso-ui{
+    .recent-popular-news-container{
+        h1{
+            @include main-headings;
+        }
+        .recent-popnew-card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            .recent-popnew-clm {
+                flex: 21%;
+                margin: 0 22px;
+                .popnew-clm-title {
+                    min-height: 92px;
+                    a{
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                        color: #000;
+                      }
+                }
+            }
+          }
+    }
+}
+
+
+
+
+  
+
+
