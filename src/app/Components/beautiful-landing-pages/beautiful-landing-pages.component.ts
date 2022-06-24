@@ -10,6 +10,7 @@ export class BeautifulLandingPagesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // function
   }
 
 }
