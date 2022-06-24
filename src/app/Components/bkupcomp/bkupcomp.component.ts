@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener, Inject } from '@angular/core';
+import * as $ from 'jquery';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-bkupcomp',
@@ -7,7 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BkupcompComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: Document  ) { }
+
+  @HostListener("document:scroll")
+  scrollfunction(){
+    if(this.document.documentElement.scrollTop > 0){
+      $(".wrapper").addClass("active");
+    }
+    else{
+      $(".wrapper").removeClass("active");
+    }
+  }
 
   ngOnInit(): void {
   }
