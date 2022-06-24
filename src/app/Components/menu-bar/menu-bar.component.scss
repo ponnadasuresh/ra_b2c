@@ -1,7 +1,14 @@
 .wrapper.active {
 	box-shadow: 0 0 5px 1px #dad0d0 !important;
 }
-
+.logo{
+	background-image: url("/assets/images/new_ra_logo.png");
+				width: 49px;
+				height: 69px;
+				background-position: left center;
+				background-size: cover;
+				margin-left: -17px;
+}
 
 // new sccs for navbar
 /* Dropdown Menu code start */
@@ -21,14 +28,14 @@
 		justify-content: space-between;
 	}
 
-	.search-icon {
-		color: #8F9BA8;
-		font-size: 18px;
-		cursor: pointer;
-		line-height: 70px;
-		width: 70px;
-		text-align: center;
-	}
+	// .search-icon {
+	// 	color: #8F9BA8;
+	// 	font-size: 18px;
+	// 	cursor: pointer;
+	// 	line-height: 70px;
+	// 	width: 70px;
+	// 	text-align: center;
+	// }
 
 	.menu-icon {
 		color: #8F9BA8;
@@ -72,6 +79,14 @@
 
 nav {
 	.content {
+		.logo{
+			img{
+				padding-top: 3px;
+			}
+		}
+		.mobile-inline-logo-card{
+			padding-top: 12px;
+		}
 		// display: flex;
 		align-items: center;
 
@@ -83,11 +98,7 @@ nav {
 }
 
 .content {
-	.logo{
-		img{
-			padding-top: 3px;
-		}
-	}
+
 	.links {
 		li {
 			list-style: none;
@@ -268,18 +279,8 @@ nav {
 			position: relative;
 			z-index: -1;
 			top: 12px;
-	
-			.logo {
-				background-image: url("/assets/images/new_ra_logo.png");
-				width: 49px;
-				height: 69px;
-				background-position: left center;
-				background-size: cover;
-				margin-left: -17px;
-	
-				img {
-					opacity: 0;
-				}
+			.mobile-inline-logo-card{
+				padding-top: 0px;
 			}
 		}
 		.menu-icon {
