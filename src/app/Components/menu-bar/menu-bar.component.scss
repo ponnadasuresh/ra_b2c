@@ -1,6 +1,11 @@
 @import '/src/custom_styles/variables.scss';
 @import '/src/custom_styles/mixins.scss';
 
+// .links ul{
+// 	margin-bottom: 0 !im;
+// }
+
+
 .wrapper {
 	@media #{$bp-responsive-900} {
 		height: 80px;
@@ -115,6 +120,7 @@
 			.menu-list {
 				.links {
 					display: flex;
+					margin-bottom: 0;
 
 					@media #{$bp-responsive-900} {
 						display: block;

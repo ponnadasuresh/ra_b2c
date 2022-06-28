@@ -25,10 +25,12 @@ import { FooterChatboxComponent } from './Components/footer-chatbox/footer-chatb
 import { BkupcompComponent } from './Components/bkupcomp/bkupcomp.component';
 import { BannerTextAnimationComponent } from './Components/banner-text-animation/banner-text-animation.component';
 import { CarePartnerComponent } from './Components/care-partner/care-partner.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RecentPopularNewsComponent } from './Components/recent-popular-news/recent-popular-news.component';
-
+import { BlogFormComponent } from './Components/blog-form/blog-form.component';
+import { RecentPostsComponent } from './Components/recent-posts/recent-posts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +51,9 @@ import { RecentPopularNewsComponent } from './Components/recent-popular-news/rec
     BannerTextAnimationComponent,
     CarePartnerComponent,
     RecentPopularNewsComponent,
-  ],
+    BlogFormComponent,
+    RecentPostsComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -59,7 +63,9 @@ import { RecentPopularNewsComponent } from './Components/recent-popular-news/rec
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

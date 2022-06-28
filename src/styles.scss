@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-
+@import '~bootstrap/dist/css/bootstrap.min.css';
 :root {
   --text-color-grey: #8F9BA8;
   --info-icon: #c5c5c4;
@@ -14,27 +14,25 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
+ 
   }
 
-  html{
-    //  scrolling css 
-    height: auto;
-    // scroll-snap-type:  y mandatory;
-  }
 
   // scrolling css to a top of the div
-  .lp-section{
-    position: relative;
-    scroll-snap-align: center;
-    // padding-top: 5%;
-  }
+  // .lp-section{
+  //   // position: relative;
+  //   // scroll-snap-align: start;
+  //   // padding-top: 5%;
+  // }
 
 
 body {
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
 }
 p{
   font-size: 1.2rem;
@@ -99,6 +97,10 @@ body::-moz-selection {
 }
 
 
+//Form group
+.form-control:focus{
+  box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 25%);
+}
 
 
 // owl-carousel styling
@@ -116,6 +118,11 @@ body::-moz-selection {
 }
 .owl-theme .owl-nav{
   margin-top: 70px !important;
+}
+
+
+.layout-padding{
+  padding: 0px 7%;
 }
 
 @media (max-width:600px) {

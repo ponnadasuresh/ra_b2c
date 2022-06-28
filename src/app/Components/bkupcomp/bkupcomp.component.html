@@ -1,45 +1,96 @@
-<!-- New Menu -->
-
-
-<div class="wrapper">
-  <nav>
-    <input type="checkbox" id="show-menu">
-    <label for="show-menu" class="menu-icon"><i class="fas fa-bars" style="font-size: 23px;"></i></label>
-
-    <div class="content">
-      <div class="mobile-inline-logo-card">
-        <div class="logo">
-          <a href="#">
-            <img clas="desktop-logo" src="./assets/images/new_ra_logo.png" width="350px" alt="" sizes="" srcset="">
-          </a>
-        </div>
-        <div class="desktop-menu-card">
-          <div class="menu-list">
-            <ul class="links">
-              <li><a href="#">Subscription</a></li>
-              <li><a href="#">Blog</a></li>
-              <li>
-                <a href="#" class="desktop-link">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="desktop-link">Contact Us</a>
-
-              </li>
-              <li><a href="#">Grid</a></li>
-              <li><a href="#">Sign in</a></li>
-            </ul>
+<div id="readyassist-ui">
+  <div class="layout-padding" style="padding-top: 130px; padding-bottom: 40px;">
+      <div class="blog-form-container">
+          <div class="container-card">
+              <h1>Create Blog</h1>
+              <form>
+                  <div class="form-group">
+                      <!-- <label for="exampleFormControlInput1">Blog Title</label> -->
+                      <input type="text" class="form-control" id="blogtilte" placeholder="Blog Title">
+                      <div class="title-length"> <span class="small">26/90</span></div>
+                  </div>
+                  <div class="form-group">
+                      <!-- <label for="exampleFormControlInput1">Blog Title</label> -->
+                      <textarea id="textarea" rows="5" class="form-control" id="description"
+                          placeholder="Description"></textarea>
+                      <div class="title-length"> <span class="small">200/900</span></div>
+                  </div>
+                  <div class="form-group">
+                     <div class="feature-image-card">
+                      <label for="" class="my-2">Feature Image</label>
+                      <div class="row">
+                          <div class="col-lg-3">
+                             
+                              <div class="blog-video blog-image">
+                                  <img src="./assets/images/ra_news2.jpeg" class="img-fluid" alt="" srcset="">
+                              </div>
+                          </div>
+                          <div class="col-lg-7">
+                              <div class="requirements">
+                                  <ul>
+                                      <li>File size should not exceed maximum 2MB</li>
+                                      <li>File should in png, jpg, jpeg</li>
+                                      <li>Image size 800 X 800px</li>
+                                  </ul>
+                                  <button class="btn btn-secondary ms-4">Upload</button>
+                              </div>
+                          </div>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="blog-feature-portfolio-card">
+                          <div class="row">
+                              <div class="col-lg-3">
+                                  <img src="./assets/images/ra_news2.jpeg" class="img-fluid" alt="" srcset="">
+                              </div>
+                              <div class="col-lg-3">
+                                  <img src="assets/images/ra_news1.jpeg" class="img-fluid" alt="" srcset="">
+                              </div>
+                              <div class="col-lg-3">
+                                  <img src="assets/images/ra_news4.jpeg" class="img-fluid" alt="" srcset="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="blog-video-card">
+                       <label for="" class="my-2">Blog video</label>
+                       <div class="row">
+                           <div class="col-lg-3">
+                              
+                               <div class="blog-video blog-image">
+                                   <img src="./assets/images/video-img.png" width="120px" class="img-fluid" alt="" srcset="">
+                               </div>
+                               <div class="video-url">
+                                  <input type="url" id="typeURL" class="my-2 form-control" placeholder="Blog URL"/>
+                               </div>
+                           </div>
+                           <div class="col-lg-7">
+                               <div class="requirements">
+                                   <ul>
+                                       <li>video size should not exceed maximum 200MB</li>
+                                       <li>File should in mp4</li>
+                                   </ul>
+                                   <button class="btn btn-secondary me-4">Upload video</button>
+                               </div>
+                           </div>
+                       </div>
+                      </div>
+                   </div>
+                 <div class="post-btn-card"><button type="submit" class="btn btn-lg btn-primary mt-4">Post Blog</button></div>  
+              </form>
           </div>
-          <div class="action-btn">
-            <button class="get-started-btn">
-              <a href="#">Subscribe Now</a>
-            </button>
-          </div>
-        </div>
       </div>
+      
+  </div>
+</div>
 
 
-    </div>
 
-
-  </nav>
+<div class="layout-padding">
+  <hr>
+<div class="recent-blog-post">
+  <app-recent-posts></app-recent-posts>
+</div>
 </div>

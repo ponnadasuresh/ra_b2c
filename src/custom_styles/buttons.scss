@@ -2,11 +2,47 @@
 @mixin btn-dark {
     background-color: $btn_dark;
     border-radius: 30px;
-    border:1px solid #000;
+    border: 1px solid #000;
     transition: all .2s ease-in;
-    &:hover{
+
+    &:hover {
         background-color: $btn_grey;
-        border:1px solid #999;
+        border: 1px solid #999;
         transition: all .2s ease-in;
     }
 }
+
+
+@mixin btn-animation {
+    
+        border: none;
+        color: #000;
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            direction: rtl;
+            z-index: -1;
+            box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            color: #000;
+
+            &:after {
+                left: auto;
+                right: 0;
+                width: 100%;
+            }
+        }
+
+        &:active {
+            top: 2px;
+        }
+    }
+
