@@ -21,10 +21,11 @@
 }
 .btn-action{
     width: 156px;
-    margin: 17px 0;
+    margin: 47px 0;
     height: 43px;
     border-radius: 20px;
     border: none;
+    
     font-size: 14px;
 }
 .addvehicle-btn{
@@ -67,4 +68,69 @@
 
 .addvehicle-form-container .form-group{
     margin: 12px 0;
+}
+
+.addvehicle-card {
+    float: right;
+}
+.vehlist-card {
+    border-radius: 55px;
+    width: 30%;
+    max-height: 60px;
+    background: #dedede;
+    padding: 10px 30px;
+    flex-direction: column;
+    display: flex;
+    box-shadow: rgb(0 0 0 / 5%) 0 10px 20px 0;
+}
+.listofvehicles-card{
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.vehname h3 {
+    font-size: 13px;
+    line-height: 21px;
+}
+.vehnumber h3 {
+    font-size: 13px !important;
+    line-height: 20px;
+    // color: #FFCC33;
+    color: #ff4859;
+
+}
+.listofvehicles-card{
+    h3{
+        margin: 0;
+    }
+}
+
+.sepratorveh {
+    width: 1.5px;
+    height: 12px;
+    background: #fff;
+    margin: 0 10px;
+    display: none;
+}
+
+.veh-active {
+    background: #198754 !important;
+    h3{
+        color: #fff !important;
+        line-height: 20px;
+    }
+    .sepratorveh{
+        background: #FFCC33;
+        display: none;
+    }
+}
+
+.listofvehicles-topcard-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    h1{
+        margin-bottom: 0;
+    }
 }

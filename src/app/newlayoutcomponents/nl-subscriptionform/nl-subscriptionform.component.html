@@ -41,13 +41,54 @@
 
                     <!-- step 3 -->
                     <section *ngIf="steps == 2">
-                        <h1>List of vehicles</h1>
+                        <div class="listofvehicles-topcard-row">
+                            <div class="maintitle">
+                                <h1>List of vehicles</h1>
+                            </div>
+                            <div class="Add-btn">
+                                <button type="button"  class="btn-success  btn addvehicle-btn" (click)="addnewVehicle()">
+                                    <i class="fa fa-plus" aria-hidden="true"></i> Add Vehicle
+                                </button>
+                            </div>
+                        </div>
+                        
+
+                        <div class="listofvehicles-card">
+                            <!-- Accordin -->
+                            <div class="vehlist-card veh-active">
+                                <div class="vehname">
+                                    <h3>Hero Splendor Plus</h3>
+                                </div>
+                                <div class="sepratorveh"></div>
+                                <div class="vehnumber">
+                                    <h3>KA23</h3>
+                                </div>
+                                <div class="sepratorveh"></div>
+                            </div>
+                            <div class="vehlist-card">
+                                <div class="vehname">
+                                    <h3>Hero Splendor Plus</h3>
+                                </div>
+                                <div class="sepratorveh"></div>
+                                <div class="vehnumber">
+                                    <h3>KA23</h3>
+                                </div>
+                                <div class="sepratorveh"></div>
+                            </div>
+                            <div class="vehlist-card">
+                                <div class="vehname">
+                                    <h3>Hero Splendor Plus</h3>
+                                </div>
+                                <div class="sepratorveh"></div>
+                                <div class="vehnumber">
+                                    <h3>KA23</h3>
+                                </div>
+                                <div class="sepratorveh"></div>
+                            </div>
+                            <!-- Accordin -->
+                        </div>
                         <div class="addvehicle-form-container">
                             <div class="addvehicle-card">
-
-                                <button type="button"  class="btn-success  btn addvehicle-btn" (click)="addnewVehicle()">
-                                    <i class="fa fa-plus" aria-hidden="true"></i> Add New Vehicle
-                                </button>
                                 
                                 <div class="newvehicleform-container" *ngIf="isAddnewvehicleEnable">
                                     <section>

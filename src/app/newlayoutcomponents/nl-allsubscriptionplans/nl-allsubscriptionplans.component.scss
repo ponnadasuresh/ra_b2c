@@ -4,7 +4,7 @@
 
 .nl-subscriptionplans-container ::ng-deep .mat-tab-label .mat-tab-label-content {
     font-size: 0.9rem !important;
-    margin-left: 22px;
+    // margin-left: 22px;
 }
 
 
@@ -74,11 +74,12 @@
 .subscriptioncard-clm-title {
     p {
         display: flex;
-        font-size: 41px;
+        font-size: 24px;
+        font-family: 'ABbold' !important;
         flex-direction: column;
         font-family: 'fBold';
         color: #cacaca;
-
+        margin: 30px 0;
         span {
             font-size: 12px;
         }
@@ -86,8 +87,10 @@
 }
 
 .price {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
+    color: #FFCC33;
     margin: 25px 0;
+    font-family: 'ABblack';
 }
 
 .subscriptioncard-clm-desc p {
@@ -151,20 +154,21 @@ color: #6c757d;
 
 ::ng-deep [mat-align-tabs=center]>.mat-tab-header .mat-tab-labels {
     justify-content: center;
-    width: 22%;
+    width: 25%;
+    align-items: center;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
     background: #fff;
     border-radius: 25px;
 
 
     @media #{$bp-sm} {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
     }
 }
 .card1-container{
-    margin-top: 8% !important;
+    margin-top: 5% !important;
     width: 90%;
     margin: 0 auto;
   }
@@ -191,18 +195,20 @@ color: #6c757d;
 .all-subscription-plans .subscriptioncard-clm:hover .btn-primary{
     opacity: 1;
 }
-.nl-subscriptionplans-card ::ng-deep .mat-tab-label{
- margin-left: -19px;   
+.subscriptioncard-clm:hover .subscriptioncard-clm-title p {
+    color: black !important;
 }
 
 .all-subscription-plans .subscriptioncard-clm .btn-primary {
     background: #FFCC33 !important;
-      color: #ff4859;
+      color: #000;
       padding: 12px 32px;
       font-weight: 600;
       border-radius: 25px;
-      border: 2px solid;
+      border: 2px solid transparent;
       opacity: 0;
+      margin-top: 5rem;
+      font-family: 'ABbold' !important;
       @media #{$bp-sm} {
           opacity: 1;
           background: #ff4859;
