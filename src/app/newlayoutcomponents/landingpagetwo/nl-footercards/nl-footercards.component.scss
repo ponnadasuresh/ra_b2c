@@ -1,0 +1,97 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui {
+    .nl-footercards-container {
+        .nl-footercards-card {
+
+            .nl-footercards-clm {
+                width: 253px;
+                min-height: 216px;
+                margin: 16px;
+
+                @media #{$bp-sm} {
+                    display: none;
+                }
+
+                text-align: center;
+
+                @media #{$bp-sm} {
+                    width: 96%;
+                }
+
+
+                .footer-clm-desc {
+                    h3 {
+                        margin-top: 43px;
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+
+                    img {
+                        border-radius: 23px;
+                        padding: 10px;
+                        transition: all 0.3s ease-in;
+                        width: 203px;
+                        height: 175px;
+                        object-fit: cover;
+
+                        @media #{$bp-sm} {
+                            width: 100%;
+                        }
+                    }
+
+                    .follow-btn {
+                        width: 125px;
+                        margin: 0;
+                        height: 41px;
+                        border-radius: 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .insta-card {
+                background: aliceblue;
+                padding: 12px;
+                border-radius: 15px;
+                width: 205px;
+
+                @media #{$bp-sm} {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+
+.footer-downloadapp-container {
+    padding: 3% 0;
+
+    .footer-downloadapp-card {
+        // display: flex;
+        // align-items: center;
+
+        .footer-downloadapp-card-clm {
+            h1 {
+                font-size: 42px;
+                // text-align: center;
+                font-family: 'fbold';
+                margin: 27px 0;
+            }
+            
+        }
+
+    }
+}
+
+
+.footer-text{
+    padding-top: 130px;
+    @media #{$bp-sm} {
+        padding-top: 0px;
+    }
+}

@@ -1,0 +1,240 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+.nl-subscriptionplans-container ::ng-deep .mat-tab-label .mat-tab-label-content {
+    font-size: 0.9rem !important;
+}
+
+
+#readyassist-ui {
+    .nl-subscriptionplans-container {
+        h1 {
+            position: relative;
+            top: 60px;
+            
+            font-size: 42px;
+            @media #{$bp-sm}{
+                position: static;
+                font-size: 2rem;
+            }
+        }
+
+        .layout-px {
+            padding: 125px 0;
+        }
+
+    }
+}
+
+
+
+.mat-tab-group {
+    margin-bottom: 48px;
+}
+
+.mat-tab-group {
+    display: inline !important;
+}
+
+.card1-container {
+    margin-top: 102px;
+    @media #{$bp-sm}{
+        margin-top: 0px !important;
+    }
+}
+
+.subscriptioncard-clm {
+    background: #fff;
+    // margin-top: 40px !important;
+    margin: 0 7px;
+    padding: 22px;
+    box-shadow: 0 0 3px #edecec;
+    border-radius: 15px;
+}
+
+.nl-subscriptionplans-card {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nl-subscriptionplans-bg {
+    background-color: #fff9e7;
+}
+
+.subscriptioncard-clm-title {
+    p {
+        display: flex;
+        font-size: 41px;
+        flex-direction: column;
+        font-family: 'fBold';
+        color: #cacaca;
+
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
+.price {
+    font-size: 2.3rem;
+    margin: 25px 0;
+}
+
+.subscriptioncard-clm-desc p {
+    
+    color: #6c757d;
+    text-align: left;
+    font-size: 1rem;
+    padding-top: 5px;
+    font-weight: 400;
+}
+
+.all-subscription-plans .owl-item.active.center .subscriptioncard-clm {
+    background: #ff4859;
+    max-width: 100%;
+    position: relative;
+    min-height: 409px;
+    margin-top: 10px !important;
+    margin: 0;
+    transform: scale(1.02);
+  
+    @media #{$bp-sm}{
+      max-width: 93%; 
+      margin-top: 50px !important;
+      margin: 0 auto;
+    }
+    .subscriptioncard-clm-desc{
+      p{
+        color: #fff;
+      }
+    }
+    .price{
+      color: #FFCC33;
+    }
+  }
+
+
+
+::ng-deep .mat-tab-label-active {
+    padding: 24px 84px !important;
+    border-radius: 34px;
+    border-radius: 25px;
+    border: 2px solid;
+    color: #fff;
+    background: linear-gradient(0deg, #404040 0%, #101010 70%);
+    opacity: 1 !important;
+
+    @media #{$bp-sm} {
+        padding: 24px !important;
+    }
+}
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #fff9e7;
+}
+
+::ng-deep .mat-tab-header {
+    border: #fff9e7;
+}
+
+::ng-deep [mat-align-tabs=center]>.mat-tab-header .mat-tab-labels {
+    justify-content: center;
+    width: 22%;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: #fff;
+    border-radius: 25px;
+
+
+    @media #{$bp-sm} {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.card1-container{
+    margin-top: 8% !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #fff9e7;
+    display: none;
+}
+
+::ng-deep .mat-tab-body.mat-tab-body-active {
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.all-subscription-plans .subscriptioncard-clm:hover .btn-primary{
+    opacity: 1;
+}
+
+
+.all-subscription-plans .subscriptioncard-clm .btn-primary {
+    background: #FFCC33 !important;
+      color: #ff4859;
+      padding: 12px 32px;
+      font-weight: 600;
+      border-radius: 25px;
+      border: 2px solid;
+      opacity: 0;
+      // display: none;
+      // visibility: hidden;
+  }
+  
+  .all-subscription-plans .subscriptioncard-clm:hover {
+    background: #ff4859;
+    margin-top: 0px !important;
+    // max-height: 360px;
+  
+    cursor: pointer;
+    .subscriptioncard-clm-desc{
+      p{
+        color: #fff;
+      }
+    }
+   
+    .price{
+      color: #FFCC33;
+    }
+  }
+
+
+
+
+
+.activeClass {
+    background: #ff4859;
+    max-width: 100%;
+    position: relative;
+    min-height: 409px;
+    margin-top: 10px !important;
+    margin: 0;
+    transform: scale(1.02);
+  
+    @media #{$bp-sm}{
+      max-width: 93%; 
+      margin-top: 50px !important;
+      margin: 0 auto;
+    }
+    .subscriptioncard-clm-desc{
+      p{
+        color: #fff;
+      }
+    }
+    .price{
+      color: #FFCC33;
+    }
+}

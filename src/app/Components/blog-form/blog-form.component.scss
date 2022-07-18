@@ -43,11 +43,15 @@
     justify-content: center;
 }
 
-// .blog-video.blog-image {
-//     border-radius: 22px;
-//     padding: 15px;
-//     box-shadow: 0px 0px 3px 2px #c5c5c5;
-// }
+.requirements h3 {
+    font-weight: 600;
+    margin-left: -11px;
+    margin-bottom: -10px;
+}
+.blog-feature-portfolio-card h3 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
 
 
 .form-control{
@@ -71,9 +75,10 @@ hr {
 }
 .feature-img-upload-btn-clm{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
+    margin-left: -10px;
     button{
-        margin-top: 5px;
+        margin-top: 25px;
     }
 }
 
@@ -87,6 +92,7 @@ hr {
 }
 .requirements ul {
     margin-top: 12px;
+    padding-left: 2px;
 }
 i.bx.bxs-plus-square {
     font-size: 6rem;
@@ -110,7 +116,7 @@ i.bx.bxs-plus-square {
 }
 .form-action-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 i.bx.bx-image {
     background: #d3d3d3;
@@ -118,6 +124,7 @@ i.bx.bx-image {
     width: 100%;
     height: 179px;
     font-size: 178px;
+    margin-left: -1px;
     border-radius: 12px 0px 0px 12px;
     color: #969696;
 }
@@ -130,7 +137,7 @@ button.btn-clear {
     width: 160px;
     border: none;
     height: 50px;
-    border-radius: 22px;
+    border-radius: 12px;
     background: #6c757d;
     color: #fff;
     font-family: 'Roboto';
@@ -141,7 +148,7 @@ button.btn-clear {
     font-size: 18px;
     border: none;
     height: 50px;
-    border-radius: 22px;
+    border-radius: 12px;
     background: #238260;
     color: #fff;
     font-family: 'Roboto';  

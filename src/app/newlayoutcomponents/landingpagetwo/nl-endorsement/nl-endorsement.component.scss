@@ -1,0 +1,49 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui {
+    .bg-wrapper{
+        background: #fafafa;
+    }
+    .nl-endorsement-container {
+        .layout-px {
+            padding: 130px 0;
+            @media #{$bp-sm}{
+                padding: 100px 0;
+            }
+        }
+
+
+        .nl-endorsement-card {
+            background: #fafafa;
+            h1 {
+                // padding: 2rem 0;
+                
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+                color: #333333;
+                margin-bottom: 0;
+                @media #{$bp-sm}{
+                    font-size: 1.8rem;
+                }
+
+                // span {
+                //     color: #FFCC33;
+                //     
+                //     font-size: 42px;
+                // }
+            }
+
+            p {
+                
+                color: #6c757d;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 400;
+                padding-top: 5px;
+            }
+        }
+    }
+}

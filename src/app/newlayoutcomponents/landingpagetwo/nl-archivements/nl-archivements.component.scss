@@ -1,0 +1,112 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui {
+    .nl-archivements-container {
+        h1 {
+            font-size: 42px;
+            line-height: 42px;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 30px;
+            @media #{$bp-sm} {
+                font-size: 1.8rem;
+            }
+            span{
+                color: #FFCC33;
+                font-size: 42px;
+                @media #{$bp-sm} {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .layout-px {
+            padding: 120px 0;
+
+            @media #{$bp-sm} {
+                padding: 50px 0;
+            }
+        }
+
+        .nl-archivements-card {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            // justify-content: space-around;
+            // @media #{$bp-sm}{
+            //     flex-direction:column;
+            // }
+
+            .nl-archivements-card-clm {
+                background: #000;
+                flex-grow: 1;
+                width: 38%;
+                padding: 10px 18px;
+                margin: 10px;
+                border-radius: 15px;
+                min-height: 250px;
+            
+                .nl-archivements-icons-card {
+                    padding: 15px 0;
+                    border-bottom: 1.7px dashed #d8c4c4;
+                    margin-bottom: 14px;
+
+                    .svg-inline--fa {
+                        color: #ffcc33;
+                        font-size: 48px;
+                        margin-bottom: 12px;
+                    }
+                }
+
+                .nl-archivements-count {
+                    padding-top: 18px;
+
+                    h3 {
+                        font-size: 1.6rem;
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #ffcc33;
+                        font-size: 15.3px;
+                        @media #{$bp-sm} {
+                            font-size: 18px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.nl-archivements-card-clm:hover .nl-archivements-icons-card .svg-inline--fa {
+    color: aliceblue !important;
+    transition: all .2s;
+}
+
+
+.map-fade {
+    // width: 23%;
+    min-height: 490px;
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(255 255 255 / 78%) 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+
+.google-location {
+    iframe{
+        @media #{$bp-sm}{
+            height: 300px;
+        }   
+    }
+    @media #{$bp-sm} {
+        
+        margin-top: 72px;
+    }
+}
+

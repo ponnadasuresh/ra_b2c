@@ -1,0 +1,70 @@
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border: 1.6px dashed #FFCC33 !important;
+}
+
+
+.subscriptionform .input-group-text {
+    background: white;
+    border-right: none !important;
+    padding: 12px;
+    border: 1.6px dashed #FFCC33;
+    border-radius: 4px 0 0 6px;
+}
+.fa-phone, .fa-key {
+    color: #cacaca;
+}
+.forminstruction p {
+   
+    font-size: 14px;
+    margin: 40px 0;
+}
+.btn-action{
+    width: 156px;
+    margin: 17px 0;
+    height: 43px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+}
+.addvehicle-btn{
+    width: 156px;
+    margin: 17px 0;
+    height: 43px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    background: linear-gradient(0deg, #404040 0%, #101010 70%) !important;
+}
+.btn-action:focus{
+    box-shadow:none !important;
+}
+.subscriptionplan-details-card {
+    background: #ff4859;
+    padding: 12px;
+    box-shadow: 0 0 3px #edecec;
+    border-radius: 15px;
+    h1{
+        color: #cacaca;
+        font-family: 'fBold';
+    }
+    p.description{
+        color: #fff;
+        font-size: 1rem;
+    }
+    p.price{
+        font-size: 32px;
+    
+    color: #FFCC33;
+    }
+    p.expiretime {
+        font-size: .8rem;
+        color: black;
+    }
+}
+
+
+
+.addvehicle-form-container .form-group{
+    margin: 12px 0;
+}

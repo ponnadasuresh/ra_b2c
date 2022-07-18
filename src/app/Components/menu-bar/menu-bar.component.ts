@@ -13,16 +13,13 @@ export class MenuBarComponent implements OnInit {
 
 @HostListener("document:scroll")
 scrollfunction(){
-  if(this.document.documentElement.scrollTop > 0){
+  if(this.document.documentElement.scrollTop > 800){
     $(".wrapper").addClass("active");
   }
   else{
     $(".wrapper").removeClass("active");
   }
 }
-
-
-
 
 
 

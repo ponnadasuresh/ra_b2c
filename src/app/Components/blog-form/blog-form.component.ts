@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-blog-form',
@@ -6,15 +7,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-form.component.scss']
 })
 export class BlogFormComponent implements OnInit {
+  blogTitle:string = ''
+  minTitleLength:number = 0;
+  maxTitlestringLength:number = 90;
+  description:string  = '';
+  minDescriptionLength:number = 0;
+  maxDescriptionLength:number = 300;
+  mydata:[] = [];
 
-  titlestringLength = 0;
-  maxTitlestringLength = 90;
-  blogTitle = ''
+  // myForm: FormGroup;
 
   constructor() { }
 
-
+  blogTitleLen(){
+    this.minTitleLength = this.blogTitle.length;
+  }
+  descriptionLen(){
+    this.minDescriptionLength = this.description.length;
+  }
+  // submitForm(){
+    
+  // }
   ngOnInit(): void {
+
   }
 
 }

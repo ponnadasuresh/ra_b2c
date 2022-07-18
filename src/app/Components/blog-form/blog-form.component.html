@@ -3,37 +3,37 @@
         <div class="blog-form-container">
             <div class="container-card">
                 <h1>Create Blog</h1>
-                <form>
+                <form autocomplete="off">
                     <div class="form-group">
-                        <!-- <label for="exampleFormControlInput1">Blog Title</label> -->
                         {{blogTitle}}
+                        <!-- <label for="exampleFormControlInput1">Blog Title</label> -->
                         <input type="text" class="form-control" name='blogtitle' [(ngModel)]='blogTitle' id="blogtilte"
-                            placeholder="Title">
+                            placeholder="Title" (input)="blogTitleLen()">
                         <div class="title-length"> <span
-                                class="small">{{titlestringLength}}/{{maxTitlestringLength}}</span></div>
+                                class="small">{{minTitleLength}}/{{maxTitlestringLength}}</span></div>
                     </div>
                     <div class="form-group">
                         <!-- <label for="exampleFormControlInput1">Blog Title</label> -->
                         <textarea id="textarea" rows="5" class="form-control" id="description"
-                            placeholder="Description"></textarea>
-                        <div class="title-length"> <span class="small">0/300</span></div>
+                            placeholder="Description" [(ngModel)]="description" name="description" (input)="descriptionLen()"></textarea>
+                        <div class="title-length"> <span class="small">{{minDescriptionLength}}/{{maxDescriptionLength}}</span></div>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="feature-image-card form-control" style="padding: 0;">
                             <div class="row">
                                 <div class="col-lg-6 grey-image-card">
-                                    <!-- <img src="https://www.bastiaanmulder.nl/wp-content/uploads/2013/11/dummy-image-square.jpg"
-                                        width="200px" class="img-fluid" alt="" srcset=""> -->
-                                        <i class='bx bx-image'></i>
+                                    <img src="https://www.bastiaanmulder.nl/wp-content/uploads/2013/11/dummy-image-square.jpg"
+                                        width="200px" class="img-fluid" alt="" srcset="">
+                                    <i class='bx bx-image'></i>
                                 </div>
                                 <div class="col-lg-6 validation-rules">
                                     <div class="requirements">
+                                        <h3>Cover Image</h3>
                                         <ul>
-                                            <h3>Cover Image</h3>
                                             <li>File size should not exceed maximum 2MB</li>
                                             <li>Image size should be 800 X 800px</li>
                                         </ul>
-                                        <!-- <button class="btn btn-secondary">Upload</button> -->
+                                        <button class="btn btn-secondary">Upload</button>
                                         <div class="feature-img-upload-btn-clm">
                                             <button class="btn btn-secondary image-upload-btn">Upload Now</button>
                                         </div>
@@ -41,13 +41,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
+                    </div> -->
+                    <!-- <div class="form-group">
                         <div class="blog-feature-portfolio-card form-control">
                             <h3>Extra Files</h3>
                             <div class="row">
                                 <div class="col-lg-3">
-                                    <!-- <img src="./assets/images/ra_news2.jpeg" class="img-fluid" alt="" srcset=""> -->
+                                    
                                     <i class='bx bxs-plus-square'></i>
                                 </div>
                                 <div class="col-lg-3">
@@ -60,24 +60,9 @@
                                     <i class='bx bxs-plus-square'></i>
                                 </div>
                             </div>
-                            <!-- <div class="row">
-                                <div class="seprator"></div>
-                                <div class="col-lg-12">
-                                    <div class="extra-file-card">
-                                        <ul>
-                                            <li>
-                                                File size should not exceed maximum 2MB
-                                            </li>
-                                            <li>
-                                                Image size 800 X 800px
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
-                    </div>
-                    <div class="extra-file-card">
+                    </div> -->
+                    <!-- <div class="extra-file-card">
                         <ul>
                             <li>
                                 File size should not exceed maximum 2MB
@@ -86,15 +71,35 @@
                                 Image size should be 800 X 800px
                             </li>
                         </ul>
+                    </div> -->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="https://www.bastiaanmulder.nl/wp-content/uploads/2013/11/dummy-image-square.jpg"
+                                width="100%" height="190px" alt="" srcset="">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="publish-btn">
+                                    <button type="submit" class="btn-publish-changes"> Publish Changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-action-btns">
+                    <!-- <div class="form-action-btns">
                         <div class="clear-btn">
                             <button type="submit" class="btn-clear">Clear</button>
                         </div>
                         <div class="publish-btn">
                             <button type="submit" class="btn-publish-changes"> Publish Changes</button>
                         </div>
-                    </div>
+                    </div> -->
 
                 </form>
             </div>

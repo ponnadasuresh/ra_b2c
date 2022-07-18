@@ -2,9 +2,12 @@
 
 
 @mixin main-headings {
-    font-size: $Variable_readyassist_fs_40px;
-    line-height: 47px;
+    // font-size: $Variable_readyassist_fs_40px;
+    font-size: 4rem;
+    line-height: 5rem;
     font-weight: $Variable_readyassist_fw_600;
+    max-width: 690px;
+    margin-bottom: 2rem;
     // color: $Variable_readyassist_fc_yellow;
 }
 

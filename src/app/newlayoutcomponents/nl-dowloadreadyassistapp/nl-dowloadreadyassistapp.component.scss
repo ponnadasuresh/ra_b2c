@@ -1,0 +1,31 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui{
+    .layout-px{
+        padding: 290px 0;
+        @media #{$bp-sm} {
+            padding: 50px 0;
+        }
+    }
+    .footer-downloadapp-container{
+        background-color: #ffcc33;
+        @media #{$bp-sm} {
+            margin-bottom: -18px;
+        }
+    }
+}
+
+
+.footer-downloadapp-card{
+    width: 100%;
+}
+
+.img-google-play{
+    img{
+        @media #{$bp-sm} {
+            width: 120px;
+        }
+    }
+}

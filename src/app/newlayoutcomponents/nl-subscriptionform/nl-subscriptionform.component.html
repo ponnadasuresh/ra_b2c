@@ -1,0 +1,96 @@
+<div id="readyassist">
+    <div class="nl-subscriptionform-container">
+        <div class="nl-subscriptionform-card">
+            <div class="subscriptionform">
+                <div class="forminstruction">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum ullam voluptates adipisci
+                        sed.
+                        Obcaecati!
+                    </p>
+                </div>
+                <form action="">
+
+                    <!-- step 1 -->
+                   
+                       <div *ngIf="steps == 1">
+                        <section >
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <input type="number" class="form-control" placeholder="Enter your mobile no"
+                                    aria-label="phoneno" aria-describedby="basic-addon1">
+                            </div>
+                        </section>
+
+                        <!-- step 2 -->
+                        <section *ngIf="isEnabled">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-key" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <input type="number" class="form-control" placeholder="Enter OTP" aria-label="otp"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </section>
+                       </div>
+
+                    <!-- step 3 -->
+                    <section *ngIf="steps == 2">
+                        <h1>List of vehicles</h1>
+                        <div class="addvehicle-form-container">
+                            <div class="addvehicle-card">
+
+                                <button type="button"  class="btn-success  btn addvehicle-btn" (click)="addnewVehicle()">
+                                    <i class="fa fa-plus" aria-hidden="true"></i> Add New Vehicle
+                                </button>
+                                
+                                <div class="newvehicleform-container" *ngIf="isAddnewvehicleEnable">
+                                    <section>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="" placeholder="brand name"  id="">
+                                        </div>
+                                    </section>
+                                    
+    
+                                    <div class="form-group">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Vehicle type</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" name="" placeholder="Vehicle no"  id="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        
+                    </section>
+
+                    <!-- action btn -->
+                    <section *ngIf="totalSteps">
+                        <button type="submit" class="btn-success btn-action" (click)="next()">{{signIn}}</button>
+                    </section>
+                </form>
+                <div class="forminstruction">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum ullam voluptates adipisci
+                        sed.
+                        Obcaecati!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

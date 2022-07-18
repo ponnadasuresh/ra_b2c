@@ -1,0 +1,53 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+
+#readyassist-ui {
+
+    .nl-collabrated-container {
+        .layout-px {
+            padding: 250px 0;
+        }
+    }
+}
+
+
+.slider {
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.collabrated-container {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(170px * 11);
+}
+
+.slide {
+    height: auto;
+    width: 100px;
+    margin: 0 100px;
+    @media #{$bp-sm} {
+        margin: 0 30px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(calc(-120px * 7));
+    }
+}

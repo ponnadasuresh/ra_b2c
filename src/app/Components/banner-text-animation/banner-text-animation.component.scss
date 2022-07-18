@@ -4,6 +4,7 @@
 .banner-tagline {
     p{
         font-size: $Variable_readyassist_fs_19px;
+        margin-top: 22px;
     }
 }
   
@@ -12,7 +13,7 @@
     padding: 0;
     display: inline-block;
     position: relative;
-    top: -40px;
+    top: -45px;
     font: 2.5rem/50px "Helvetica Neue", sans-serif;
     // color: #999;
   }
@@ -21,6 +22,7 @@
     float: left;
     color: black;
     margin-top: 3%;
+    // margin-top: 36px;
     margin-right:12px;
   }
   .banner-animation-container b {
@@ -37,7 +39,7 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: $Variable_readyassist_fw_600;
   
   

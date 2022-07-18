@@ -1,0 +1,85 @@
+.buynowscreen-container {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+}
+.layout-padding{
+    padding: 0px 7%;
+}
+
+// background: #ff4859;
+
+.buynowscreen-left{
+    width: 30%;
+    padding: 32px;
+    background: #ff4859;
+    box-shadow: 0 0 3px #edecec;
+    border-radius: 15px; 
+    h1 {
+        font-family: 'fBold';
+        color: #cacaca;
+        margin: 20px 0;
+    }
+    p.description {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+    }
+    ul {
+        padding-left: 0;
+        li{
+            list-style: none;
+            line-height: 34px;
+            color: #fff;
+            font-size: 14px;
+            i.bx.bx-check {
+                color: #cacaca;
+                vertical-align: baseline;
+            }
+        }
+    }
+    span.price {
+        font-size: 32px;
+        font-family: 'fBold';
+        color: #FFCC33;
+    }
+    span.pyr {
+        font-size: 12px;
+       
+    }
+.fa-indian-rupee-sign {
+        font-size: 12px;
+        color: #000;
+        vertical-align: super;
+    }
+    p.tagline {
+        font-size: 12px;
+        color: #FFCC33;
+    }
+    .btm-price-section {
+        a {
+            color: #fff;
+            margin: 20px 0;
+           
+            display: block;
+            font-size: 14px;
+            color: #cacaca;
+        }
+    }
+    .btm-price-section {
+        position: relative;
+        top: 38px;
+    }
+}
+.buynowscreen-right{
+    width: 50%;
+    background: #fff;
+    padding: 22px;
+    box-shadow: 0 0 3px #edecec;
+    border-radius: 15px;  
+    p{
+        color: #fff;
+        text-align: left;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,102 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui {
+    .nl-blog-container {
+        .layout-px {
+            padding: 150px 0;
+            @media #{$bp-sm}{
+                padding: 20px 0;
+            }
+        }
+
+        .nl-blog-card {
+            h1 {
+                
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+                color: #333333;
+                margin-bottom: 1rem;
+                span{
+                    color: #FFCC33;
+                    font-size: 42px;
+                    @media #{$bp-sm}{
+                        font-size: 1.8rem;
+                     }
+                }
+                @media #{$bp-sm}{
+                   font-size: 1.8rem;
+                }
+            }
+
+            h3 {
+                font-size: 17px;
+                line-height: 32px;
+                text-align: center;
+                color: rgb(0 0 0 / 44%);
+                font-weight: 500;
+                width: 370px;
+                padding-bottom: 3%;
+                margin: 0 auto;
+                @media #{$bp-sm}{
+                    width: 100%;
+                }
+            }
+
+
+                .nl-blog-card-clm-container {
+                    width: 33.33%;
+                    margin: 32px;
+                    @media #{$bp-sm}{
+                        flex-direction:column;
+                    }
+                    width: 100%;
+                    margin: 0;
+
+                    .blog-clm {
+                        .img-card {
+                            border-radius: 25px;
+                            padding: 12px;
+                            transition: all 0.2s ease;
+                            img{
+                                border-radius: 25px;
+                                padding: 12px;
+                                transition: all .2s ease;
+                            }
+
+                        }
+
+                        .img-caption {
+                            margin: 22px 0;
+                            margin-left: 27px;
+
+                            p {
+                                
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                max-width: 300px;
+                                color: rgba(0, 0, 0, 0.44);
+                            }
+                        }
+
+                        .btn-logo {
+                            p{
+                                
+                                font-weight: 600;
+                                font-size: 20px;
+                                margin-left: 27px;
+                            }
+                        }
+                    }
+                }
+            
+
+        }
+    }
+
+}
+
+

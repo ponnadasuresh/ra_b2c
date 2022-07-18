@@ -1,0 +1,193 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+
+#readyassist-ui {
+    .nl-subscriptionplans-container {
+        .layout-px {
+            padding: 130px 0;
+            @media #{$bp-sm}{
+                padding: 10px 0;
+            }
+        }
+
+        .nl-subscriptionplans-card {
+            margin-top: 82px;
+            @media #{$bp-sm}{
+                margin-top: 120px;
+            }
+            h1 {
+                // padding: 2rem 0;
+                
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+                color: #333333;
+                margin-bottom: 0;
+                @media #{$bp-sm}{
+                    font-size: 1.8rem;
+                }
+
+                span {
+                    color: #FFCC33;
+                    
+                    font-size: 42px;
+                    @media #{$bp-sm}{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            p {
+                
+                color: #6c757d;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 400;
+                padding-top: 5px;
+            }
+
+            // .nl-ourservices-clm{
+
+            //     a{
+
+            //     }
+
+            // }
+        }
+    }
+}
+.nl-subscriptionpalns-clm-card{
+        margin-top: 0rem;
+    }
+
+.nl-subscription-clm-toptitle-card {
+    display: flex;
+    justify-content: space-between;
+    h2{
+        color: #000;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    h3{
+        color: #000;
+        font-size: 28px;
+        font-weight: 600;
+        
+    }
+}
+
+.nl-subscriptionpalns-clm {
+    background: #e3e1e1;
+    width: 84%;
+    border-radius: 15px;
+    padding: 15px 20px 35px 20px;
+    margin: 0 auto;
+    @media #{$bp-sm}{
+        width: 100%;
+    }
+    p{
+        text-align: left !important;
+    }
+}
+
+.nl-subscription-clm-toptitle p {
+    margin: 0 !important;
+}
+
+i.bx.bx-check {
+    color: green;
+    font-weight: 600;
+    font-size: 12px;
+}
+i.bx.bx-x {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.nl-subscription-list-card{
+    padding: 4px 0;
+}
+.purchase-btn button {
+    background: linear-gradient(0deg, #404040 0%, #101010 70%);
+    color: #fff;
+    padding: 12px 21px;
+    font-family: "fSemiBold";
+    border-radius: 40px;
+    font-size: 14px;
+}
+.fa-gear {
+    font-size: 23px;
+    border: 2px solid #6411ad;
+    padding: 4px;
+    border-radius: 5px;
+    color: #6411ad;
+}
+
+
+
+// new subicon
+.subscrition-icon {
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    background: #e1cfcf;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(0deg, #404040 0%, #101010 70%);
+    box-shadow: 0 2px 10px rgb(11 6 19 / 30%), 0 2px 10px rgb(0 0 0 / 50%);
+    margin: 0 auto;
+    top: 3rem;
+    position: relative;
+}
+span.package-price {
+    font-size: 1.5rem;
+    color: #FFCC33;
+    margin-left: 5px;
+    font-family: 'ABblack';
+}
+.subscrp-badge {
+    color: #fff;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.nl-subscription-clm {
+    padding-top: 4rem;
+    
+    h2{
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+}
+.package-card:hover {
+    transition: all .2s ease;
+    transform: translateY(-15px);
+}
+.package-card {
+    transition: all .2s ease;
+    transform: translateY(0);
+    margin: 0 auto;
+    margin-top: 0;
+    @media #{$bp-sm}{
+        margin-top: 0;
+    }
+}
+.purchase-btn {
+    padding-top: 14px;
+    flex-direction: column;
+    display: flex;
+    button{
+        box-shadow: 0 2px 10px rgb(11 6 19 / 17%), 0 2px 10px rgb(0 0 0 / 18%);
+        border: none;
+    }
+}
+.nl-subscriptionpalns-clm:hover {
+    box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+    transition: all .2s ease-in;
+}
+.nl-subscriptionpalns-clm {
+    transition: all .2s ease-in;
+}

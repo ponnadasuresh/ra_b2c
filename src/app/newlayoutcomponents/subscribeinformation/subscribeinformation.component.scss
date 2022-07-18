@@ -1,0 +1,109 @@
+.subscribeinformation-container {
+    background: #000;
+    padding: 1rem 2.4rem;
+}
+
+.subscribeinformation-container h1 {
+    color: #fff;
+    padding-top: 23px;
+    font-family: 'fBold';
+    max-width: 60%;
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+}
+
+.subscribeinformation-container p {
+    color: #fff;
+    font-size: 14px;
+   
+}
+
+.row.subscribeinformation-card {
+    justify-content: center;
+    align-items: center;
+}
+.subscribeinformation-container .form-control{
+background-color: transparent;
+border-bottom: 1px solid #ced4da !important;
+border: none;
+border-radius: inherit;
+}
+.subscribeinformation-container .form-control:focus {
+    box-shadow: none !important;
+}
+.subscribeinformation-container input.form-control {
+    color: #fff !important;
+}
+
+.subscribeinformation-container .input-group-text {
+    color: #ffffff;
+    background-color: #ff4859;
+    border: none;
+    padding: 6px 8px;
+    border-radius: inherit;
+    position: relative;
+    left: -26px;
+    z-index: 3;
+    top: 8px;
+}
+.subscribeinformation-container .input-group-append {
+    margin-left: 36px !important;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+svg.svg-inline--fa.fa-arrow-right {
+    font-size: 12px;
+    margin: 0;
+
+}
+
+.benefits-container {
+    margin-top: 5rem;
+}
+.benefits-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.benefits-clm{
+    background: #000;
+    flex-grow: 1;
+    max-width: 22%;
+    padding: 10px 18px;
+    margin: 0 1.5rem;
+    border-radius: 15px;
+}
+.benefits-clm-card{
+    padding: 15px 0;
+    border-bottom: 1.7px dashed #d8c4c4;
+    margin-bottom: 14px;
+}
+.benefits-count{
+    padding-top: 18px;
+    ul {
+        padding-left: 0;
+        li {
+            color: #fbf5f5;
+            font-size: 14px;
+           
+            line-height: 33px;
+            list-style: none;
+            i.bx.bx-check {
+                vertical-align: middle;
+                color: #ffcc33;
+            }
+        }
+    }
+  
+}
+.svg-inline--fa{
+    color: #ffcc33;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+
+

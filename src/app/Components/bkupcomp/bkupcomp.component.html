@@ -1,96 +1,88 @@
 <div id="readyassist-ui">
-  <div class="layout-padding" style="padding-top: 130px; padding-bottom: 40px;">
-      <div class="blog-form-container">
-          <div class="container-card">
-              <h1>Create Blog</h1>
-              <form>
-                  <div class="form-group">
-                      <!-- <label for="exampleFormControlInput1">Blog Title</label> -->
-                      <input type="text" class="form-control" id="blogtilte" placeholder="Blog Title">
-                      <div class="title-length"> <span class="small">26/90</span></div>
-                  </div>
-                  <div class="form-group">
-                      <!-- <label for="exampleFormControlInput1">Blog Title</label> -->
-                      <textarea id="textarea" rows="5" class="form-control" id="description"
-                          placeholder="Description"></textarea>
-                      <div class="title-length"> <span class="small">200/900</span></div>
-                  </div>
-                  <div class="form-group">
-                     <div class="feature-image-card">
-                      <label for="" class="my-2">Feature Image</label>
-                      <div class="row">
-                          <div class="col-lg-3">
-                             
-                              <div class="blog-video blog-image">
-                                  <img src="./assets/images/ra_news2.jpeg" class="img-fluid" alt="" srcset="">
-                              </div>
-                          </div>
-                          <div class="col-lg-7">
-                              <div class="requirements">
-                                  <ul>
-                                      <li>File size should not exceed maximum 2MB</li>
-                                      <li>File should in png, jpg, jpeg</li>
-                                      <li>Image size 800 X 800px</li>
-                                  </ul>
-                                  <button class="btn btn-secondary ms-4">Upload</button>
-                              </div>
-                          </div>
-                      </div>
-                     </div>
-                  </div>
-                  <div class="form-group">
-                      <div class="blog-feature-portfolio-card">
-                          <div class="row">
-                              <div class="col-lg-3">
-                                  <img src="./assets/images/ra_news2.jpeg" class="img-fluid" alt="" srcset="">
-                              </div>
-                              <div class="col-lg-3">
-                                  <img src="assets/images/ra_news1.jpeg" class="img-fluid" alt="" srcset="">
-                              </div>
-                              <div class="col-lg-3">
-                                  <img src="assets/images/ra_news4.jpeg" class="img-fluid" alt="" srcset="">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <div class="blog-video-card">
-                       <label for="" class="my-2">Blog video</label>
-                       <div class="row">
-                           <div class="col-lg-3">
-                              
-                               <div class="blog-video blog-image">
-                                   <img src="./assets/images/video-img.png" width="120px" class="img-fluid" alt="" srcset="">
-                               </div>
-                               <div class="video-url">
-                                  <input type="url" id="typeURL" class="my-2 form-control" placeholder="Blog URL"/>
-                               </div>
-                           </div>
-                           <div class="col-lg-7">
-                               <div class="requirements">
-                                   <ul>
-                                       <li>video size should not exceed maximum 200MB</li>
-                                       <li>File should in mp4</li>
-                                   </ul>
-                                   <button class="btn btn-secondary me-4">Upload video</button>
-                               </div>
-                           </div>
-                       </div>
-                      </div>
-                   </div>
-                 <div class="post-btn-card"><button type="submit" class="btn btn-lg btn-primary mt-4">Post Blog</button></div>  
-              </form>
-          </div>
-      </div>
-      
-  </div>
-</div>
+    <div class="nl-subscriptionplans-bg">
+        <div class="nl-subscriptionplans-container layout-padding">
+            <div class="nl-subscriptionplans-card layout-px">
+                <h1>Subscription</h1>
+                <mat-tab-group [@.disabled]="true" mat-align-tabs="end">
+                    <mat-tab class="twowheel-btn" label="Two Wheeler">
+                        <div class="card1-container" style="min-height: 1px;" #carouselHolder>
+                            <ng-container *ngIf="isCarouselFor1stTabVisible">
+                                <owl-carousel-o [options]="subscriptionplans" class="all-subscription-plans">
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    class="btn btn-primary text-center">Book now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm active-slide">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>32<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    class="btn btn-primary text-center">Book now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    class="btn btn-primary text-center">Book now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    class="btn btn-primary text-center">Book now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    class="btn btn-primary text-center">Book now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </owl-carousel-o>
+                            </ng-container>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Four Wheeler">
+                        content 2
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
 
-
-
-<div class="layout-padding">
-  <hr>
-<div class="recent-blog-post">
-  <app-recent-posts></app-recent-posts>
-</div>
+        </div>
+    </div>
 </div>

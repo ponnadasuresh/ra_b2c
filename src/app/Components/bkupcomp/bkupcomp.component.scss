@@ -1,30 +1,183 @@
-.title-length {
-    float: right;
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+.nl-subscriptionplans-container ::ng-deep .mat-tab-label .mat-tab-label-content {
+    font-size: 0.9rem !important;
 }
-.feature-image-card {
-    margin-top: 22px;
+
+
+#readyassist-ui {
+    .nl-subscriptionplans-container {
+        h1 {
+            position: relative;
+            top: 60px;
+            
+            font-size: 42px;
+            @media #{$bp-sm}{
+                position: static;
+                font-size: 2rem;
+            }
+        }
+
+        .layout-px {
+            padding: 160px 0;
+        }
+
+    }
 }
-.container-card {
-    box-shadow: 0px 0px 3px 2px #c5c5c5;
-    padding: 30px;
+
+
+
+.mat-tab-group {
+    margin-bottom: 48px;
 }
-.feature-image-card label, .blog-video-card label{
-    color: #76838d;
-    font-size: 17px;
+
+.mat-tab-group {
+    display: inline !important;
 }
-.requirements > ul li {
-    font-size: 16px;
-    line-height: 30px;
-    color: #76838d;
-    list-style: auto;
+
+.card1-container {
+    margin-top: 62px;
+    @media #{$bp-sm}{
+        margin-top: 0px;
+    }
 }
-.blog-feature-portfolio-card, .blog-video-card, .feature-image-card {
-    border: 2px solid #dbe0e4;
-    padding: 10px 10px;
-    border-radius: 8px;
-    margin-top: 20px;
+
+.subscriptioncard-clm {
+    background: #fff;
+    margin-top: 40px !important;
+    margin: 10px 6px;
+    padding: 28px;
+    box-shadow: 0 0 3px #edecec;
+    border-radius: 15px;
 }
-.post-btn-card {
-    display: flex;
-    justify-content: center;
+
+.nl-subscriptionplans-card {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nl-subscriptionplans-bg {
+    background-color: #fff9e7;
+}
+
+.subscriptioncard-clm-title {
+    p {
+        display: flex;
+        font-size: 41px;
+        flex-direction: column;
+        font-family: 'fBold';
+        color: #cacaca;
+
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
+.price {
+    font-size: 2.3rem;
+    margin: 25px 0;
+   
+    font-weight: 600;
+}
+
+.subscriptioncard-clm-desc p {
+    
+    color: #6c757d;
+    text-align: left;
+    font-size: 1rem;
+    padding-top: 5px;
+    font-weight: 400;
+}
+
+.active-slide {
+    background: #ff4859 !important;
+    max-width: 100%;
+    position: relative;
+    min-height: 394px;
+    margin-top: 10px !important;
+    margin: 0;
+    transform: scale(1.02);
+
+    .price {
+        color: #FFCC33;
+    }
+}
+
+.subscriptioncard-clm-desc button {
+    display: none;
+}
+
+.active-slide button {
+    display: block !important;
+}
+
+.active-slide .btn-primary {
+    background: #FFCC33 !important;
+    color: #ff4859;
+    padding: 12px 32px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid;
+    background: linear-gradient(0deg, #404040 0%, #101010 70%);
+}
+
+.active-slide p {
+    color: #fff;
+}
+
+::ng-deep .mat-tab-label-active {
+    padding: 24px 84px !important;
+    border-radius: 34px;
+    border-radius: 25px;
+    border: 2px solid;
+    color: #fff;
+    background: linear-gradient(0deg, #404040 0%, #101010 70%);
+    opacity: 1 !important;
+
+    @media #{$bp-sm} {
+        padding: 24px !important;
+    }
+}
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #fff9e7;
+}
+
+::ng-deep .mat-tab-header {
+    border: #fff9e7;
+}
+
+::ng-deep [mat-align-tabs=end]>.mat-tab-header .mat-tab-labels {
+    justify-content: flex-end;
+    width: 27%;
+    background: #fff;
+    border-radius: 25px;
+    margin-left: auto;
+
+    @media #{$bp-sm} {
+        width: 80%;
+        margin-left: inherit;
+    }
+}
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #fff9e7;
+    display: none;
+}
+
+::ng-deep .mat-tab-body.mat-tab-body-active {
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

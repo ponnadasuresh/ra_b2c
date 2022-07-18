@@ -7,17 +7,17 @@
       <div class="content">
         <div class="mobile-inline-logo-card">
           <div class="logo">
-            <!-- <a href="#">
-              <img clas="desktop-logo" src="./assets/images/new_ra_logo.png" width="350px" alt="" sizes="" srcset="">
-            </a> -->
+            <a href="#" [routerLink]="['/']">
+              <img clas="desktop-logo" src="./assets/images/main_logo.png" width="250px" alt="" sizes="" srcset="">
+            </a>
           </div>
           <div class="desktop-menu-card">
             <div class="menu-list">
               <ul class="links">
-                <li><a href="#">Subscription</a></li>
+                <!-- <li><a href="#">Subscription</a></li> -->
                 <li><a href="#" [routerLink]="['blogform']">Blog</a></li>
                 <li>
-                  <a href="#" class="desktop-link">About Us</a>
+                  <a href="#" class="desktop-link" [routerLink]="['#aboutus']">About Us</a>
                 </li>
                 <li>
                   <a href="#" class="desktop-link">Contact Us</a>
@@ -29,8 +29,9 @@
             </div>
             <div class="action-btn">
               <button class="get-started-btn">
-                <a href="#">Subscribe Now</a>
+                <a [routerLink]="['subscriptionplans']">Subscribe Now <span _ngcontent-cpf-c50="" class="angleright">&nbsp;→</span></a>
               </button>
+              <!-- <a href="https://developer.chrome.com/docs/devtools/issues/">Hiii</a> -->
             </div>
           </div>
         </div>

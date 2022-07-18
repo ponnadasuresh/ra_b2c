@@ -1,0 +1,39 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui {
+    .nl-boardmembers-container {
+        .layout-px {
+            padding-top: 160px;
+            padding-bottom: 180px;
+
+            @media #{$bp-sm} {
+                padding: 50px 0;
+            }
+        }
+
+        .nl-boardmembers-card {
+            h1 {
+                
+                font-size: 42px;
+                text-align: center;
+                color: #333333;
+                margin-bottom: 3rem;
+                @media #{$bp-sm} {
+                    font-size: 1.8rem;
+                }
+
+                span {
+                    color: #FFCC33;
+                    
+                    font-size: 42px;
+                    @media #{$bp-sm} {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

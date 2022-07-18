@@ -1,0 +1,97 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui {
+    .nl-ourservices-container {
+        .layout-px {
+            padding: 200px 0;
+            @media #{$bp-sm}{
+                padding: 80px 0;
+            }
+        }
+
+        .nl-ourservices-card {
+            .nl-ourservices-list-card {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 4rem 2rem;
+                flex-wrap: wrap;
+
+                @media #{$bp-sm} {
+                    // flex-direction: column;
+                    margin:1rem;
+                }
+
+                .nl-services-img-card {
+                    text-align: center;
+
+                    img {
+                        transition: all .2s ease;
+                    }
+
+                    &:hover {
+                        img {
+                            background: #dcd8d8;
+                            transition: all .2s ease;
+                            border-radius: 5px;
+                            padding: 12px;
+                        }
+                    }
+
+                    .services-title {
+                        margin: 8px 0 12px;
+
+                        a {
+                            
+                            color: #212529;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                // padding: 2rem 0;
+                
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+                color: #333333;
+                margin-bottom: 0;
+
+                @media #{$bp-sm} {
+                    font-size: 2rem;
+                }
+
+                span {
+                    color: #FFCC33;
+                    
+                    font-size: 42px;
+
+                    @media #{$bp-sm} {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            p {
+                
+                color: #6c757d;
+                text-align: center;
+                font-size: 1rem;
+                padding-top: 5px;
+                font-weight: 400;
+            }
+
+            // .nl-ourservices-clm{
+
+            //     a{
+
+            //     }
+
+            // }
+        }
+    }
+}

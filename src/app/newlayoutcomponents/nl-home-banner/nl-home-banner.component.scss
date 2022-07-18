@@ -1,0 +1,153 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui{
+  .nl-home-container{
+    padding: 8rem 0rem;
+    background: #fff9e7;
+    font-family: fBold;
+    @media #{$bp-sm}{
+      padding:5rem 0rem
+    }
+    h1{
+      font-size: 68px;
+      max-width: 420px;
+      line-height: 68px;
+      font-family: fSemiBold, sans-serif;
+      @media #{$bp-sm}{
+        font-size: 2rem;
+        max-width: 100%;
+        line-height: 2.7rem;
+      }
+    }
+  }
+}
+
+
+// text flip
+.flip_container {
+    .flip {
+      overflow: hidden;
+      // height: 30px;
+      height: 36px;
+    }
+    ul {
+      text-align: start;
+      list-style: none;
+      padding-left: 0;
+      animation-name: change;
+      animation-duration: 18s;
+      animation-iteration-count: infinite;
+    }
+    li {
+      color: #333333;
+      font-family: fSemiBold, sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: 1px;
+      @media #{$bp-sm}{
+        font-size: 1.5rem;
+      }
+    }
+  
+    @keyframes change {
+      0% {
+        transform: translateY(0);
+      }
+      7% {
+        transform: translateY(-13%);
+      }
+      14% {
+        transform: translateY(-26%);
+      }
+      21% {
+        transform: translateY(-39%);
+      }
+      28%{
+        transform: translateY(-52%);
+      }
+      35% {
+        transform: translateY(-65%);
+      }
+      42% {
+        transform: translateY(-78%);
+      }
+      49% {
+        transform: translateY(-91%);
+      }
+      56% {
+        transform: translateY(-78%);
+      }
+      63% {
+        transform: translateY(-65%);
+      }
+      70% {
+        transform: translateY(-52%);
+      }
+      77% {
+        transform: translateY(-39%);
+      }
+      84% {
+        transform: translateY(-26%);
+      }
+      91% {
+        transform: translateY(-13%);
+      }
+      97% {
+        transform: translateY(-0%);
+      }
+    }
+  }
+  
+.nl-default-btn{
+  background: linear-gradient(0deg, #404040 0%, #101010 70%);
+  color: #fff;
+  padding: 14px 35px;
+  @media #{$bp-sm}{
+    padding: 9px 17px;
+  }
+  font-family: 'fSemiBold';
+  border-radius: 40px;
+  // font-weight: 500;
+  i.bx.bx-chevrons-right {
+    font-size: 25px;
+    vertical-align: middle;
+}
+  }
+.default-btn-card {
+  margin-top: 6rem;
+  @media #{$bp-sm}{
+    margin-top: 3rem;
+  }
+}
+.heading {
+  padding: 40px 0;
+}
+.nl-home-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media #{$bp-sm} {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.subHeading p{
+  
+}
+
+.truck-card img {
+  width: 100%;
+}
+.hanner-tag{
+  color: rgb(155, 154, 151);
+    font-size: 15px;
+}
+
+.my-5.flip_container {
+  @media #{$bp-sm} {
+  margin: 44px 0 !important;
+}
+}

@@ -1,0 +1,70 @@
+#readyassist-ui {
+    .nl-testimonials-container {
+        .layout-px {
+            // padding: 100px 0;
+        }
+
+        // .nl-testimonials-card {
+        //     h1 {}
+        // }
+    }
+}
+
+
+.nl-testimonial_clms-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nl-testimonial_clms {
+    margin-left: 51px;
+}
+.testimonial-clm-right {
+    background: #fff;
+    padding: 38px 57px 30px 30px;
+    width: 52%;
+    border-radius: 5px;
+    box-shadow: -5px -4px 7px 7px #fafafa;
+}
+.nl-testimonial_clms p {
+    font-size: 15px;
+    margin-bottom: 0 !important;
+    color: #8d8d8d;
+}
+.author-section {
+    margin-top: 56px;
+}
+.avatar-card img {
+    // background: #a39393;
+    border-radius: 80px;
+    width: 73px;
+    padding: 7px;
+}
+.avatar-card {
+    position: relative;
+    top: -68px;
+    left: -67px;
+}
+.content-card {
+    margin-top: -74px;
+}
+.description p {
+    
+    font-size: 14px;
+    line-height: 21px;
+}
+.author-section p {
+    margin: 0 !important;
+    font-size: 17px;
+    line-height: 23px;
+}
+p.contry {
+    color: #cacbcb;
+    font-size: 14px !important;
+}
+.nl-testimonial_clms h1 {
+    font-size: 42px;
+    max-width: 442px;
+    line-height: 54px;
+    font-family: 'fSemiBold';
+}

@@ -1,0 +1,285 @@
+<div id="readyassist-ui">
+    <div class="nl-subscriptionplans-bg section">
+        <div class="nl-subscriptionplans-container layout-padding">
+            <div class="nl-subscriptionplans-card layout-px">
+                <mat-tab-group [@.disabled]="true" mat-align-tabs="center">
+                    <mat-tab class="twowheel-btn" label="Two Wheeler">
+                        <div class="card1-container" style="min-height: 1px;" #carouselHolder>
+                            <ng-container *ngIf="isCarouselFor1stTabVisible">
+                                <owl-carousel-o [options]="subscriptionplans" class="all-subscription-plans">
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>50<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p>
+                                                <button (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm active-slide">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>32<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </owl-carousel-o>
+                                <!-- before content here -->
+
+                            </ng-container>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Four Wheeler">
+                        <!-- content 2 -->
+                        <div class="card1-container" style="min-height: 1px;" #carouselHolder2>
+                            <ng-container *ngIf="isCarouselFor2stTabVisible">
+                                <owl-carousel-o [options]="subscriptionplans" class="all-subscription-plans">
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm active-slide">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>32<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide>
+                                        <div class="subscriptioncard-clm">
+                                            <div class="subscriptioncard-clm-title">
+                                                <p>30<span>minutes</span></p>
+                                            </div>
+                                            <div class="subscriptioncard-clm-desc">
+                                                <div class="price">$49</div>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum
+                                                    ullam voluptates adipisci sed. Obcaecati! </p><button
+                                                    (click)="scroll()" class="btn btn-primary text-center">Buy
+                                                    now</button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </owl-carousel-o>
+                            </ng-container>
+                        </div>
+                        <!-- content 2 -->
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- buy50 content -->
+    <section #textCreate class="section">
+        <div id="buy50" style="padding-top: 10%;
+    padding-bottom: 13%;">
+            <div class="accordion-body">
+                <div class="buynow-form">
+                    <app-nl-buynowscreen *ngIf="buynowScreen"></app-nl-buynowscreen>
+                    <app-subscribeinformation *ngIf="!buynowScreen"></app-subscribeinformation>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+
+
+    <section class="section">
+        <div id="buy50" style="padding-top: 30%;
+    padding-bottom: 20%; background-color: aqua;">
+            <div class="accordion-body">
+                <div class="buynow">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem adipisci
+                    assumenda, praesentium tempore fugit. Ullam voluptas ducimus aspernatur,
+                    possimus nihil temporibus, rem quae dolor optio adipisci officia facere
+                    laboriosam velit deserunt. Quae, commodi! Voluptatibus nihil similique ipsa nisi
+                    quaerat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem adipisci
+                    assumenda, praesentium tempore fugit. Ullam voluptas ducimus aspernatur,
+                    possimus nihil temporibus, rem quae dolor optio adipisci officia facere
+                    laboriosam velit deserunt. Quae, commodi! Voluptatibus nihil similique ipsa nisi
+                    quaerat.
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- buy50 content -->
+
+</div>
+
+
+
+
+<!-- <div class="accordion" id="buynow50">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#buynow50">
+        <div class="accordion-body">
+          <strong>This test test</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#col2" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="col2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div> -->

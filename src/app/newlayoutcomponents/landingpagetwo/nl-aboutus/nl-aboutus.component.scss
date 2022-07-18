@@ -1,0 +1,94 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+#readyassist-ui {
+    .nl-aboutus-container {
+        padding-bottom: 35px !important;
+
+        @media #{$bp-sm} {
+            padding: 0px 7%;
+        }
+
+        .layout-px {
+            padding: 140px 0;
+
+            @media #{$bp-sm} {
+                padding: 30px 0;
+            }
+        }
+
+        .nl-aboutus-card {
+            background: #ffcc33;
+            padding: 3% !important;
+            border-radius: 25px;
+
+            @media #{$bp-sm} {
+                padding: 6% !important;
+            }
+
+            h1 {
+                
+                font-size: 28px;
+                line-height: 50px;
+                text-align: center;
+                color: #333333;
+                margin-bottom: 1.2rem;
+
+                @media #{$bp-sm} {
+                    font-size: 1.4rem;
+                    line-height: 30px;
+                }
+            }
+
+            .nl-aboutus-description {
+                p {
+                    
+                    font-size: 14px;
+                    line-height: 26px;
+                    margin: 0 0 18px 0;
+                    span{
+                        font-size: 14px;
+                    }
+                }
+
+                .learn-more-inner-card {
+                    float: right;
+                    margin-top: -20px;
+                    margin-right: 42px;
+
+                    span {
+                        @media #{$bp-sm} {
+                            font-size: 11px !important;
+                        }
+
+                    }
+
+                    a {
+                        color: rgba(0, 0, 0, 0.44);
+                        font-size: 16px;
+                        text-decoration: underline;
+
+                        @media #{$bp-sm} {
+                            font-size: 11px;
+                        }
+
+                        .fa-angle-right {
+                            vertical-align: middle;
+                            font-size: 16px;
+                            margin-left: 5px;
+                        }
+
+                        span {
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.learnmore {
+    padding-top: 0;
+}
