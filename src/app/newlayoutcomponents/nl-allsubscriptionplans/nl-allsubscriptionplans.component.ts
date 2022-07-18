@@ -51,7 +51,7 @@ export class NlAllsubscriptionplansComponent implements OnInit {
     touchDrag: true,
     pullDrag: false,
     // center: true,
-    dots: false,
+    dots: true,
     navSpeed: 700,
     navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
     responsive: {

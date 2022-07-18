@@ -1,14 +1,14 @@
 
-.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-    border: 1.6px dashed #FFCC33 !important;
-}
+// .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+//     border: 1.6px dashed #FFCC33 !important;
+// }
 
 
 .subscriptionform .input-group-text {
     background: white;
     border-right: none !important;
     padding: 12px;
-    border: 1.6px dashed #FFCC33;
+    // border: 1.6px dashed #FFCC33;
     border-radius: 4px 0 0 6px;
 }
 .fa-phone, .fa-key {

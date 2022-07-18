@@ -47,6 +47,18 @@ body {
   }
 
 
+
+  .owl-theme .owl-dots{
+    display: none;
+    @media #{$bp-sm}{
+      display: block;
+      margin-top: 22px;
+    }
+  }
+  
+
+
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -130,11 +142,12 @@ body::-moz-selection {
 
 //Form group
 .form-control:focus{
-  box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 25%);
+  box-shadow: none;
 }
 
 
 // owl-carousel styling
+
 .owl-carousel {
   .owl-nav {
       [class*=owl-] {
@@ -177,6 +190,12 @@ body::-moz-selection {
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
+  }
+
+
+
+  .nl-subscriptionplans-card  .owl-theme .owl-dots .owl-dot span{
+    background: #ded6d6;
   }
   
 // Custom font
@@ -298,6 +317,9 @@ color: rgba(0, 102, 153, 0.4);
 .all-subscription-plans .owl-carousel .owl-nav {
   position: relative;
   top: -223px;
+  @media #{$bp-sm}{
+    display: none;
+  }
   .fa-chevron-left{
     color: #c9c6be;
     // background: #efefef;

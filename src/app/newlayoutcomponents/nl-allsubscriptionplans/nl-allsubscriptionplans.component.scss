@@ -4,6 +4,7 @@
 
 .nl-subscriptionplans-container ::ng-deep .mat-tab-label .mat-tab-label-content {
     font-size: 0.9rem !important;
+    margin-left: 22px;
 }
 
 
@@ -22,6 +23,10 @@
 
         .layout-px {
             padding: 125px 0;
+            @media #{$bp-sm}{
+                padding-top: 155px;
+                padding-bottom: 40px;
+            }
         }
 
     }
@@ -51,6 +56,10 @@
     padding: 22px;
     box-shadow: 0 0 3px #edecec;
     border-radius: 15px;
+    @media #{$bp-sm}{
+        background-color: #ff4859;
+    }
+    
 }
 
 .nl-subscriptionplans-card {
@@ -82,12 +91,14 @@
 }
 
 .subscriptioncard-clm-desc p {
-    
-    color: #6c757d;
+color: #6c757d;
     text-align: left;
     font-size: 1rem;
     padding-top: 5px;
     font-weight: 400;
+    @media #{$bp-sm}{
+        color: #fff;
+    }
 }
 
 .all-subscription-plans .owl-item.active.center .subscriptioncard-clm {
@@ -148,7 +159,7 @@
 
 
     @media #{$bp-sm} {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 }
@@ -180,7 +191,9 @@
 .all-subscription-plans .subscriptioncard-clm:hover .btn-primary{
     opacity: 1;
 }
-
+.nl-subscriptionplans-card ::ng-deep .mat-tab-label{
+ margin-left: -19px;   
+}
 
 .all-subscription-plans .subscriptioncard-clm .btn-primary {
     background: #FFCC33 !important;
@@ -190,8 +203,10 @@
       border-radius: 25px;
       border: 2px solid;
       opacity: 0;
-      // display: none;
-      // visibility: hidden;
+      @media #{$bp-sm} {
+          opacity: 1;
+          background: #ff4859;
+      }
   }
   
   .all-subscription-plans .subscriptioncard-clm:hover {

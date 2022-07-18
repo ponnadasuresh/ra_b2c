@@ -1,3 +1,7 @@
+@import '/src/custom_styles/buttons.scss';
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
 .buynowscreen-container {
     display: flex;
     justify-content: space-between;
@@ -15,6 +19,10 @@
     background: #ff4859;
     box-shadow: 0 0 3px #edecec;
     border-radius: 15px; 
+    @media #{$bp-sm}{
+        display: none;
+    }
+
     h1 {
         font-family: 'fBold';
         color: #cacaca;
@@ -77,6 +85,9 @@
     padding: 22px;
     box-shadow: 0 0 3px #edecec;
     border-radius: 15px;  
+    @media #{$bp-sm}{
+        width: 100%;
+    }
     p{
         color: #fff;
         text-align: left;
