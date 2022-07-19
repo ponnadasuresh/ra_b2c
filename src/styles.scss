@@ -39,7 +39,7 @@ body {
   // scrolling css to a top of the div
   .section{
     // position: relative;
-    // scroll-snap-align: start;
+    scroll-snap-align: start;
     @media #{$bp-sm}{
       scroll-snap-align: none;
   }
@@ -141,7 +141,7 @@ body::-moz-selection {
 
 
 //Form group
-.form-control:focus{
+.form-control:focus, .form-select:focus{
   box-shadow: none;
 }
 
@@ -343,17 +343,9 @@ color: rgba(0, 102, 153, 0.4);
 
 
 
-
-// .all-subscription-plans .owl-item.active.center .btn-primary{
-//   background: #FFCC33 !important;
-//   color: #ff4859;
-//   padding: 12px 32px;
-//   font-weight: 600;
-//   border-radius: 25px;
-//   border: 2px solid;
-//   display: block !important;
-// }
-
+.accordion-body {
+  padding: 0;
+}
 
 
 

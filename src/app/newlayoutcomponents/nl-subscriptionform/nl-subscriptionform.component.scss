@@ -67,14 +67,15 @@
 
 
 .addvehicle-form-container .form-group{
-    margin: 12px 0;
+    margin: 25px 0;
 }
 
-.addvehicle-card {
-    float: right;
-}
+// .addvehicle-card {
+//     float: right;
+// }
 .vehlist-card {
     border-radius: 55px;
+    cursor: context-menu;
     width: 30%;
     max-height: 60px;
     background: #dedede;
@@ -96,7 +97,7 @@
     font-size: 13px !important;
     line-height: 20px;
     // color: #FFCC33;
-    color: #ff4859;
+    color: #fff;
 
 }
 .listofvehicles-card{
@@ -133,4 +134,8 @@
     h1{
         margin-bottom: 0;
     }
+}
+
+.cardactive{
+    background-color: #ff4859;
 }

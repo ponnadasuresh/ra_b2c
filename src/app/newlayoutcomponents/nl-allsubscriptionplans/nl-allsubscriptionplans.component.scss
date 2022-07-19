@@ -77,8 +77,7 @@
         font-size: 24px;
         font-family: 'ABbold' !important;
         flex-direction: column;
-        font-family: 'fBold';
-        color: #cacaca;
+        // color: #cacaca;
         margin: 30px 0;
         span {
             font-size: 12px;
@@ -196,7 +195,7 @@ color: #6c757d;
     opacity: 1;
 }
 .subscriptioncard-clm:hover .subscriptioncard-clm-title p {
-    color: black !important;
+    color: #fff !important;
 }
 
 .all-subscription-plans .subscriptioncard-clm .btn-primary {
@@ -223,7 +222,7 @@ color: #6c757d;
     cursor: pointer;
     .subscriptioncard-clm-desc{
       p{
-        color: #fff;
+        color: #000;
       }
     }
    
