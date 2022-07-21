@@ -73,7 +73,7 @@
 		.content {
 			@media #{$bp-responsive-900} {
 				position: relative;
-				// z-index: -1;
+				z-index: -1;
 				top: 12px;
 			}
 			@media #{$bp-sm}{
