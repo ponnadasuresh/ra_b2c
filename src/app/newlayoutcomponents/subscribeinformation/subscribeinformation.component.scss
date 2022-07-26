@@ -2,19 +2,19 @@
 @import '/src/custom_styles/mixins.scss';
 @import '/src/custom_styles/variables.scss';
 
-.subscribeinformation-container {
-    background: #000;
-    padding: 1rem 2.4rem;
-    @media #{$bp-sm}{
-        padding: 1.8rem 2rem;
-    }
-}
+// .subscribeinformation-container {
+//     background: #000;
+//     padding: 1rem 2.4rem;
+//     @media #{$bp-sm}{
+//         padding: 1.8rem 2rem;
+//     }
+// }
 
-.mobile-number {
-    @media #{$bp-sm}{
-        margin-top: 32px;
-    }
-}
+// .mobile-number {
+//     @media #{$bp-sm}{
+//         margin-top: 32px;
+//     }
+// }
 
 .subscribeinformation-container h1 {
     color: #fff;
@@ -126,7 +126,32 @@ svg.svg-inline--fa.fa-arrow-right {
     color: #ffcc33;
     font-size: 48px;
     margin-bottom: 12px;
+    
 }
 
 
 
+
+
+
+
+
+#readyassist{
+    .container{
+        .subscribeinformation-container{
+            background: #000;
+            padding: 1rem 2.4rem;
+            @media #{$bp-sm}{
+                        padding: 1.8rem 2rem;
+                    }
+            .subscribeinformation-card{
+                .mobile-number {
+                    @media #{$bp-sm}{
+                        margin-top: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+}

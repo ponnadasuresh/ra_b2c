@@ -39,7 +39,7 @@ body {
   // scrolling css to a top of the div
   .section{
     // position: relative;
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
     @media #{$bp-sm}{
       scroll-snap-align: none;
   }
@@ -347,11 +347,12 @@ color: rgba(0, 102, 153, 0.4);
   padding: 0;
 }
 
-
-
-
-
-
 .btn-check:focus+.btn-primary, .btn-primary:focus{
   box-shadow: none !important;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+

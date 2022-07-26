@@ -17,55 +17,40 @@ export class NlSubscriptionformComponent implements OnInit {
   cardactive =  false;
   VehiclesListenable = true;
   addVehiclesFormenable = false;
-  vehiclemodel = 'Choose vehicle model'
 
-
-  // Vehicles model list "Hero Xtreme 200S", "Hero Destini 125", "Hero Maestro Edge 125"
-  vehiclesModelList: any = [
-    {
-      id:1,
-      vehiclemodel: 'Hero Xtreme 200S',
-    },
-    {
-      id:2,
-      vehiclemodel: 'yamaha',
-    },
-    {
-      id:3,
-      vehiclemodel: ' Maestro Edge 125',
-    },
-    {
-      id:4,
-      vehiclemodel: 'Hero Xpulse 200T',
-    },
-  ];
-  // Vehicles model
-
+  vehiclebrand = '';
+  vehiclemodel = ''
+  vehicleReg = ''
+  
 
   // list of vehicles
   vehiclesList= [
     {
       id:1,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
     {
       id:2,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
     {
       id:3,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
     {
       id:4,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
   ]
@@ -86,6 +71,29 @@ this.VehiclesListenable = false;
 this.addVehiclesFormenable = true;
 this.signIn = "Proceed →"
   }
+
+// new vehicle
+submitNewVeh(){
+  // vehiclebrand = '';
+  // vehiclemodel = ''
+
+
+  // vehiclebrand = '';
+  // vehiclemodel = ''
+  // vehicleRegNo = ''
+
+  this.vehiclesList.push({
+    vehiclebrand: this.vehiclebrand,
+    vehicleRegNo: this.vehicleReg,
+    isSelect: false,
+    vehiclemodel: 'Hero Splendor Plus',
+    id: this.vehiclesList.length + 1,
+  })
+
+  console.log(this.vehiclesList);
+
+
+}
 
 
 

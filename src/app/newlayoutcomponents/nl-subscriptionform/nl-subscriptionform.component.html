@@ -61,11 +61,11 @@
                               (click)="selectVehicle(vl)"
                               >
                                 <div class="vehname">
-                                    <h3>{{vl.vehiclename}}</h3>
+                                    <h3>{{vl.vehiclebrand}}</h3>
                                 </div>
 
                                 <div class="vehnumber">
-                                    <h3>{{vl.vehiclenumber}}</h3>
+                                    <h3>{{vl.vehiclemodel}}</h3>
                                 </div>
 
                             </div>
@@ -78,27 +78,31 @@
                                 <div class="newvehicleform-container">
                                     <section>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="" placeholder="Vehicle brand"
+                                            <input type="text" class="form-control" [(ngModel)] = 'vehiclebrand' name="vehiclebrand" placeholder="Vehicle brand"
                                                 id="">
                                         </div>
                                     </section>
                                     <div class="form-group">
                                         <input type="text"  class="form-control" placeholder="Choose vehicle model" list="vehlist">
                                         <datalist id="vehlist">
-                                            <option *ngFor="let vml of vehiclesModelList" [value]="vml.vehiclemodel">
-                                                {{vml.vehiclemodel}}
+                                            <option *ngFor="let vml of vehiclesList" [value]="vml.vehiclebrand">
+                                                {{vml.vehiclebrand}}
                                                 </option>
                                         </datalist>
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="number" class="form-control" name="" placeholder="Vehicle registration no"
+                                        <h1>number: {{vehicleReg}}</h1>
+                                        
+                                        <input type="text" class="form-control" [(ngModel)] = 'vehicleReg' name="" placeholder="Vehicle registration no"
                                             id="">
                                     </div>
                                 </div>
 
 
                             </div>
+
+                            <button class="btn btn-primary" (click)="submitNewVeh()" >Submit</button>
                         </div>
 
 

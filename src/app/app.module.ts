@@ -57,6 +57,7 @@ import { SubscribeinformationComponent } from './newlayoutcomponents/subscribein
 import { NlSubscriptionformComponent } from './newlayoutcomponents/nl-subscriptionform/nl-subscriptionform.component';
 import { NlNewtestimonmialsComponent } from './newlayoutcomponents/nl-newtestimonmials/nl-newtestimonmials.component';
 import { NlDowloadreadyassistappComponent } from './newlayoutcomponents/nl-dowloadreadyassistapp/nl-dowloadreadyassistapp.component';
+import { DefaultComponentComponent } from './newlayoutcomponents/default-component/default-component.component';
 
 
 @NgModule({
@@ -103,7 +104,8 @@ import { NlDowloadreadyassistappComponent } from './newlayoutcomponents/nl-dowlo
     SubscribeinformationComponent,
     NlSubscriptionformComponent,
     NlNewtestimonmialsComponent,
-    NlDowloadreadyassistappComponent
+    NlDowloadreadyassistappComponent,
+    DefaultComponentComponent
    ],
   imports: [
     BrowserModule,
