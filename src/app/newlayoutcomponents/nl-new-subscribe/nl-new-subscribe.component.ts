@@ -1,15 +1,16 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
+
+
 @Component({
-  selector: 'app-nl-allsubscriptionplans',
-  templateUrl: './nl-allsubscriptionplans.component.html',
-  styleUrls: ['./nl-allsubscriptionplans.component.scss']
+  selector: 'app-nl-new-subscribe',
+  templateUrl: './nl-new-subscribe.component.html',
+  styleUrls: ['./nl-new-subscribe.component.scss']
 })
-export class NlAllsubscriptionplansComponent implements OnInit {
+export class NlNewSubscribeComponent implements OnInit {
 
   constructor() { }
-
   buynowScreen = false;
 
   @ViewChild('textCreate', { static: false }) textCreate!: ElementRef;
@@ -43,7 +44,9 @@ export class NlAllsubscriptionplansComponent implements OnInit {
       }, 0);
     }
   }
-  subscriptionplans: OwlOptions = {
+
+
+  newsubscription: OwlOptions = {
     loop: true,
     margin: 10,
     autoplay: false,
@@ -70,26 +73,15 @@ export class NlAllsubscriptionplansComponent implements OnInit {
     },
     nav: true
   }
-
   scroll() {
-this.buynowScreen = true;
-    this.textCreate.nativeElement.scrollIntoView(
-      {behavior: 'smooth'}
-    );
-   
-    
-}
-
+    this.buynowScreen = true;
+        this.textCreate.nativeElement.scrollIntoView(
+          {behavior: 'smooth'}
+        );
+       
+        
+    }
   ngOnInit(): void {
   }
 
 }
-
-
-
-// https://www.youtube.com/watch?v=Lo_6bp6ApvE
-
-
-// .owl-item.active.center .subscriptioncard-clm {
-//   background: red;
-// }

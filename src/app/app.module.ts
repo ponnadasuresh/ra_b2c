@@ -51,10 +51,7 @@ import { TestimonialsComponent } from './newlayoutcomponents/landingpagetwo/test
 import { NlNewBannerComponent } from './newlayoutcomponents/landingpagetwo/nl-new-banner/nl-new-banner.component';
 import { NlHomeVideoComponent } from './newlayoutcomponents/landingpagetwo/nl-home-video/nl-home-video.component';
 import { NlCollabratedwithComponent } from './newlayoutcomponents/nl-collabratedwith/nl-collabratedwith.component';
-import { NlAllsubscriptionplansComponent } from './newlayoutcomponents/nl-allsubscriptionplans/nl-allsubscriptionplans.component';
-import {  NlBuynowscreenComponent } from './newlayoutcomponents/nl-buynowscreen/nl-buynowscreen.component';
-import { SubscribeinformationComponent } from './newlayoutcomponents/subscribeinformation/subscribeinformation.component';
-import { NlSubscriptionformComponent } from './newlayoutcomponents/nl-subscriptionform/nl-subscriptionform.component';
+// import { NlSubscriptionformComponent } from './newlayoutcomponents/nl-subscriptionform/nl-subscriptionform.component';
 import { NlNewtestimonmialsComponent } from './newlayoutcomponents/nl-newtestimonmials/nl-newtestimonmials.component';
 import { NlDowloadreadyassistappComponent } from './newlayoutcomponents/nl-dowloadreadyassistapp/nl-dowloadreadyassistapp.component';
 import { DefaultComponentComponent } from './newlayoutcomponents/default-component/default-component.component';
@@ -99,10 +96,7 @@ import { DefaultComponentComponent } from './newlayoutcomponents/default-compone
     NlNewBannerComponent,
     NlHomeVideoComponent,
     NlCollabratedwithComponent,
-    NlAllsubscriptionplansComponent,
-    NlBuynowscreenComponent,
-    SubscribeinformationComponent,
-    NlSubscriptionformComponent,
+    // NlSubscriptionformComponent,
     NlNewtestimonmialsComponent,
     NlDowloadreadyassistappComponent,
     DefaultComponentComponent
