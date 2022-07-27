@@ -10,10 +10,16 @@ const routes: Routes = [
   { path: 'blogform', component: BlogFormComponent },
   { path: '', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/landingpagetwo.module').then(m => m.LandingpagetwoModule)  },
 
-  { path: '#aboutus', component:NlAboutusComponent  },
+  // { path: '#aboutus', component:NlAboutusComponent  },
   { path: 'h1', component:LandingpageComponent  },
   {path: 'default', component:DefaultComponentComponent},
-  { path: 'subscriptionplans', loadChildren: () => import('./newlayoutcomponents/nl-new-subscribe/nl-new-subscribe.module').then(m => m.NlNewSubscribeModule) }
+  { path: 'subscriptionplans', loadChildren: () => import('./newlayoutcomponents/nl-new-subscribe/nl-new-subscribe.module').then(m => m.NlNewSubscribeModule) },
+
+
+  { path: 'aboutus', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/nl-aboutus/nl-aboutus.module').then(m => m.NlAboutusModule) }
+
+// C:\Users\sures\Angular projects\ra_b2c\src\app\newlayoutcomponents\landingpagetwo\nl-aboutus\nl-aboutus.module.ts
+
 ];
 
 
