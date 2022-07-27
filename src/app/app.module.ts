@@ -27,9 +27,6 @@ import { BkupcompComponent } from './Components/bkupcomp/bkupcomp.component';
 import { BannerTextAnimationComponent } from './Components/banner-text-animation/banner-text-animation.component';
 import { CarePartnerComponent } from './Components/care-partner/care-partner.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatInputModule} from '@angular/material/input';
-
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RecentPopularNewsComponent } from './Components/recent-popular-news/recent-popular-news.component';
 import { BlogFormComponent } from './Components/blog-form/blog-form.component';
@@ -114,8 +111,6 @@ import { DefaultComponentComponent } from './newlayoutcomponents/default-compone
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
-    MatExpansionModule,
-    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
