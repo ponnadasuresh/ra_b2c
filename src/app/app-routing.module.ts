@@ -8,13 +8,14 @@ import { NlAboutusComponent } from './newlayoutcomponents/landingpagetwo/nl-abou
 import {DefaultComponentComponent} from './newlayoutcomponents/default-component/default-component.component'
 const routes: Routes = [
   { path: 'blogform', component: BlogFormComponent },
-  { path: '', component:LandingpagetwoComponent  },
+  { path: '', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/landingpagetwo.module').then(m => m.LandingpagetwoModule)  },
+
   { path: '#aboutus', component:NlAboutusComponent  },
   { path: 'h1', component:LandingpageComponent  },
-  // { path: 'subscriptionplans', component:NlAllsubscriptionplansComponent  },
   {path: 'default', component:DefaultComponentComponent},
   { path: 'subscriptionplans', loadChildren: () => import('./newlayoutcomponents/nl-new-subscribe/nl-new-subscribe.module').then(m => m.NlNewSubscribeModule) }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,  {scrollPositionRestoration: 'enabled'})],

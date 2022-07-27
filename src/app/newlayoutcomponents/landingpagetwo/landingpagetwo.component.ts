@@ -13,7 +13,8 @@ export class LandingpagetwoComponent implements OnInit {
   subscribeplans = false;
   color= ''
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
+  constructor(@Inject(DOCUMENT) private document: Document) { 
+  }
 
   //navbar header background change
   @HostListener("document:scroll")
