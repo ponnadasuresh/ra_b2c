@@ -8,7 +8,7 @@
                         Obcaecati!
                     </p>
                 </div>
-                <form action="">
+                <form [formGroup]="subscriptionForm">
 
                     <!-- step 1 -->
 
@@ -20,8 +20,9 @@
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                     </span>
                                 </div>
-                                <input type="number" class="form-control" placeholder="Enter your mobile no"
+                                <input type="number" formControlName="mobileNumber" class="form-control" placeholder="Enter your mobile no"
                                     aria-label="phoneno" aria-describedby="basic-addon1">
+                                   
                             </div>
                         </section>
 
@@ -33,7 +34,7 @@
                                         <i class="fa fa-key" aria-hidden="true"></i>
                                     </span>
                                 </div>
-                                <input type="number" class="form-control" placeholder="Enter OTP" aria-label="otp"
+                                <input type="number" class="form-control" formControlName="otp" placeholder="Enter OTP" aria-label="otp"
                                     aria-describedby="basic-addon1">
                             </div>
                         </section>
@@ -61,11 +62,11 @@
                               (click)="selectVehicle(vl)"
                               >
                                 <div class="vehname">
-                                    <h3>{{vl.vehiclename}}</h3>
+                                    <h3>{{vl.vehiclebrand}}</h3>
                                 </div>
 
                                 <div class="vehnumber">
-                                    <h3>{{vl.vehiclenumber}}</h3>
+                                    <h3>{{vl.vehicleRegno}}</h3>
                                 </div>
 
                             </div>
@@ -78,7 +79,7 @@
                                 <div class="newvehicleform-container">
                                     <section>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="" placeholder="Vehicle brand"
+                                            <input type="text" class="form-control" name="" [(ngModel)] = "vehiclebrand" placeholder="Vehicle brand"
                                                 id="">
                                         </div>
                                     </section>
@@ -87,14 +88,14 @@
                                     <div class="form-group">
                                         <input type="text"  class="form-control" placeholder="Choose vehicle model" list="vehlist">
                                         <datalist id="vehlist">
-                                            <option *ngFor="let vml of vehiclesModelList" [value]="vml.vehiclemodel">
-                                                {{vml.vehiclemodel}}
+                                            <option *ngFor="let vml of vehiclesList" [value]="vml.vehiclebrand">
+                                                {{vml.vehiclebrand}}
                                                 </option>
                                         </datalist>
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="number" class="form-control" name="" placeholder="Vehicle registration no"
+                                        <input type="number" class="form-control" [(ngModel)]="vehicleRegno" name="" placeholder="Vehicle registration no"
                                             id="">
                                     </div>
                                 </div>

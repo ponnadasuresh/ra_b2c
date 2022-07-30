@@ -77,7 +77,7 @@
     border-radius: 55px;
     cursor: context-menu;
     width: 30%;
-    max-height: 60px;
+    min-height: 60px;
     background: #dedede;
     padding: 10px 30px;
     flex-direction: column;
@@ -138,4 +138,12 @@
 
 .cardactive{
     background-color: #ff4859;
+}
+
+
+input.ng-valid{
+    border: 1px solid green;
+}
+input.ng-invalid{
+    border: 1px solid red;
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-nl-subscriptionform',
   templateUrl: './nl-subscriptionform.component.html',
@@ -9,6 +9,12 @@ export class NlSubscriptionformComponent implements OnInit {
 
   constructor() { }
 
+  subscriptionForm =  new FormGroup({
+    mobileNumber: new FormControl('',Validators.required),
+    otp: new FormControl('',Validators.required)
+  })
+
+
   isEnabled: boolean | undefined;
   signIn: string = "Proceed →";
   isAddnewvehicleEnable: boolean | undefined;
@@ -17,60 +23,45 @@ export class NlSubscriptionformComponent implements OnInit {
   cardactive =  false;
   VehiclesListenable = true;
   addVehiclesFormenable = false;
-  vehiclemodel = 'Choose vehicle model'
+  vehiclemodel = 'Choose vehicle model';
+  vehiclebrand = '';
+  vehicleModel = '';
+  vehicleRegno = ''
 
 
-  // Vehicles model list "Hero Xtreme 200S", "Hero Destini 125", "Hero Maestro Edge 125"
-  vehiclesModelList: any = [
-    {
-      id:1,
-      vehiclemodel: 'Hero Xtreme 200S',
-    },
-    {
-      id:2,
-      vehiclemodel: 'yamaha',
-    },
-    {
-      id:3,
-      vehiclemodel: ' Maestro Edge 125',
-    },
-    {
-      id:4,
-      vehiclemodel: 'Hero Xpulse 200T',
-    },
-  ];
-  // Vehicles model
+ 
 
 
-  // list of vehicles
+  
   vehiclesList= [
     {
       id:1,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus 1',
+      vehicleRegno: 'KA23',
       isSelect:false
     },
     {
       id:2,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus 2',
+      vehicleRegno: 'KA23',
       isSelect:false
     },
     {
       id:3,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehicleRegno: 'KA23',
       isSelect:false
     },
     {
       id:4,
-      vehiclename: 'Hero Splendor Plus',
-      vehiclenumber: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehicleRegno: 'KA23',
       isSelect:false
     },
   ]
 
   ngOnInit(): void {
+
   }
 
   selectVehicle(v: any) {
@@ -87,18 +78,25 @@ this.addVehiclesFormenable = true;
 this.signIn = "Proceed →"
   }
 
-
-
   next() {
-    // console.log(this.steps);
+    console.log(this.steps);
     if (this.signIn.match("Proceed")) {
       this.isEnabled = true;
       this.signIn = "Verification →"
     } else {
       this.steps++;
-
+      this.signIn = "Proceed →"
     }
 
   }
 
 }
+
+
+
+// let arr = [{num: 1, char: "a"}, {num: 2, char: "b"}];
+
+// arr = [...arr,{num: 3, char: "c"}];
+
+// //...arr --> spread operator
+// console.log(arr);
