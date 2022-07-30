@@ -23,39 +23,40 @@ export class NlSubscriptionformComponent implements OnInit {
   cardactive =  false;
   VehiclesListenable = true;
   addVehiclesFormenable = false;
-  vehiclemodel = 'Choose vehicle model';
+
   vehiclebrand = '';
-  vehicleModel = '';
-  vehicleRegno = ''
-
-
- 
-
+  vehiclemodel = ''
+  vehicleReg = ''
+  
 
   
   vehiclesList= [
     {
       id:1,
-      vehiclebrand: 'Hero Splendor Plus 1',
-      vehicleRegno: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
     {
       id:2,
-      vehiclebrand: 'Hero Splendor Plus 2',
-      vehicleRegno: 'KA23',
+      vehiclebrand: 'Hero Splendor Plus',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
     {
       id:3,
       vehiclebrand: 'Hero Splendor Plus',
-      vehicleRegno: 'KA23',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
     {
       id:4,
       vehiclebrand: 'Hero Splendor Plus',
-      vehicleRegno: 'KA23',
+      vehiclemodel: 'Hero Splendor Plus',
+      vehicleRegNo: 'KA23',
       isSelect:false
     },
   ]
@@ -77,6 +78,31 @@ this.VehiclesListenable = false;
 this.addVehiclesFormenable = true;
 this.signIn = "Proceed →"
   }
+
+// new vehicle
+submitNewVeh(){
+  // vehiclebrand = '';
+  // vehiclemodel = ''
+
+
+  // vehiclebrand = '';
+  // vehiclemodel = ''
+  // vehicleRegNo = ''
+
+  this.vehiclesList.push({
+    vehiclebrand: this.vehiclebrand,
+    vehicleRegNo: this.vehicleReg,
+    isSelect: false,
+    vehiclemodel: 'Hero Splendor Plus',
+    id: this.vehiclesList.length + 1,
+  })
+
+  console.log(this.vehiclesList);
+
+
+}
+
+
 
   next() {
     console.log(this.steps);

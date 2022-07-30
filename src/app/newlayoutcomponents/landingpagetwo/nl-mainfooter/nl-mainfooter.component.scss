@@ -11,7 +11,7 @@
 
         .footer-wrapper {
             background: rgb(6 6 6 / 93%);
-            margin-top: -150px;
+            margin-top: -90px;
             @media #{$bp-sm}{
                 margin-top: 11px;
             }
@@ -81,7 +81,7 @@
 .get-app-section {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 30px;
     img{
         width: 180px;

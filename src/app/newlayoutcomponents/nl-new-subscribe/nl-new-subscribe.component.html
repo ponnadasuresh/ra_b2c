@@ -6,7 +6,7 @@
                     <mat-tab class="twowheel-btn" label="Two Wheeler">
                         <div class="card1-container" style="min-height: 1px;" #carouselHolder>
                             <ng-container *ngIf="isCarouselFor1stTabVisible">
-                                <owl-carousel-o [options]="subscriptionplans" class="all-subscription-plans">
+                                <owl-carousel-o [options]="newsubscription" class="all-subscription-plans">
                                     <ng-template carouselSlide>
                                         <div class="subscriptioncard-clm">
                                             <div class="subscriptioncard-clm-title">
@@ -95,7 +95,7 @@
                         <!-- content 2 -->
                         <div class="card1-container" style="min-height: 1px;" #carouselHolder2>
                             <ng-container *ngIf="isCarouselFor2stTabVisible">
-                                <owl-carousel-o [options]="subscriptionplans" class="all-subscription-plans">
+                                <owl-carousel-o [options]="newsubscription" class="all-subscription-plans">
                                     <ng-template carouselSlide>
                                         <div class="subscriptioncard-clm">
                                             <div class="subscriptioncard-clm-title">

@@ -1,0 +1,40 @@
+.layout-px{
+    padding: 125px 0;
+}
+
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+.main-container{
+    
+    .default-card{
+        h1{
+            @include default-h1;
+
+            @media #{$bp-sm}{
+                // @include default-h1;
+                color: red;
+            }
+       }
+        p{
+           
+            @include default-para;
+            
+        }
+
+        .child-two{
+            h1{
+                @include default-h1;
+            }
+        p{
+            @include default-para;
+            
+        }
+        span{
+            color: $Variable_readyassist_bgc_yellow;
+        }
+        }
+    }
+}
+
+

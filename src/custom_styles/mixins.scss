@@ -32,3 +32,13 @@
     align-items: $ai;
     justify-content: $jc;
 }
+
+
+@mixin default-h1 {
+    color: blue;
+}
+@mixin default-para {
+    color: #000;
+            font-size: 1rem;
+            font-family: 'ABregular';
+}

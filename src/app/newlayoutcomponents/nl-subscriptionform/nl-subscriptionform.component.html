@@ -66,7 +66,7 @@
                                 </div>
 
                                 <div class="vehnumber">
-                                    <h3>{{vl.vehicleRegno}}</h3>
+                                    <h3>{{vl.vehiclemodel}}</h3>
                                 </div>
 
                             </div>
@@ -79,12 +79,10 @@
                                 <div class="newvehicleform-container">
                                     <section>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="" [(ngModel)] = "vehiclebrand" placeholder="Vehicle brand"
+                                            <input type="text" class="form-control" [(ngModel)] = 'vehiclebrand' name="vehiclebrand" placeholder="Vehicle brand"
                                                 id="">
                                         </div>
                                     </section>
-
-
                                     <div class="form-group">
                                         <input type="text"  class="form-control" placeholder="Choose vehicle model" list="vehlist">
                                         <datalist id="vehlist">
@@ -102,6 +100,8 @@
 
 
                             </div>
+
+                            <button class="btn btn-primary" (click)="submitNewVeh()" >Submit</button>
                         </div>
 
 
