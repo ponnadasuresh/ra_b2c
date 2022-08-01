@@ -35,6 +35,7 @@ import { NlCollabratedwithComponent } from './newlayoutcomponents/nl-collabrated
 import { NlNewtestimonmialsComponent } from './newlayoutcomponents/nl-newtestimonmials/nl-newtestimonmials.component';
 import { NlDowloadreadyassistappComponent } from './newlayoutcomponents/nl-dowloadreadyassistapp/nl-dowloadreadyassistapp.component';
 import { DefaultComponentComponent } from './newlayoutcomponents/default-component/default-component.component';
+import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-newaboutus.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,9 @@ import { DefaultComponentComponent } from './newlayoutcomponents/default-compone
     // NlSubscriptionformComponent,
     NlNewtestimonmialsComponent,
     NlDowloadreadyassistappComponent,
-    DefaultComponentComponent
+    DefaultComponentComponent,
+    NlNewaboutusComponent,
+
    ],
   imports: [
     BrowserModule,

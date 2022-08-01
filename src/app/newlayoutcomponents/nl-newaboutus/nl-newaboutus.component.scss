@@ -1,0 +1,37 @@
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+
+#readyassist-ui {
+    img{
+        width:100%;
+    }
+    .nl-newaboutus-container {
+        h1 {
+            position: relative;
+            font-size: 50px;
+            @media #{$bp-sm}{
+                position: static;
+                font-size: 2rem;
+            }
+        }
+
+        .p1{
+            font-size: 200%;
+            font-weight:bolder;
+            line-height: 30px;
+        }
+
+
+        
+
+        .layout-px {
+            padding: 125px 0;
+            @media #{$bp-sm}{
+                padding-top: 155px;
+                padding-bottom: 40px;
+            }
+        }
+
+    }
+}
