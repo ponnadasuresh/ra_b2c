@@ -9,10 +9,16 @@
     background: #F7F8FD;
     font-family: fBold;
     @media #{$bp-sm}{
-      padding:5rem 0rem
+      padding:5rem 0rem;
+    }
+    @media #{$bp-lg}{
+      padding:3rem 0rem;
     }
     h1{
       font-size: 61px;
+      @media #{$bp-lg}{
+        font-size: 51px;
+      }
       max-width: 420px;
       line-height: 68px;
       font-family: fSemiBold, sans-serif;
