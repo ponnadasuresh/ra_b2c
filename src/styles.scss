@@ -250,6 +250,9 @@ input[type=number] {
             @media #{$bp-sm}{
               transform: translate(0, 0);
             }
+            @media #{$bp-lg}{
+              transform: translate(464px, -30px);
+            }
           
             // margin-top: -30px !important;
         }
