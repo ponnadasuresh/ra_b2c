@@ -3,13 +3,75 @@
 
 
 #readyassist-ui {
-    img{
+
+    .aboutus-bg{
+        position :absolute;
+        background-image: url('../../../assets/images/nl_footerbg.svg');
+        height:100%;
         width:100%;
-    }
+        // z-index: -1;
+        opacity:.1;
+        background-size: 40% 40%;
+        }
+
+
+            // justify-content: space-around;
+            // @media #{$bp-sm}{
+            //     flex-direction:column;
+            // }
+
+
+                .nl-archivements-card-clm {
+                    background: #000;
+                    min-height: 250px;
+                    border-radius: 20px;
+                    max-width: 250px;
+                
+                    .nl-archivements-icons-card {
+                        padding: 15px 0;
+                        border-bottom: 1.7px dashed #d8c4c4;
+                        margin-bottom: 14px;
+    
+                        .svg-inline--fa {
+                            color: #ffcc33;
+                            font-size: 48px;
+                            margin-bottom: 12px;
+                        }
+                    }
+    
+                    .nl-archivements-count {
+                        padding-top: 18px;
+    
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #fff;
+                        }
+    
+                        p {
+                            color: #ffcc33;
+                            font-size: 15.3px;
+                            @media #{$bp-sm} {
+                                font-size: 18px;
+                            }
+                            
+                        }
+                    }
+                }
+    
+
+            
+
+
+
     .nl-newaboutus-container {
+
+
+
+
         h1 {
             position: relative;
             font-size: 50px;
+
             @media #{$bp-sm}{
                 position: static;
                 font-size: 2rem;
