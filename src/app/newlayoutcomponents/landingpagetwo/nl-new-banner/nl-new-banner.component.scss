@@ -117,6 +117,9 @@
   @media #{$bp-sm}{
     padding: 9px 17px;
   }
+  @media #{$bp-lg}{
+    padding: 12px 17px;
+  }
   font-family: 'fSemiBold';
   border-radius: 40px;
   // font-weight: 500;
