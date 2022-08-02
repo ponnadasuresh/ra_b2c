@@ -17,7 +17,7 @@ export class NlSubscriptionformComponent implements OnInit {
 
   isEnabled: boolean | undefined;
   signIn: string = "Proceed →";
-  isAddnewvehicleEnable: boolean | undefined;
+  // isAddnewvehicleEnable: boolean | undefined;
   totalSteps = 5;
   steps: number = 1
   cardactive =  false;
@@ -72,8 +72,13 @@ export class NlSubscriptionformComponent implements OnInit {
     this.vehiclesList.filter((y: any) => v.id === y.id)[0].isSelect = true;
   }
 
+  cancelAddvehicle(){
+    this.VehiclesListenable = true;
+    this.addVehiclesFormenable = false;    
+  }
+
+
   addnewVehicle(){
-this.isAddnewvehicleEnable = false;
 this.VehiclesListenable = false;
 this.addVehiclesFormenable = true;
 this.signIn = "Proceed →"

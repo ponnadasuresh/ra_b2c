@@ -53,18 +53,26 @@ border-radius: inherit;
 .subscribeinformation-container input.form-control {
     color: #fff !important;
 }
-
-.subscribeinformation-container .input-group-text {
-    color: #ffffff;
+.sendemail .input-group-text{
     background-color: #ff4859;
-    border: none;
-    padding: 6px 8px;
-    border-radius: inherit;
-    position: relative;
-    left: -26px;
-    z-index: 3;
-    top: 8px;
+    border: 0;
 }
+.sendemail .input-group-text {
+    padding: 7px 14px;
+    display: block;
+}
+
+// .subscribeinformation-container .input-group-text button.sendemail {
+//     color: #ffffff;
+//     background-color: #ff4859;
+//     border: none;
+//     padding: 6px 8px;
+//     border-radius: inherit;
+//     position: relative;
+//     left: -26px;
+//     z-index: 3;
+//     top: 8px;
+// }
 .subscribeinformation-container .input-group-append {
     margin-left: 36px !important;
 }
@@ -86,14 +94,14 @@ svg.svg-inline--fa.fa-arrow-right {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .benefits-clm{
     background: #000;
     flex-grow: 1;
     max-width: 22%;
     padding: 10px 18px;
-    margin: 0 1.5rem;
-    border-radius: 15px;
+    border-radius: 16px;
     @media #{$bp-sm}{
         max-width: 100%;
         margin: 10px 0;
@@ -141,6 +149,7 @@ svg.svg-inline--fa.fa-arrow-right {
         .subscribeinformation-container{
             background: #000;
             padding: 1rem 2.4rem;
+            border-radius: 9px;
             @media #{$bp-sm}{
                         padding: 1.8rem 2rem;
                     }

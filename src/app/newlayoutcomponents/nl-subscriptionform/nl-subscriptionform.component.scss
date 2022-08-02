@@ -147,3 +147,10 @@ input.ng-valid{
 input.ng-invalid{
     border: 1px solid red;
 }
+
+
+
+.action-btns {
+    display: flex;
+    justify-content: space-between;
+}
