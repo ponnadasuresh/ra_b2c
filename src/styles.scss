@@ -39,7 +39,7 @@ body {
   // scrolling css to a top of the div
   .section{
     // position: relative;
-    // scroll-snap-align: start;
+    // scroll-snap-align: center;
     @media #{$bp-sm}{
       scroll-snap-align: none;
   }
