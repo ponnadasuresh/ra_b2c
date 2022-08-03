@@ -15,6 +15,9 @@
             @media #{$bp-sm}{
                 margin-top: 11px;
             }
+            @media #{$bp-lg}{
+                margin-top: -110px;
+            }
 
             .nl-mainfooter-container {
                 .layout-px {
@@ -86,6 +89,9 @@
     img{
         width: 180px;
     margin-left: 12px;
+    @media #{$bp-lg}{
+        width: 120px;
+    }
     }
     p{
         margin: 0;
@@ -107,6 +113,10 @@
                 color: #b8b8b8;
                 font-family: 'ABregular';
                 line-height: 35px;
+                @media #{$bp-lg}{
+                    line-height: 27px;
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -122,6 +132,9 @@ address{
 }
 .email a{
     color: #b8b8b8;
+    @media #{$bp-lg}{
+        font-size: 14px;
+    } 
 }
 .footer-clm-title h3 {
     color: #FFCC33 !important;
@@ -138,6 +151,10 @@ address{
 }
 .quicklinks, address, .ftr-col-one {
     margin: 40px 0;
+    @media #{$bp-lg}{
+        margin: 20px 0;
+        font-size: 14px;
+    }
 }
 span.email-seprator {
     width: 1px;

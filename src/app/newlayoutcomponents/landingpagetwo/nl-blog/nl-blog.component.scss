@@ -9,6 +9,9 @@
             @media #{$bp-sm}{
                 padding: 20px 0;
             }
+            @media #{$bp-lg}{
+                padding: 120px 0;
+            }
         }
 
         .nl-blog-card {
@@ -19,15 +22,19 @@
                 text-align: center;
                 color: #333333;
                 margin-bottom: 1rem;
+                @media #{$bp-lg}{
+                    font-size: 32px;
+                    margin-bottom: 0;
+                 }
                 span{
                     color: #FFCC33;
                     font-size: 42px;
                     @media #{$bp-sm}{
                         font-size: 1.8rem;
                      }
-                }
-                @media #{$bp-sm}{
-                   font-size: 1.8rem;
+                    @media #{$bp-lg}{
+                        font-size: 32px;
+                     }
                 }
             }
 
@@ -42,6 +49,10 @@
                 margin: 0 auto;
                 @media #{$bp-sm}{
                     width: 100%;
+                }
+                @media #{$bp-lg}{
+                    font-size: 14px;
+                    padding-bottom: 1%;
                 }
             }
 

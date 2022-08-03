@@ -94,4 +94,7 @@
     @media #{$bp-sm} {
         padding-top: 0px;
     }
+    @media #{$bp-lg} {
+        padding-top: 100px;
+    }
 }

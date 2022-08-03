@@ -8,6 +8,9 @@
         @media #{$bp-sm} {
             padding: 50px 0;
         }
+        @media #{$bp-lg} {
+            padding: 200px 0;
+        }
     }
     .footer-downloadapp-container{
         background-color: #ffcc33;

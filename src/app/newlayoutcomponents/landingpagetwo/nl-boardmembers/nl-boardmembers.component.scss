@@ -11,6 +11,10 @@
             @media #{$bp-sm} {
                 padding: 50px 0;
             }
+            @media #{$bp-lg} {
+                padding-top: 120px;
+                padding-bottom: 130px;
+            }
         }
 
         .nl-boardmembers-card {
@@ -23,13 +27,19 @@
                 @media #{$bp-sm} {
                     font-size: 1.8rem;
                 }
+                @media #{$bp-lg} {
+                    font-size: 32px;
+                    margin-bottom: 2rem;
+                }
 
                 span {
                     color: #FFCC33;
-                    
                     font-size: 42px;
                     @media #{$bp-sm} {
                         font-size: 1.8rem;
+                    }
+                    @media #{$bp-lg} {
+                        font-size: 32px;
                     }
                 }
             }
