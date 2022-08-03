@@ -37,6 +37,7 @@ import { NlDowloadreadyassistappComponent } from './newlayoutcomponents/nl-dowlo
 import { DefaultComponentComponent } from './newlayoutcomponents/default-component/default-component.component';
 import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-newaboutus.component';
 
+import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,7 @@ import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-ne
     NlDowloadreadyassistappComponent,
     DefaultComponentComponent,
     NlNewaboutusComponent,
-
+    NlSubscriptionConformationComponent
    ],
   imports: [
     

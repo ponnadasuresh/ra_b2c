@@ -41,6 +41,7 @@ body {
     // height: 100vh;
     // position: relative;
     // scroll-snap-align: center;
+    // scroll-snap-align: start;
     @media #{$bp-sm}{
       scroll-snap-align: none;
   }
