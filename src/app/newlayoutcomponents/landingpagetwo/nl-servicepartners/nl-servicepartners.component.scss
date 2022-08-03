@@ -14,6 +14,9 @@
             @media #{$bp-sm} {
                 padding: 100px 0;
             }
+            @media #{$bp-lg}{
+                padding: 152px 0;
+            }
         }
 
         .nl-servicepartners-card {
@@ -63,6 +66,9 @@
                     font-size: 1.8rem;
                     margin-top: 3rem;
                 }
+                @media #{$bp-lg} {
+                    font-size: 32px;
+                }
                 span {
                     color: #FFCC33;
                     
@@ -70,6 +76,9 @@
                     @media #{$bp-sm} {
                         font-size: 1.8rem;
                         margin-top: 3rem;
+                    }
+                    @media #{$bp-lg} {
+                        font-size: 32px;
                     }
                 }
 
@@ -97,6 +106,9 @@
         height: 43px;
         border-radius: 20px;
         font-size: 14px;
+        @media #{$bp-lg} {
+            margin: 30px 0;
+        }
     }
 
     .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
@@ -158,6 +170,9 @@ img.pattern {
         margin-top: 4%;
         left: 4px;
         width: 247px;
+    }
+    @media #{$bp-lg} {
+        margin-top: 9%;
     }
 }
 
