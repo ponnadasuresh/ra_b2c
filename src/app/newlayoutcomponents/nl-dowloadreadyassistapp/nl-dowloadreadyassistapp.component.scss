@@ -3,6 +3,8 @@
 @import '/src/custom_styles/variables.scss';
 
 #readyassist-ui{
+    height:100vh;
+    background-color: #ffcc33;
     .layout-px{
         padding: 290px 0;
         @media #{$bp-sm} {
@@ -13,7 +15,7 @@
         }
     }
     .footer-downloadapp-container{
-        background-color: #ffcc33;
+        
         @media #{$bp-sm} {
             margin-bottom: -18px;
         }
