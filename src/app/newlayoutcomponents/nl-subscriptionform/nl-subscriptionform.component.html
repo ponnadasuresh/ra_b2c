@@ -102,7 +102,7 @@
 
                             </div>
 
-                            <button class="btn btn-primary" (click)="submitNewVeh()" >Submit</button>
+                            <button type="submit" class="btn-secondary btn-cancel btn-action" (click)="cancelAddvehicle()" >Cancel</button>
                         </div>
 
 
@@ -111,7 +111,7 @@
                     <!-- action btn -->
                     <section *ngIf="totalSteps" class="action-btns">
                         <button type="submit" class="btn-success btn-action" (click)="next()">{{signIn}}</button>
-                        <button *ngIf="addVehiclesFormenable" type="submit" class="btn-secondary btn-action" (click)="cancelAddvehicle()" >Cancel</button>
+                        
                     </section>
                 </form>
                 <div class="forminstruction">
@@ -124,3 +124,5 @@
         </div>
     </div>
 </div>
+
+
