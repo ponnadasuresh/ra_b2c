@@ -13,7 +13,8 @@
 	}
 
 	// background: #fff9e7;
-	background-color: transparent;
+	background-color: rgb(255,255,250, .7);
+	backdrop-filter: blur(10px);
 	position: fixed;
 	width: 100%;
 	z-index: 5;
@@ -68,7 +69,6 @@
 		position: relative;
 		max-width: calc(100% - 200px);
 		margin: 0 auto;
-		height: 100px;
 
 		.content {
 			@media #{$bp-responsive-900} {

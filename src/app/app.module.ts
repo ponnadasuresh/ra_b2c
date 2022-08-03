@@ -37,6 +37,7 @@ import { NlDowloadreadyassistappComponent } from './newlayoutcomponents/nl-dowlo
 import { DefaultComponentComponent } from './newlayoutcomponents/default-component/default-component.component';
 import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-newaboutus.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +70,7 @@ import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-ne
 
    ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
