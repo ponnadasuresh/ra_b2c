@@ -114,6 +114,9 @@
 							@media #{$bp-sm} {
 								padding: 7px 13px;
 							}
+							@media #{$bp-lg} {
+								padding: 9px 17px;
+							}
 
 							a {
 								text-decoration: none;
@@ -162,6 +165,10 @@
 							border-radius: 5px;
 							text-decoration: none;
 							transition: all 0.3s ease;
+							@media #{$bp-lg} {
+								font-size: 14px;	
+								padding: 9px 18px;
+							}
 
 							@media #{$bp-responsive-900} {
 								line-height: 40px;

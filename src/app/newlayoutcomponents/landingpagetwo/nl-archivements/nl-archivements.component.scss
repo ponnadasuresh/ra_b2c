@@ -10,14 +10,25 @@
             text-align: center;
             color: #333333;
             margin-bottom: 30px;
+
             @media #{$bp-sm} {
                 font-size: 1.8rem;
             }
-            span{
+
+            @media #{$bp-lg} {
+                font-size: 32px;
+            }
+
+            span {
                 color: #FFCC33;
                 font-size: 42px;
+
                 @media #{$bp-sm} {
                     font-size: 1.8rem;
+                }
+
+                @media #{$bp-lg} {
+                    font-size: 32px;
                 }
             }
         }
@@ -28,16 +39,19 @@
             @media #{$bp-sm} {
                 padding: 50px 0;
             }
+
+            @media #{$bp-sm} {
+                padding: 110px 0;
+            }
         }
 
         .nl-archivements-card {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            // justify-content: space-around;
-            // @media #{$bp-sm}{
-            //     flex-direction:column;
-            // }
+            @media #{$bp-lg} {
+               gap:12px;
+            }
 
             .nl-archivements-card-clm {
                 background: #000;
@@ -47,16 +61,30 @@
                 margin: 10px;
                 border-radius: 15px;
                 min-height: 250px;
-            
+
+                @media #{$bp-lg} {
+                    min-height: 170px;
+                    padding: 10px 15px;
+                    margin: 0;
+                }
+
                 .nl-archivements-icons-card {
                     padding: 15px 0;
                     border-bottom: 1.7px dashed #d8c4c4;
                     margin-bottom: 14px;
+                    @media #{$bp-lg} {
+                        margin-bottom: 0; 
+                    }
 
                     .svg-inline--fa {
                         color: #ffcc33;
                         font-size: 48px;
                         margin-bottom: 12px;
+
+                        @media #{$bp-lg} {
+                            margin-bottom: 0;
+                            font-size: 28px;
+                        }
                     }
                 }
 
@@ -66,15 +94,23 @@
                     h3 {
                         font-size: 1.6rem;
                         color: #fff;
+                        @media #{$bp-lg} {
+                            font-size: 1.2rem;
+                            margin-bottom: 5px;
+    }
                     }
 
                     p {
                         color: #ffcc33;
                         font-size: 15.3px;
+
                         @media #{$bp-sm} {
-                            font-size: 18px;
+                            font-size: 12px;
                         }
-                        
+                        @media #{$bp-lg} {
+                            font-size: 12px;
+                        }
+
                     }
                 }
             }
@@ -99,13 +135,17 @@
 
 
 .google-location {
-    iframe{
-        @media #{$bp-sm}{
+    iframe {
+        @media #{$bp-sm} {
             height: 300px;
-        }   
+        }
+        @media #{$bp-lg} {
+            height: 350px;
+        }
     }
+
     @media #{$bp-sm} {
-        
+
         margin-top: 72px;
     }
 }

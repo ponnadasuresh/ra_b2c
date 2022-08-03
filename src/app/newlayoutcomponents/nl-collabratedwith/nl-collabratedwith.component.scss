@@ -8,6 +8,10 @@
     .nl-collabrated-container {
         .layout-px {
             padding: 250px 0;
+            @media #{$bp-lg} {
+                padding: 0px 0;
+            }
+
         }
     }
 }
@@ -18,6 +22,9 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    @media #{$bp-lg} {
+        margin-top: -70px;
+    }
 }
 
 .collabrated-container {

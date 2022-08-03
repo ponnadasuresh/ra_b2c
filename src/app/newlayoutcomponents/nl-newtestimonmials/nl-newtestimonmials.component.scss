@@ -11,6 +11,9 @@
             @media #{$bp-sm} {
                 padding-top: 120px;
             }
+            @media #{$bp-lg} {
+                padding-top: 130px;
+            }
         }
 
         .main-title {
@@ -19,6 +22,9 @@
                 color: #333333;
                 @media #{$bp-sm} {
                     font-size: 1.8rem;
+                }
+                @media #{$bp-lg} {
+                    font-size: 32px;
                 }
                 }
         }
@@ -30,13 +36,10 @@
 
         .testimonial-card {
             margin-top: 2rem;
-
-            .testimonial-subcard {
-                // img {
-                //     width: 98% !important;
-                // }
+            @media #{$bp-lg} {
+                margin-top: 1rem;
             }
-        }
+       }
     }
 }
 
@@ -49,11 +52,11 @@
         padding: 23px 20px;
         border-radius: 12px;
         display: flex;
-
-
         @media #{$bp-sm} {
             margin: 12px;
-            
+        }
+        @media #{$bp-lg} {
+            padding: 16px 20px;  
         }
 
         // box-shadow: 0 0 5px 2px #e4dede;
@@ -72,18 +75,25 @@ p.occupation {
 }
 
 .avatar {
+        margin-right: 22px;
+    img{
+        padding: 4px;
     background: #fff;
-    width: 352px;
-    padding: 5px;
-    margin-right: 22px;
-    height: 121px;
-    border-radius: 12px;
-    @media #{$bp-sm} {
-        height: fit-content;
+    border-radius: 9px;
+    width: 92px !important;
     }
-     img {
-        border-radius: 12px;
-    }
+    // background: #fff;
+    // width: 352px;
+    // padding: 5px;
+    // margin-right: 22px;
+    // height: 121px;
+    // border-radius: 12px;
+    // @media #{$bp-sm} {
+    //     height: fit-content;
+    // }
+    //  img {
+    //     border-radius: 12px;
+    // }
 }
 
 .avatar-position {
