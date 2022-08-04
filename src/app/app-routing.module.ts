@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'default', component:DefaultComponentComponent},
   { path: 'subscriptionplans', loadChildren: () => import('./newlayoutcomponents/nl-new-subscribe/nl-new-subscribe.module').then(m => m.NlNewSubscribeModule) },
   { path: 'aboutus', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/nl-aboutus/nl-aboutus.module').then(m => m.NlAboutusModule) },
-  { path: 'subscritionconfornation', component:NlSubscriptionConformationComponent}
+  { path: 'subscritionconformation', component:NlSubscriptionConformationComponent}
 
 ];
 

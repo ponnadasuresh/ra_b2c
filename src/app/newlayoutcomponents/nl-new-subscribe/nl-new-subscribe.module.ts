@@ -9,6 +9,7 @@ import { SubscribeinformationComponent } from '../subscribeinformation/subscribe
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NlSubscriptionformComponent } from '../nl-subscriptionform/nl-subscriptionform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NlSubscriptionConformationComponent } from '../nl-subscription-conformation/nl-subscription-conformation.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NlNewSubscribeComponent,
     NlBuynowscreenComponent,
     NlSubscriptionformComponent,
-    SubscribeinformationComponent
+    SubscribeinformationComponent,
+    NlSubscriptionConformationComponent
   ],
   imports: [
     CommonModule,

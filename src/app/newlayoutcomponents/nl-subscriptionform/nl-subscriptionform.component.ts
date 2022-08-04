@@ -14,12 +14,13 @@ export class NlSubscriptionformComponent implements OnInit {
     otp: new FormControl('',Validators.required)
   })
 
-
-  isEnabled: boolean | undefined;
+  isSuccess= false;
+  // isEnabled: boolean | undefined;
+  isEnabled = true;
   signIn: string = "Proceed →";
   // isAddnewvehicleEnable: boolean | undefined;
-  totalSteps = 5;
-  steps: number = 1
+  totalSteps = 4;
+  steps: number = 0;
   cardactive =  false;
   VehiclesListenable = true;
   addVehiclesFormenable = false;
@@ -64,6 +65,10 @@ export class NlSubscriptionformComponent implements OnInit {
   ngOnInit(): void {
 
   }
+  // testMe(){
+  //   alert('Hiii.......');
+  //   this.signIn = 'Proceed';
+  // }
 
   selectVehicle(v: any) {
     for (const x of this.vehiclesList) {
@@ -74,17 +79,19 @@ export class NlSubscriptionformComponent implements OnInit {
 
   cancelAddvehicle(){
     this.VehiclesListenable = true;
-    this.addVehiclesFormenable = false;    
+    this.addVehiclesFormenable = false;  
+    this.signIn = "Proceed →"  
   }
 
 
   addnewVehicle(){
+    this.signIn = "Submit →"
 this.VehiclesListenable = false;
 this.addVehiclesFormenable = true;
-this.signIn = "Proceed →"
+this.submitNewVeh();
+
   }
 
-// new vehicle
 submitNewVeh(){
   // vehiclebrand = '';
   // vehiclemodel = ''
@@ -106,19 +113,34 @@ submitNewVeh(){
 
 
 }
-
-
-
   next() {
-    console.log(this.steps);
-    if (this.signIn.match("Proceed")) {
-      this.isEnabled = true;
-      this.signIn = "Verification →"
-    } else {
+    // if (this.signIn.match("Proceed")) {
+    //   this.isEnabled = true;
+    //   this.signIn = "Verification →";
+    //   // this.steps++;
+
+    // } else {
+    //   this.steps++;
+    //   this.signIn = 'Proceed →';
+    //   this.isSuccess = true;
+
+    // }
+    this.isEnabled = true;
+    this.signIn = "Verification →";
+    this.steps = this.steps + 1;
+
+    if(this.steps == 2){
+      this.isEnabled = false;
+      this.signIn = "Proceed →";
       this.steps++;
-      this.signIn = "Proceed →"
+     console.log(this.steps);
     }
 
+
+    // this.steps++;
+    // this.steps++;
+    console.log(this.steps);
+ 
   }
 
 }
