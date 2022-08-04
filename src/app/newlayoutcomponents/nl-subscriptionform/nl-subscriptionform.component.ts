@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+declare var window: any;
 @Component({
   selector: 'app-nl-subscriptionform',
   templateUrl: './nl-subscriptionform.component.html',
@@ -9,17 +10,20 @@ export class NlSubscriptionformComponent implements OnInit {
 
   constructor() { }
 
+  @ViewChild('exampleModal') myModal: any;
+
+
   subscriptionForm =  new FormGroup({
     mobileNumber: new FormControl('',Validators.required),
     otp: new FormControl('',Validators.required)
   })
-
+  formModal: any;
   isSuccess= false;
   // isEnabled: boolean | undefined;
   isEnabled = true;
   signIn: string = "Proceed →";
   // isAddnewvehicleEnable: boolean | undefined;
-  totalSteps = 4;
+  isActionBtn:boolean = true;
   steps: number = 0;
   cardactive =  false;
   VehiclesListenable = true;
@@ -28,7 +32,7 @@ export class NlSubscriptionformComponent implements OnInit {
   vehiclebrand = '';
   vehiclemodel = ''
   vehicleReg = ''
-  
+  submitted:boolean=false;
 
   
   vehiclesList= [
@@ -63,7 +67,8 @@ export class NlSubscriptionformComponent implements OnInit {
   ]
 
   ngOnInit(): void {
-
+    this.formModal = new window.bootstrap.Modal(
+      document.getElementById('exampleModal'))
   }
   // testMe(){
   //   alert('Hiii.......');
@@ -88,8 +93,8 @@ export class NlSubscriptionformComponent implements OnInit {
     this.signIn = "Submit →"
 this.VehiclesListenable = false;
 this.addVehiclesFormenable = true;
-this.submitNewVeh();
-
+// this.submitNewVeh();
+// this.steps=2;
   }
 
 submitNewVeh(){
@@ -114,34 +119,40 @@ submitNewVeh(){
 
 }
   next() {
-    // if (this.signIn.match("Proceed")) {
-    //   this.isEnabled = true;
-    //   this.signIn = "Verification →";
-    //   // this.steps++;
-
-    // } else {
-    //   this.steps++;
-    //   this.signIn = 'Proceed →';
-    //   this.isSuccess = true;
-
-    // }
-    this.isEnabled = true;
-    this.signIn = "Verification →";
+    
     this.steps = this.steps + 1;
+   
+    if(this.steps == 1){
+      this.signIn = "Verification →";
+    }
+
+    if(this.signIn == "Submit →"){
+      this.steps=2;
+      this.submitNewVeh();
+    }
 
     if(this.steps == 2){
       this.isEnabled = false;
       this.signIn = "Proceed →";
-      this.steps++;
-     console.log(this.steps);
+      this.VehiclesListenable = true;
+this.addVehiclesFormenable = false;
     }
 
+    if(this.steps == 3 && this.signIn != "Submit →"){
+      this.formModal.show();
+      this.isActionBtn = false;
+    }
+   
 
     // this.steps++;
     // this.steps++;
     console.log(this.steps);
  
   }
+
+  // test(){
+  //   this.myModal.nativeElement.className = 'modal fade show';
+  // }
 
 }
 
