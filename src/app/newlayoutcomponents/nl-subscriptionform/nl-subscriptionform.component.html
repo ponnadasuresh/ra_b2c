@@ -27,7 +27,7 @@
                             </div>
                         </section>
 
-                        <!-- step 2 -->
+                        <!-- step 1 -->
                         <section *ngIf="steps == 1">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -41,8 +41,8 @@
                         </section>
                     </div>
 
-                    <!-- step 3 -->
-                    <section *ngIf="steps == 3">
+                    <!-- step 2 -->
+                    <section *ngIf="steps == 2">
                         <div class="listofvehicles-topcard-row">
                             <div class="maintitle">
                                 <h1>List of vehicles</h1>
@@ -76,12 +76,14 @@
 
                                 <div class="newvehicleform-container">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="vehicleReg" name=""
-                                            placeholder="Vehicle registration no" id="">
+                                        <input type="number" class="form-control" [ngModelOptions]="{standalone: true}"
+                                            [(ngModel)]="vehicleReg" name="" placeholder="Vehicle registration no"
+                                            id="">
                                     </div>
                                     <section>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]='vehiclebrand'
+                                            <input type="text" class="form-control"
+                                                [ngModelOptions]="{standalone: true}" [(ngModel)]='vehiclebrand'
                                                 name="vehiclebrand" placeholder="Vehicle brand" id="">
                                         </div>
                                     </section>
@@ -109,7 +111,7 @@
                     </section>
 
                     <!-- action btn -->
-                    <section *ngIf="totalSteps" class="action-btns">
+                    <section *ngIf="isActionBtn" class="action-btns">
                         <button type="submit" class="btn-success btn-action" (click)="next()">{{signIn}}</button>
 
                     </section>
@@ -125,26 +127,36 @@
 </div>
 
 
-<!-- model popup conformation  -->
-<div id="readyassist-ui" *ngIf="isSuccess">
-    <div class="sc-container layout-padding">
-        <div class="layout-px">
-            <div class="sc-card">
-                <h1>Your subscription has been created</h1>
-    
-                <div class="check-icon">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <p>Thank you for purchase !</p>
-                    <p class="small-txt">Four wheeler plan</p>
-                    <p class="xs-txt">You will receive a purchase conformation email with details of your subscription </p>
-    
-                    <button class="cnf-sumbit-btn">OK</button>
+
+
+<!-- Modal -->
+
+<div class="nl-subscriptionform-modelpopup modal fade" id="exampleModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <!-- model popup conformation  -->
+        <div id="readyassist-ui">
+            <div class="sc-container layout-padding">
+                <div class="layout-px">
+                    <div class="sc-card">
+                        <h1>Your subscription has been created</h1>
+
+                        <div class="check-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>Thank you for purchase !</p>
+                            <p class="small-txt">Four wheeler plan</p>
+                            <p class="xs-txt">You will receive a purchase conformation email with details of your
+                                subscription </p>
+
+                            <button class="cnf-sumbit-btn" data-dismiss="modal">OK</button>
+                        </div>
+
+                    </div>
                 </div>
-                    
+
             </div>
         </div>
 
+        <!-- model popup conformation  -->
     </div>
 </div>
-
-<!-- model popup conformation  -->
