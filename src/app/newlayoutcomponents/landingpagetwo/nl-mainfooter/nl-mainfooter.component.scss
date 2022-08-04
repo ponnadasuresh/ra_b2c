@@ -33,6 +33,9 @@
                         flex-direction:column;
                         gap: 0;
                     }
+                    @media #{$bp-lg}{
+                        gap: 48px;
+                    } 
 
                     h3 {
                         

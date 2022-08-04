@@ -12,7 +12,7 @@
 
                     <!-- step 1 -->
 
-                    <div *ngIf="steps == 1">
+                    <div *ngIf="isEnabled">
                         <section>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -20,34 +20,35 @@
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                     </span>
                                 </div>
-                                <input type="number" formControlName="mobileNumber" class="form-control" placeholder="Enter your mobile no"
-                                    aria-label="phoneno" aria-describedby="basic-addon1">
-                                   
+                                <input type="number" formControlName="mobileNumber" class="form-control"
+                                    placeholder="Enter your mobile no" aria-label="phoneno"
+                                    aria-describedby="basic-addon1">
+
                             </div>
                         </section>
 
                         <!-- step 2 -->
-                        <section *ngIf="isEnabled">
+                        <section *ngIf="steps == 1">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">
                                         <i class="fa fa-key" aria-hidden="true"></i>
                                     </span>
                                 </div>
-                                <input type="number" class="form-control" formControlName="otp" placeholder="Enter OTP" aria-label="otp"
-                                    aria-describedby="basic-addon1">
+                                <input type="number" class="form-control" formControlName="otp" placeholder="Enter OTP"
+                                    aria-label="otp" aria-describedby="basic-addon1">
                             </div>
                         </section>
                     </div>
 
                     <!-- step 3 -->
-                    <section *ngIf="steps == 2">
+                    <section *ngIf="steps == 3">
                         <div class="listofvehicles-topcard-row">
                             <div class="maintitle">
                                 <h1>List of vehicles</h1>
                             </div>
                             <div class="Add-btn">
-                                <button  type="button" class="btn-success  btn addvehicle-btn" (click)="addnewVehicle()">
+                                <button type="button" class="btn-success  btn addvehicle-btn" (click)="addnewVehicle()">
                                     <i class="fa fa-plus" aria-hidden="true"></i> Add Vehicle
                                 </button>
                             </div>
@@ -56,53 +57,52 @@
 
                         <div class="listofvehicles-card" *ngIf="VehiclesListenable">
                             <!-- Accordin -->
-                            <div class="vehlist-card"
-                             *ngFor="let vl of vehiclesList"
-                              [ngClass]="vl.isSelect ? 'cardactive' : ''"
-                              (click)="selectVehicle(vl)"
-                              >
+                            <div class="vehlist-card" *ngFor="let vl of vehiclesList"
+                                [ngClass]="vl.isSelect ? 'cardactive' : ''" (click)="selectVehicle(vl)">
                                 <div class="vehname">
                                     <h3>{{vl.vehiclebrand}}</h3>
                                 </div>
 
                                 <div class="vehnumber">
-                                    <h3>{{vl.vehiclemodel}}</h3>
+                                    <h3>{{vl.vehicleRegNo}}</h3>
                                 </div>
 
                             </div>
 
                             <!-- Accordin -->
                         </div>
-                        <div class="addvehicle-form-container" *ngIf="addVehiclesFormenable"> 
+                        <div class="addvehicle-form-container" *ngIf="addVehiclesFormenable">
                             <div class="addvehicle-card">
 
                                 <div class="newvehicleform-container">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" [(ngModel)]="vehicleReg" name="" placeholder="Vehicle registration no"
-                                            id="">
+                                        <input type="number" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="vehicleReg" name=""
+                                            placeholder="Vehicle registration no" id="">
                                     </div>
                                     <section>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" [(ngModel)] = 'vehiclebrand' name="vehiclebrand" placeholder="Vehicle brand"
-                                                id="">
+                                            <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]='vehiclebrand'
+                                                name="vehiclebrand" placeholder="Vehicle brand" id="">
                                         </div>
                                     </section>
                                     <div class="form-group">
-                                        <input type="text"  class="form-control" placeholder="Choose vehicle model" list="vehlist">
+                                        <input type="text" class="form-control" placeholder="Choose vehicle model"
+                                            list="vehlist">
                                         <datalist id="vehlist">
                                             <option *ngFor="let vml of vehiclesList" [value]="vml.vehiclebrand">
                                                 {{vml.vehiclebrand}}
-                                                </option>
+                                            </option>
                                         </datalist>
                                     </div>
 
-                                    
+
                                 </div>
 
 
                             </div>
 
-                            <button type="submit" class="btn-secondary btn-cancel btn-action" (click)="cancelAddvehicle()" >Cancel</button>
+                            <button type="submit" class="btn-secondary btn-cancel btn-action"
+                                (click)="cancelAddvehicle()">Cancel</button>
                         </div>
 
 
@@ -111,12 +111,11 @@
                     <!-- action btn -->
                     <section *ngIf="totalSteps" class="action-btns">
                         <button type="submit" class="btn-success btn-action" (click)="next()">{{signIn}}</button>
-                        
+
                     </section>
                 </form>
                 <div class="forminstruction">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum ullam voluptates adipisci
-                        sed Obcaecati!
+                    <p> Lorem ipsum
                     </p>
                 </div>
             </div>
@@ -126,3 +125,26 @@
 </div>
 
 
+<!-- model popup conformation  -->
+<div id="readyassist-ui" *ngIf="isSuccess">
+    <div class="sc-container layout-padding">
+        <div class="layout-px">
+            <div class="sc-card">
+                <h1>Your subscription has been created</h1>
+    
+                <div class="check-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Thank you for purchase !</p>
+                    <p class="small-txt">Four wheeler plan</p>
+                    <p class="xs-txt">You will receive a purchase conformation email with details of your subscription </p>
+    
+                    <button class="cnf-sumbit-btn">OK</button>
+                </div>
+                    
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- model popup conformation  -->

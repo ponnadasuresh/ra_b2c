@@ -53,13 +53,22 @@ border-radius: inherit;
 .subscribeinformation-container input.form-control {
     color: #fff !important;
 }
+.mobile-number button{
+    background-color: transparent;
+}
 .sendemail .input-group-text{
-    background-color: #ff4859;
-    border: 0;
+    background-color: #ff4859 !important;
+    border-radius: 0 !important;
+    border: none;
 }
 .sendemail .input-group-text {
-    padding: 7px 14px;
+    padding: 6px 14px;
     display: block;
+    @media #{$bp-lg}{
+        padding: 8px 9px;
+        display: inline-grid;
+        cursor: pointer;
+    }
 }
 
 // .subscribeinformation-container .input-group-text button.sendemail {
@@ -74,7 +83,7 @@ border-radius: inherit;
 //     top: 8px;
 // }
 .subscribeinformation-container .input-group-append {
-    margin-left: 36px !important;
+    margin-left: 9px !important;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -82,8 +91,9 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 svg.svg-inline--fa.fa-arrow-right {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
+    vertical-align: middle;
 
 }
 
@@ -163,4 +173,9 @@ svg.svg-inline--fa.fa-arrow-right {
         }
     }
 
+}
+
+
+.mobile-number .input-group {
+    align-items: center;
 }
