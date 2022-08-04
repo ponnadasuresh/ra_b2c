@@ -2,7 +2,8 @@
 @import '/src/custom_styles/variables.scss';
 
 
-#readyassist-ui {
+
+  
 
     .aboutus-bg{
         position :absolute;
@@ -13,24 +14,48 @@
         opacity:.1;
         background-size: 100% 100%;
         }
-        
-        .aboutrow{
-            height:100vh;
+
+        .collab{
+            height : 50vh;
         }
+        
+    
 
         .aimrow{
+            
             color:white;
-            height:50vh;
             background-color: #262a2e;
+            padding-left: 125px;
+            height:50vh;
+            @media (max-width : 575px){
+                padding-left:50px;
+                height :auto;
+            }
+
+            @media (max-width : 767px){
+                padding-left:80px;
+                height :auto;
+            }
+           
+           
+       
 
             .svg-inline--fa {
                 color: #ffcc33;
                 font-size: 48px;
                 margin-bottom: 12px;
+                @media (max-width : 575px){
+                    font-size : 40px;
+                }
+               
             }
 
             h3{
-                font-size: 400%;
+                font-size: 200%;
+                @media (max-width : 767px){
+                        font-size : 40px;
+                }
+               
             }
 
             p{
@@ -56,6 +81,9 @@
     
             .p1{
                 font-size: 200%;
+                @media (max-width : 576px){
+                    font-size: 150%;
+                }
                 font-weight:bolder;
                 line-height: 30px;
             }
@@ -63,26 +91,18 @@
     
             
     
-            .layout-px {
-                padding: 125px 0;
-                @media #{$bp-sm}{
-                    padding-top: 155px;
-                    padding-bottom: 40px;
-                }
-            }
+            // .layout-px {
+            //     padding: 125px 0;
+            //     @media #{$bp-sm}{
+            //         padding-top: 155px;
+                  
+            //     }
+            // }
     
         }
 
-        .collab{
-            height:50vh;
-        }
-
-        .board{
-           height :100vh;
-        }
-
+    
 
     
     
 
-}
