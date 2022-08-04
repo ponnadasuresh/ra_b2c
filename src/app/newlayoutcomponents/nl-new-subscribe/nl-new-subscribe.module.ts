@@ -18,7 +18,6 @@ import { NlSubscriptionConformationComponent } from '../nl-subscription-conforma
     NlBuynowscreenComponent,
     NlSubscriptionformComponent,
     SubscribeinformationComponent,
-    NlSubscriptionConformationComponent
   ],
   imports: [
     CommonModule,

@@ -9,6 +9,7 @@ import { DOCUMENT } from '@angular/common';
 })
 export class MenuBarComponent implements OnInit {
 
+
   constructor(@Inject(DOCUMENT) private document: Document  ) { }
 
 @HostListener("document:scroll")

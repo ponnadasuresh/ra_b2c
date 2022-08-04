@@ -25,7 +25,8 @@
             
             color:white;
             background-color: #262a2e;
-            padding-left: 125px;
+            padding-left: 8%;
+            padding-right: 4%;
             height:50vh;
             @media (max-width : 575px){
                 padding-left:50px;
@@ -55,11 +56,18 @@
                 @media (max-width : 767px){
                         font-size : 40px;
                 }
+
+           
+           
                
             }
 
             p{
                 opacity: .7;
+
+                @media (min-width : 768px){
+                    font-size : 92%;
+            }
             }
          
         }

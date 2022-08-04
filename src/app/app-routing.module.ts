@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes} from '@angular/router';
 import {DefaultComponentComponent} from './newlayoutcomponents/default-component/default-component.component'
+import { NlGridComponent } from './newlayoutcomponents/nl-grid/nl-grid.component';
 import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-newaboutus.component';
 import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 const routes: Routes = [
   { path : 'newaboutus', component:NlNewaboutusComponent},
+  { path : 'grid' , component: NlGridComponent},
   { path: '', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/landingpagetwo.module').then(m => m.LandingpagetwoModule)  },
   {path: 'default', component:DefaultComponentComponent},
   { path: 'subscriptionplans', loadChildren: () => import('./newlayoutcomponents/nl-new-subscribe/nl-new-subscribe.module').then(m => m.NlNewSubscribeModule) },
@@ -18,4 +20,8 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes,  {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+  
+
+ }

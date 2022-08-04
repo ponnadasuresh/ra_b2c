@@ -38,6 +38,7 @@ import { DefaultComponentComponent } from './newlayoutcomponents/default-compone
 import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-newaboutus.component';
 
 import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
+import { NlGridComponent } from './newlayoutcomponents/nl-grid/nl-grid.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-su
     NlDowloadreadyassistappComponent,
     DefaultComponentComponent,
     NlNewaboutusComponent,
-    NlSubscriptionConformationComponent
+    NlSubscriptionConformationComponent,
+    NlGridComponent
    ],
   imports: [
     
