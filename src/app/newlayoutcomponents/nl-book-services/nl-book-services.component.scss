@@ -1,13 +1,30 @@
-#readyassist-ui{
+#readyassist-ui {
 
-    .nl-bookservices-container{
-        .nl-bookservices-card{
+    .nl-bookservices-container {
+        .nl-bookservices-card {
             padding: 290px 0;
+            width: 60%;
+            margin: 0 auto;
+            .input-group-text {
+                padding: 10px;
+                border-radius: 5px 0 0 5px;
+            }
+            .bookservices-submit-btn {
+                background: #28a745;
+                color: #fff;
+                border-radius: 40px;
+                width: 120px;
+                margin: 19px 0;
+                min-height: 43px;
+            }
+            .schedule-slot-card{
+                label {
+                    margin-bottom: 7px;
+                    font-size: 16px;
+                    color: #5a5a5a;
+                }
+            } 
         }
     }
 
 }
-
-
-
-

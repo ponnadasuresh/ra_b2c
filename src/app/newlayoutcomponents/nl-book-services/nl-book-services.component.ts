@@ -8,8 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class NlBookServicesComponent implements OnInit {
 
   constructor() { }
+  isSignIn:string = 'Submit →';
+  steps:number = 1;
+  actionButton:boolean = true;
+  
 
   ngOnInit(): void {
+    console.log(this.steps);
   }
 
+  proceedBtn(){
+    this.steps++;
+    if(this.steps == 2){
+      this.isSignIn = 'Proceed →';
+    }
+    if(this.steps == 3){
+      this.actionButton = false;
+    }
+
+
+  }
+
+
 }
+
+
+// Proceed →
