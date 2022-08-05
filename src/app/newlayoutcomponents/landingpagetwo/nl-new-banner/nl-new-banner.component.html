@@ -1,12 +1,12 @@
 <div id="readyassist-ui">
-    <div class="nl-home-container">
-        <div class="nl-home-card layout-padding"> 
-          <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="nl-home-left-card nl-home-card-clm">
-                <div class="heading">
-                    <h1>24/7 onspot break-down support</h1>
-                    <!-- <div class="my-5 flip_container">
+  <div class="nl-home-container">
+    <div class="nl-home-card layout-padding">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="nl-home-left-card nl-home-card-clm">
+            <div class="heading">
+              <h1>24/7 onspot break-down support</h1>
+              <!-- <div class="my-5 flip_container">
                       <div class="flip">
                         <ul class="list">
                           <li>BATTERY JUMPSTART</li>
@@ -20,34 +20,116 @@
                         </ul>
                       </div>
                     </div> -->
-                    <div class="my-5 subHeading"><p class="f24 fr sp">anytime anywhere in india</p></div>
-                    <div class="default-btn-card">
-                      <button class="nl-default-btn" [routerLink]="['subscriptionplans']" >Book Service <span class="angleright">&nbsp; →</span></button>
-                    </div>
-                  </div>
-            </div>
-            </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 video-container">
-              <div class="nl-home-left-card nl-home-card-clm">
-                <div class="truck-card">
-                  <!-- <img src="./assets/images/nl_truck.png" alt="" srcset=""> -->
-                  <div id="superso-ui">
-                    <div class="superso-hme-video-container">
-                            <iframe src="https://fast.wistia.net/embed/iframe/3gb70n4cnv"
-                                title="fast.wistia.net"
-                                sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-top-navigation-by-user-activation"
-                                allowfullscreen="" loading="lazy" frameborder="0"></iframe>
-                               
-                        </div>
-                    </div>
-                </div>
-               
+              <div class="my-5 subHeading">
+                <p class="f24 fr sp">anytime anywhere in india</p>
+              </div>
+              <div class="default-btn-card">
+                <button class="nl-default-btn" (click)="booKservices.toggle();">Book Service <span
+                    class="angleright">&nbsp; →</span></button>
               </div>
             </div>
           </div>
-           
-            
         </div>
+        <div class="col-lg-8 col-md-12 col-sm-12 video-container">
+          <div class="nl-home-left-card nl-home-card-clm">
+            <div class="truck-card">
+              <!-- <img src="./assets/images/nl_truck.png" alt="" srcset=""> -->
+              <div id="superso-ui">
+                <div class="superso-hme-video-container">
+                  <iframe src="https://fast.wistia.net/embed/iframe/3gb70n4cnv" title="fast.wistia.net"
+                    sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-top-navigation-by-user-activation"
+                    allowfullscreen="" loading="lazy" frameborder="0"></iframe>
+
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
+
+                <!-- Book Services -->
+
+                      <mat-sidenav #booKservices>
+                        <div class="nl-bookservices-card">                        
+                        <!-- form starts here  -->
+                        <form action="">
+                          <!-- step 1 -->
+                          <section *ngIf="steps == 1">
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                  <i class="fa-solid fa-phone"></i>
+                                </span>
+                              </div>
+                              <input type="number" class="form-control" placeholder="Mobile no" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                            </div>
+                  
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                  <i class="fa-solid fa-key"></i>
+                                </span>
+                              </div>
+                              <input type="number" class="form-control" placeholder="OTP" aria-label="OTP"
+                                aria-describedby="basic-addon1">
+                            </div>
+                          </section>
+                  
+                          <!-- step 2 -->
+                          <section *ngIf="steps == 2"> 
+                            <div class="input-group mb-3">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Vehicle List</option>
+                                <option value="1">Bike</option>
+                                <option value="2">Car</option>
+                                <option value="3">Honda</option>
+                              </select>
+                            </div>
+                  
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                  <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                              </div>
+                              <input type="number" class="form-control" placeholder="Base Location" aria-label="base location"
+                                aria-describedby="basic-addon1">
+                            </div>
+                  
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                  <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                              </div>
+                              <input type="number" class="form-control" placeholder="Drop Location" aria-label="base location"
+                                aria-describedby="basic-addon1">
+                            </div>
+                  
+                            <div class="services">
+                              <h1>Services Comes here</h1>
+                            </div>
+                            <div class="schedule-slot-card">
+                               <label for="">Schedule Slots</label>
+                              <div class="input-group mb-3">
+                               
+                                <input type="date" class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                  
+                  
+                          </section>
+                          <button *ngIf="actionButton" class="btn bookservices-submit-btn" (click)="proceedBtn()">{{isSignIn}}</button>
+                        </form>
+                        </div>
+                        <!-- form starts here  -->
+                      </mat-sidenav>
+                  <!-- Book Services -->

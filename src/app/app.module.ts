@@ -35,9 +35,7 @@ import { NlCollabratedwithComponent } from './newlayoutcomponents/nl-collabrated
 import { NlNewtestimonmialsComponent } from './newlayoutcomponents/nl-newtestimonmials/nl-newtestimonmials.component';
 import { NlDowloadreadyassistappComponent } from './newlayoutcomponents/nl-dowloadreadyassistapp/nl-dowloadreadyassistapp.component';
 import { DefaultComponentComponent } from './newlayoutcomponents/default-component/default-component.component';
-import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/nl-book-services.component';
-// import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,8 +64,6 @@ import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/
     NlNewtestimonmialsComponent,
     NlDowloadreadyassistappComponent,
     DefaultComponentComponent,
-    NlBookServicesComponent,
-    // NlSubscriptionConformationComponent
    ],
   imports: [
     BrowserModule,
@@ -82,6 +78,7 @@ import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

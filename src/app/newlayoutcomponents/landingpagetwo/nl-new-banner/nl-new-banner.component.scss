@@ -225,3 +225,40 @@
 .video-container {
   margin-top: -18px;
 }
+
+
+// Book Services
+
+  .nl-bookservices-card {
+    position: absolute;
+    background: #fff;
+    width: 60%;
+    padding: 40px 30px;
+    top: 190px;
+    left: 40%;
+    min-height: 410px;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,.05) 0 10px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      .input-group-text {
+          padding: 10px;
+          border-radius: 5px 0 0 5px;
+      }
+      .bookservices-submit-btn {
+          background: #28a745;
+          color: #fff;
+          border-radius: 40px;
+          width: 120px;
+          margin: 19px 0;
+          min-height: 43px;
+      }
+      .schedule-slot-card{
+          label {
+              margin-bottom: 7px;
+              font-size: 16px;
+              color: #5a5a5a;
+          }
+      } 
+  }
