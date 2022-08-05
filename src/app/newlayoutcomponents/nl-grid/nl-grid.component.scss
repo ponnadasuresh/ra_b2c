@@ -23,15 +23,12 @@
 }
 
 h1{
-    
-    text-align: justify;
+    font-size :5vw;
     font-weight: bolder;
-    letter-spacing : 10px;
     @media (max-width : 575px){
         font-size : 9vw;
     }
 }
-
 
 
 p{
