@@ -39,6 +39,8 @@ import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-ne
 
 import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 import { NlGridComponent } from './newlayoutcomponents/nl-grid/nl-grid.component';
+import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/nl-book-services.component';
+// import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,9 @@ import { NlGridComponent } from './newlayoutcomponents/nl-grid/nl-grid.component
     DefaultComponentComponent,
     NlNewaboutusComponent,
     NlSubscriptionConformationComponent,
-    NlGridComponent
+    NlGridComponent,
+    NlBookServicesComponent,
+    // NlSubscriptionConformationComponent
    ],
   imports: [
     

@@ -4,6 +4,8 @@ import {DefaultComponentComponent} from './newlayoutcomponents/default-component
 import { NlGridComponent } from './newlayoutcomponents/nl-grid/nl-grid.component';
 import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-newaboutus.component';
 import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
+import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/nl-book-services.component';
+// import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 const routes: Routes = [
   { path : 'newaboutus', component:NlNewaboutusComponent},
   { path : 'grid' , component: NlGridComponent},
@@ -11,7 +13,8 @@ const routes: Routes = [
   {path: 'default', component:DefaultComponentComponent},
   { path: 'subscriptionplans', loadChildren: () => import('./newlayoutcomponents/nl-new-subscribe/nl-new-subscribe.module').then(m => m.NlNewSubscribeModule) },
   { path: 'aboutus', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/nl-aboutus/nl-aboutus.module').then(m => m.NlAboutusModule) },
-  { path: 'subscritionconformation', component:NlSubscriptionConformationComponent}
+  // { path: 'subscritionconformation', component:NlSubscriptionConformationComponent}
+  { path: 'bookservices', component:NlBookServicesComponent}
 
 ];
 
