@@ -1,31 +1,76 @@
 <div id="readyassist-ui">
-    <div class="nl-bookservices-container layout-padding">
-        <div class="nl-bookservices-card layout-px">
-           <form action="">
-            <section>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">
-                        <i class="fa-solid fa-phone"></i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="OTP" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-            </section>
-            <section>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">
-                        <i class="fa-solid fa-key"></i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="OTP" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-            </section>
-            <button class="btn bookservices-submit-btn">Submit</button>
-           </form>
-        </div>
-    </div>
-</div>
+  <div class="nl-bookservices-container layout-padding">
+    <div class="nl-bookservices-card layout-px">
+      <form action="">
+        <!-- step 1 -->
+        <section *ngIf="steps == 1">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+            </div>
+            <input type="number" class="form-control" placeholder="Mobile no" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
 
-<!-- padding: 290px 0; -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-key"></i>
+              </span>
+            </div>
+            <input type="number" class="form-control" placeholder="OTP" aria-label="OTP"
+              aria-describedby="basic-addon1">
+          </div>
+        </section>
+
+        <!-- step 2 -->
+        <section *ngIf="steps == 2"> 
+          <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Vehicle List</option>
+              <option value="1">Bike</option>
+              <option value="2">Car</option>
+              <option value="3">Honda</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+            <input type="number" class="form-control" placeholder="Base Location" aria-label="base location"
+              aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+            <input type="number" class="form-control" placeholder="Drop Location" aria-label="base location"
+              aria-describedby="basic-addon1">
+          </div>
+
+          <div class="services">
+            <h1>Services Comes here</h1>
+          </div>
+          <div class="schedule-slot-card">
+             <label for="">Schedule Slots</label>
+            <div class="input-group mb-3">
+             
+              <input type="date" class="form-control" aria-describedby="basic-addon1">
+            </div>
+          </div>
+
+
+        </section>
+        <button *ngIf="actionButton" class="btn bookservices-submit-btn" (click)="proceedBtn()">{{isSignIn}}</button>
+      </form>
+    </div>
+  </div>
+</div>
