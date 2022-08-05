@@ -5,8 +5,11 @@ import { NlGridComponent } from './newlayoutcomponents/nl-grid/nl-grid.component
 import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-newaboutus.component';
 import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/nl-book-services.component';
+import { NlSigninPopComponent } from './newlayoutcomponents/nl-signin-pop/nl-signin-pop.component';
 // import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 const routes: Routes = [
+
+  { path : 'signin', component : NlSigninPopComponent},
   { path : 'newaboutus', component:NlNewaboutusComponent},
   { path : 'grid' , component: NlGridComponent},
   { path: '', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/landingpagetwo.module').then(m => m.LandingpagetwoModule)  },

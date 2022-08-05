@@ -1,6 +1,8 @@
 import { Component, OnInit, ElementRef, HostListener, Inject } from '@angular/core';
 import * as $ from 'jquery';
 import { DOCUMENT } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { NlSigninPopComponent } from 'src/app/newlayoutcomponents/nl-signin-pop/nl-signin-pop.component';
 
 @Component({
   selector: 'app-menu-bar',
@@ -9,8 +11,15 @@ import { DOCUMENT } from '@angular/common';
 })
 export class MenuBarComponent implements OnInit {
 
+ 
 
-  constructor(@Inject(DOCUMENT) private document: Document  ) { }
+ proceed(){
+
+      this.popup.open(NlSigninPopComponent)
+  }
+
+
+  constructor(@Inject(DOCUMENT) private document: Document, private readonly popup: MatDialog) { }
 
 @HostListener("document:scroll")
 scrollfunction(){

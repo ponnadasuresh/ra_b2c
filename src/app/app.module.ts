@@ -40,8 +40,11 @@ import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-ne
 import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 import { NlGridComponent } from './newlayoutcomponents/nl-grid/nl-grid.component';
 import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/nl-book-services.component';
+
+import { MatDialogModule } from '@angular/material/dialog'
 // import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 
+import {MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,7 +80,7 @@ import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/
     // NlSubscriptionConformationComponent
    ],
   imports: [
-    
+    MatDialogModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -90,6 +93,7 @@ import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
