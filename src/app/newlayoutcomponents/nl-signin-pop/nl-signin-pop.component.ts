@@ -16,8 +16,12 @@ export class NlSigninPopComponent implements OnInit {
     otp : new FormControl('',[Validators.required])
   })
 
-  onSubmit(){
-    console.log('submit works');
+
+
+  proceed(){
+
+    console.log("hello you're done")
+    
   }
 
   constructor() { 

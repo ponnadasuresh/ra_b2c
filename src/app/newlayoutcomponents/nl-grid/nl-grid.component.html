@@ -37,12 +37,13 @@
 
 </div>
 
-<!-- <form [formGroup]="submits" (ngSubmit)="submit()">
+<form [formGroup]="submits" (ngSubmit)="submit()">
 
-    <input type="number" formControlName="phone">
-    <input type="number" formControlName="otp">
+    <input *ngIf="viewPhone" type="number" formControlName="phone" placeholder="phone">
+    <input *ngIf="viewOtp" type="number" formControlName="otp"  placeholder="otp">
     <button type="submit">Submit</button>
-</form> -->
+    
+</form>
 
 
 

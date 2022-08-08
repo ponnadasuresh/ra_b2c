@@ -1,3 +1,4 @@
+import { _ViewRepeaterOperation } from '@angular/cdk/collections';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
@@ -12,11 +13,30 @@ export class NlGridComponent implements OnInit {
     phone : new FormControl ("", [Validators.required]),
     otp : new FormControl ("", [Validators.required])
   });
+
+
+  viewPhone : boolean = true;
+
+  viewOtp: boolean = false;
     
 
   submit(){
-    console.log("ksefhiseufh");
-    console.log(this.submits);
+
+    if(this.viewPhone==true)
+    {
+      console.log("otp field displayed")
+      this.viewPhone=false;
+      this.viewOtp=true;
+
+    }
+    else{
+      console.log("values submitted");
+      open("/aboutus");
+
+    }
+    
+    
+
   }
 
   constructor() { }
