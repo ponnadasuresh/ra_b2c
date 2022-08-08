@@ -1,0 +1,120 @@
+@import '/src/custom_styles/mixins.scss';
+@import '/src/custom_styles/variables.scss';
+
+
+
+  
+
+    .aboutus-bg{
+        position :absolute;
+        background-image: url('../../../assets/images/nl_footerbg.svg');
+        height:100%;
+        width:100%;
+        // z-index: -1;
+        opacity:.1;
+        background-size: 100% 100%;
+        }
+
+        .collab{
+            height : 50vh;
+        }
+
+        .board{
+            height : 100vh;
+        }
+        
+    
+
+        .aimrow{
+            
+            color:white;
+            background-color: #262a2e;
+            padding-left: 8%;
+            padding-right: 4%;
+            height:50vh;
+            @media (max-width : 575px){
+                padding-left:50px;
+                height :auto;
+            }
+
+            @media (max-width : 767px){
+                padding-left:80px;
+                height :auto;
+            }
+           
+           
+       
+
+            .svg-inline--fa {
+                color: #ffcc33;
+                font-size: 48px;
+                margin-bottom: 12px;
+                @media (max-width : 575px){
+                    font-size : 40px;
+                }
+               
+            }
+
+            h3{
+                font-size: 200%;
+                @media (max-width : 767px){
+                        font-size : 40px;
+                }
+
+           
+           
+               
+            }
+
+            p{
+                opacity: .7;
+
+                @media (min-width : 768px){
+                    font-size : 92%;
+            }
+            }
+         
+        }
+
+        .nl-newaboutus-container {
+
+
+
+
+            h1 {
+                position: relative;
+                font-size: 50px;
+    
+                @media #{$bp-sm}{
+                    position: static;
+                    font-size: 2rem;
+                }
+            }
+    
+            .p1{
+                font-size: 200%;
+                @media (max-width : 576px){
+                    font-size: 150%;
+                }
+                font-weight:bolder;
+                line-height: 30px;
+            }
+    
+    
+            
+    
+            // .layout-px {
+            //     padding: 125px 0;
+            //     @media #{$bp-sm}{
+            //         padding-top: 155px;
+                  
+            //     }
+            // }
+    
+        }
+
+    
+
+    
+    
+

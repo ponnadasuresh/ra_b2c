@@ -3,9 +3,10 @@
 @import '/src/custom_styles/variables.scss';
 
 
-#readyassist-ui {
+
 
     .nl-collabrated-container {
+        
         .layout-px {
             padding: 250px 0;
             @media #{$bp-lg} {
@@ -14,7 +15,7 @@
 
         }
     }
-}
+
 
 
 .slider {

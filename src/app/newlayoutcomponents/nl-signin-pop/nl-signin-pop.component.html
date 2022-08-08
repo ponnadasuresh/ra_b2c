@@ -1,0 +1,49 @@
+<div class="row">
+
+    <div class="col-12 pb-5 pt-5">
+        <h1>SignIn</h1>
+
+        <p>Enter your 10 digit mobile number to continue... </p>
+
+    </div>
+
+    <div class="col-12">
+
+        <form (ngSubmit)="proceed()">
+
+            <div class="form-group">
+                <input type="number" class="form-control input" id="exampleInputEmail1" placeholder="Enter Mobile Number">
+            </div>
+
+            <div class="form-group d-none">
+                <input type="number" class="form-control input" id="exampleInputEmail1" placeholder="Enter OTP">
+            </div>
+
+
+            <div class="col-12 text-end pt-5">
+
+                <div class="row pt-4 d-flex justify-content-end ">
+
+                    <div class="col-6 col-sm-5 col-md-4">
+                        <button class="btn1 px-0">cancel</button>
+                    </div>
+                        
+                    <div class="col-6 col-sm-5 col-md-4">
+                        <button type="submit" class="btn2 px-0">Proceed →</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+</div>

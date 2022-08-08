@@ -17,14 +17,14 @@
                 <!-- <li><a href="#">Subscription</a></li> -->
                 <li><a href="#" [routerLink]="['blogform']">Blog</a></li>
                 <li>
-                  <a href="#" class="desktop-link" [routerLink]="['aboutus']">About Us</a>
+                  <a href="#" class="desktop-link" [routerLink]="['newaboutus']">About Us</a>
                 </li>
                 <li>
                   <a href="#" class="desktop-link">Contact Us</a>
 
                 </li>
-                <li><a href="#">Grid</a></li>
-                <li><a href="#">Sign in</a></li>
+                <li><a [routerLink]="['grid']" >Grid</a></li>
+                <li><a class="btn" (click)="proceed()">Sign in</a></li>
               </ul>
             </div>
             <div class="action-btn">

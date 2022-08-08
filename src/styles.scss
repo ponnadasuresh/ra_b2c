@@ -38,8 +38,10 @@ body {
 
   // scrolling css to a top of the div
   .section{
+    // height: 100vh;
     // position: relative;
-    scroll-snap-align: start;
+    // scroll-snap-align: center;
+    // scroll-snap-align: start;
     @media #{$bp-sm}{
       scroll-snap-align: none;
   }
@@ -366,5 +368,17 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+
+
+// Signin PopUp Styles
+
+mat-dialog-container {
+  background-color: rgb(255, 255, 255, 1) !important;
+  // backdrop-filter: blur(5px);
+  border-radius: 10px !important;
+  width : 700px !important;
+  height : 500px !important;
 }
 
