@@ -231,17 +231,18 @@
 
   .nl-bookservices-card {
     position: absolute;
-    background: #fff;
-    width: 60%;
+    background: #fafafa;
+    width: 40%;
     padding: 40px 30px;
-    top: 190px;
-    left: 40%;
-    min-height: 410px;
+    top: 0px;
+    left: 60%;
+    min-height: 100%        ;
     border-radius: 20px;
-    box-shadow: rgba(0,0,0,.05) 0 10px 20px 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 10px 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 5;
       .input-group-text {
           padding: 10px;
           border-radius: 5px 0 0 5px;
