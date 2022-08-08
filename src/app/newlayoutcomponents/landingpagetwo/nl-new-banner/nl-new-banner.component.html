@@ -60,6 +60,10 @@
                         <div class="nl-bookservices-card">                        
                         <!-- form starts here  -->
                         <form action="">
+                          <button type="button" >
+                            <div *ngIf="closepopup" ><span class="cancel-popup"><i class="fa-solid fa-xmark"></i></span></div>
+                            <div *ngIf="previousIcon" (click)="previousBtn()"><span class="cancel-popup"><i class="fa-solid fa-arrow-left"></i></span></div>
+                          </button>
                           <!-- step 1 -->
                           <section *ngIf="steps == 1">
                             <div class="input-group mb-3">
@@ -87,10 +91,10 @@
                           <section *ngIf="steps == 2"> 
                             <div class="input-group mb-3">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>Vehicle List</option>
-                                <option value="1">Bike</option>
-                                <option value="2">Car</option>
-                                <option value="3">Honda</option>
+                                <option selected>Hero Honda</option>
+                                <option value="2">Yamaha</option>
+                                <option value="3">Apache</option>
+                                <option value="3">Passion Plus</option>
                               </select>
                             </div>
                   
