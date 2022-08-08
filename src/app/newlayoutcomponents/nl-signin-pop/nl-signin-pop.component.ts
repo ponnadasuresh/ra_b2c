@@ -11,7 +11,7 @@ export class NlSigninPopComponent implements OnInit {
   viewNumber : boolean = false;
   viewOtp : boolean = false;
 
-  signIn= new FormGroup({
+  signIn = new FormGroup({
     number : new FormControl('',[Validators.required]),
     otp : new FormControl('',[Validators.required])
   })
