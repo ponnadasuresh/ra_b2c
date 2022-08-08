@@ -28,17 +28,13 @@
         .aimrow{
             
             color:white;
-            background-color: #262a2e;
-            padding-left: 8%;
-            padding-right: 4%;
+            background-image: linear-gradient( #262a2e 65%,rgb(86, 86, 86));
             height:50vh;
             @media (max-width : 575px){
-                padding-left:50px;
                 height :auto;
             }
 
             @media (max-width : 767px){
-                padding-left:80px;
                 height :auto;
             }
            
@@ -47,19 +43,27 @@
 
             .svg-inline--fa {
                 color: #ffcc33;
-                font-size: 48px;
+                font-size: 2.5vw;
                 margin-bottom: 12px;
                 @media (max-width : 575px){
                     font-size : 40px;
+                }
+
+                @media (max-width : 767px){
+                    font-size : 33px;
                 }
                
             }
 
             h3{
-                font-size: 200%;
+                
                 @media (max-width : 767px){
                         font-size : 40px;
                 }
+
+                @media (min-width : 768px){
+                    font-size :3.3vw;
+            }
 
            
            
@@ -67,10 +71,10 @@
             }
 
             p{
-                opacity: .7;
+                opacity: .8;
 
                 @media (min-width : 768px){
-                    font-size : 92%;
+                    font-size : 0.9vw;
             }
             }
          
@@ -101,16 +105,7 @@
             }
     
     
-            
-    
-            // .layout-px {
-            //     padding: 125px 0;
-            //     @media #{$bp-sm}{
-            //         padding-top: 155px;
-                  
-            //     }
-            // }
-    
+        
         }
 
     
