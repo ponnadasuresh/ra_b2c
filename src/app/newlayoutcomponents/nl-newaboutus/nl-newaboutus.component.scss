@@ -21,6 +21,11 @@
 
         .board{
             height : 100vh;
+
+            @media (max-width : 576px )
+            {
+                height : auto;
+            }
         }
         
     
@@ -32,10 +37,12 @@
             height:50vh;
             @media (max-width : 575px){
                 height :auto;
+                background-image: linear-gradient(to right, #262a2e 65%,rgb(86, 86, 86));
             }
 
             @media (max-width : 767px){
                 height :auto;
+                
             }
            
            

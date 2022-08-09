@@ -1,113 +1,268 @@
 
-@import '/src/custom_styles/buttons.scss';
-@import '/src/custom_styles/mixins.scss';
-@import '/src/custom_styles/variables.scss';
+// @import '/src/custom_styles/buttons.scss';
+// @import '/src/custom_styles/mixins.scss';
+// @import '/src/custom_styles/variables.scss';
 
-#readyassist-ui {
-    .footer-bg {
-        background-image: url('/assets/images/nl_footerbg.svg');
-        background-position: center center;
-        background-size: contain;
+// #readyassist-ui {
+//     .footer-bg {
+//         background-image: url('/assets/images/nl_footerbg.svg');
+//         background-position: center center;
+//         background-size: contain;
 
-        .footer-wrapper {
-            background: rgb(6 6 6 / 93%);
-            margin-top: -90px;
-            @media #{$bp-sm}{
-                margin-top: 11px;
-            }
-            @media #{$bp-lg}{
-                margin-top: -110px;
-            }
+//         .footer-wrapper {
+            // background: rgb(6 6 6 / 93%);
+            // margin-top: -90px;
+            // @media #{$bp-sm}{
+            //     margin-top: 11px;
+            // }
+            // @media #{$bp-lg}{
+            //     margin-top: -110px;
+            // }
 
-            .nl-mainfooter-container {
-                .layout-px {
-                    padding: 30px 0;
-                    // background: #000000d6;
-                }
+            // .nl-mainfooter-container {
+                // .layout-px {
+                //     padding: 30px 0;
+                //     // background: #000000d6;
+                // }
 
-                .nl-mainfooter-card {
-                    display: flex;
-                    gap: 62px;
-                    padding: 3px 0;
-                    @media #{$bp-sm}{
-                        flex-direction:column;
-                        gap: 0;
-                    }
-                    @media #{$bp-lg}{
-                        gap: 48px;
-                    } 
+                // .nl-mainfooter-card {
+                    // display: flex;
+                    // gap: 62px;
+                    // padding: 3px 0;
+                    // @media #{$bp-sm}{
+                    //     flex-direction:column;
+                    //     gap: 0;
+                    // }
+                    // @media #{$bp-lg}{
+                    //     gap: 48px;
+                    // } 
 
-                    h3 {
+                    // h3 {
                         
-                        font-size: 18px;
-                        line-height: 25px;
-                        margin-top: 25px;
-                        color: #fff;
-                    }
+                    //     font-size: 18px;
+                    //     line-height: 25px;
+                    //     margin-top: 25px;
+                    //     color: #fff;
+                    // }
 
-                    .footer-clm-container {
-                        width: 430px;
-                        margin-top: 100px;
-                        @media #{$bp-sm}{
-                            width: 100%;
-                            margin-top: 0px;
-                        }
+                    // .footer-clm-container {
+                        // width: 430px;
+                        // margin-top: 100px;
+                        // @media #{$bp-sm}{
+                        //     width: 100%;
+                        //     margin-top: 0px;
+                        // }
 
-                        .footer-container-clm {
-                            .footer-links {
-                                ul {
-                                    padding-left: 0;
-                                    margin-left:-7px;
-                                    margin-top: 30px;
-                                    li {
-                                        display: inline-block;
-                                        padding: 5px;
-                                    }
-                                }
-                            }
-                            .footer-clm-description {
-                                address {
-                                    color: #b8b8b8;
-                                    line-height: 29px;
-                                }
+                        // .footer-container-clm {
+                        //     .footer-links {
+                                // ul {
+                                //     padding-left: 0;
+                                //     margin-left:-7px;
+                                //     margin-top: 30px;
+                                //     li {
+                                //         display: inline-block;
+                                //         padding: 5px;
+                                //     }
+                                // }
+                            // }
+                            // .footer-clm-description {
+                                // address {
+                                //     color: #b8b8b8;
+                                //     line-height: 29px;
+                                // }
 
-                                p {
-                                    color: #b8b8b8;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+                                // p {
+                                //     color: #b8b8b8;
+                                // }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
 
+//     }
+// }
+
+// .get-app-section {
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-start;
+    // margin-top: 30px;
+    // img{
+    //     width: 180px;
+    // margin-left: 12px;
+    // @media #{$bp-lg}{
+    //     width: 120px;
+    // }
+    // }
+    // p{
+    //     margin: 0;
+    // }
+    // h3{
+    //     margin: 0 !important;
+    //     font-family: 'ABregular' !important;
+    //     font-size: 16px;
+    // }
+// }
+
+
+// .quicklinks{
+    // ul {
+    //     padding-left: 0;
+    //     list-style: none;
+    //     li {
+    //         a {
+    //             color: #b8b8b8;
+    //             font-family: 'ABregular';
+    //             line-height: 35px;
+    //             @media #{$bp-lg}{
+    //                 line-height: 27px;
+    //                 font-size: 14px;
+    //             }
+    //         }
+    //     }
+    // }
+    
+// }
+
+
+// address{
+//     color: #b8b8b8;
+//     font-size: 16px;
+//     line-height: 25px;
+//     font-family: 'ABregular';
+// }
+// .email a{
+//     color: #b8b8b8;
+//     @media #{$bp-lg}{
+//         font-size: 14px;
+//     } 
+// }
+// .footer-clm-title h3 {
+//     color: #FFCC33 !important;
+// }
+// .footer-clm-title{
+//     img{
+//         width: 200px;
+//         margin-top: 8px;
+//         @media #{$bp-sm}{
+//             margin-top: 48px;
+//         }
+       
+//     }
+// }
+// .quicklinks, address, .ftr-col-one {
+//     margin: 40px 0;
+//     @media #{$bp-lg}{
+//         margin: 20px 0;
+//         font-size: 14px;
+//     }
+// }
+// span.email-seprator {
+//     width: 1px;
+//     height: 13px;
+//     background: #fff;
+//     display: inline-block;
+//     margin: 0 6px;
+//     vertical-align: middle;
+// }
+
+// .get-app-section{
+//     img{
+//         @media #{$bp-sm}{
+//             width: 120px;
+//         }
+//     }
+// }
+
+
+
+
+
+
+.footer-bg {
+    
+    background-position: center center;
+    background-size: contain;
+    background: black;
+    // background-image: url('/assets/images/nl_footerbg.svg');
+    color: white;
+
+    .email a{
+        color: #b8b8b8;
+     
     }
-}
 
-.get-app-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 30px;
-    img{
-        width: 180px;
-    margin-left: 12px;
-    @media #{$bp-lg}{
-        width: 120px;
+
+    span.email-seprator {
+        width: 1px;
+        height: 13px;
+        background: #fff;
+        display: inline-block;
+        margin: 0 6px;
+        vertical-align: middle;
     }
-    }
-    p{
-        margin: 0;
-    }
-    h3{
-        margin: 0 !important;
-        font-family: 'ABregular' !important;
+
+
+
+     
+
+
+    address{
+        color: #b8b8b8;
         font-size: 16px;
+        line-height: 25px;
+        font-family: 'ABregular';
+
+        @media (min-width : 768px) and (max-width : 991px){
+    
+            font-size: 13px;
+        }
     }
-}
+
+    .email{
+        color: #b8b8b8;
+    }
+    
+
+    .fontsegment1{
+
+        color: #b8b8b8;
+ 
+    }
 
 
-.quicklinks{
+
+
+
+
+
+
+    .gplay{
+     
+            max-width : 110px;
+     
+    }
+
+    .logoimg{
+        max-width:210px;
+
+        @media (min-width : 768px) and (max-width : 991px){
+            max-width : 140px;
+        }
+    }
+
+
+    .head{
+        margin: 0 !important;
+        font-family: 'ABbold' !important;
+        font-size: 18px;
+        font-weight :900;
+        color: #FFCC33 !important;
+
+    }
+
     ul {
         padding-left: 0;
         list-style: none;
@@ -116,62 +271,13 @@
                 color: #b8b8b8;
                 font-family: 'ABregular';
                 line-height: 35px;
-                @media #{$bp-lg}{
-                    line-height: 27px;
-                    font-size: 14px;
+                @media (min-width : 768px) and (max-width : 991px){
+                    line-height: 30px;
+                    font-size: 13px;
                 }
             }
         }
     }
+
     
-}
-
-
-address{
-    color: #b8b8b8;
-    font-size: 16px;
-    line-height: 25px;
-    font-family: 'ABregular';
-}
-.email a{
-    color: #b8b8b8;
-    @media #{$bp-lg}{
-        font-size: 14px;
-    } 
-}
-.footer-clm-title h3 {
-    color: #FFCC33 !important;
-}
-.footer-clm-title{
-    img{
-        width: 200px;
-        margin-top: 8px;
-        @media #{$bp-sm}{
-            margin-top: 48px;
-        }
-       
-    }
-}
-.quicklinks, address, .ftr-col-one {
-    margin: 40px 0;
-    @media #{$bp-lg}{
-        margin: 20px 0;
-        font-size: 14px;
-    }
-}
-span.email-seprator {
-    width: 1px;
-    height: 13px;
-    background: #fff;
-    display: inline-block;
-    margin: 0 6px;
-    vertical-align: middle;
-}
-
-.get-app-section{
-    img{
-        @media #{$bp-sm}{
-            width: 120px;
-        }
-    }
 }
