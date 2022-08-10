@@ -2,27 +2,34 @@
 @import '/src/custom_styles/mixins.scss';
 @import '/src/custom_styles/variables.scss';
 
-#readyassist-ui{
-  .nl-home-container{
+#readyassist-ui {
+  .nl-home-container {
     padding: 8rem 0rem;
     // background: #fff9e7;
     background: #F7F8FD;
     font-family: fBold;
-    @media #{$bp-sm}{
-      padding:5rem 0rem;
+
+    @media #{$bp-sm} {
+      padding: 5rem 0rem;
     }
-    @media #{$bp-lg}{
-      padding:3rem 0rem;
+
+    @media #{$bp-lg} {
+      padding: 3rem 0rem;
     }
-    h1{
+
+    h1 {
       font-size: 61px;
-      @media #{$bp-lg}{
+
+      @media #{$bp-lg} {
         font-size: 51px;
       }
+
       max-width: 420px;
       line-height: 68px;
-      font-family: fSemiBold, sans-serif;
-      @media #{$bp-sm}{
+      font-family: fSemiBold,
+      sans-serif;
+
+      @media #{$bp-sm} {
         font-size: 2rem;
         max-width: 80%;
         line-height: 2.7rem;
@@ -34,133 +41,161 @@
 
 // text flip
 .flip_container {
-    .flip {
-      overflow: hidden;
-      // height: 30px;
-      height: 36px;
-    }
-    ul {
-      text-align: start;
-      list-style: none;
-      padding-left: 0;
-      animation-name: change;
-      animation-duration: 18s;
-      animation-iteration-count: infinite;
-    }
-    li {
-      color: #333333;
-      font-family: fSemiBold, sans-serif;
-      font-size: 36px;
-      font-weight: 600;
-      line-height: 40px;
-      letter-spacing: 1px;
-      @media #{$bp-sm}{
-        font-size: 1.5rem;
-      }
-    }
-  
-    @keyframes change {
-      0% {
-        transform: translateY(0);
-      }
-      7% {
-        transform: translateY(-13%);
-      }
-      14% {
-        transform: translateY(-26%);
-      }
-      21% {
-        transform: translateY(-39%);
-      }
-      28%{
-        transform: translateY(-52%);
-      }
-      35% {
-        transform: translateY(-65%);
-      }
-      42% {
-        transform: translateY(-78%);
-      }
-      49% {
-        transform: translateY(-91%);
-      }
-      56% {
-        transform: translateY(-78%);
-      }
-      63% {
-        transform: translateY(-65%);
-      }
-      70% {
-        transform: translateY(-52%);
-      }
-      77% {
-        transform: translateY(-39%);
-      }
-      84% {
-        transform: translateY(-26%);
-      }
-      91% {
-        transform: translateY(-13%);
-      }
-      97% {
-        transform: translateY(-0%);
-      }
+  .flip {
+    overflow: hidden;
+    // height: 30px;
+    height: 36px;
+  }
+
+  ul {
+    text-align: start;
+    list-style: none;
+    padding-left: 0;
+    animation-name: change;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+  }
+
+  li {
+    color: #333333;
+    font-family: fSemiBold, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 1px;
+
+    @media #{$bp-sm} {
+      font-size: 1.5rem;
     }
   }
-  
-.nl-default-btn{
+
+  @keyframes change {
+    0% {
+      transform: translateY(0);
+    }
+
+    7% {
+      transform: translateY(-13%);
+    }
+
+    14% {
+      transform: translateY(-26%);
+    }
+
+    21% {
+      transform: translateY(-39%);
+    }
+
+    28% {
+      transform: translateY(-52%);
+    }
+
+    35% {
+      transform: translateY(-65%);
+    }
+
+    42% {
+      transform: translateY(-78%);
+    }
+
+    49% {
+      transform: translateY(-91%);
+    }
+
+    56% {
+      transform: translateY(-78%);
+    }
+
+    63% {
+      transform: translateY(-65%);
+    }
+
+    70% {
+      transform: translateY(-52%);
+    }
+
+    77% {
+      transform: translateY(-39%);
+    }
+
+    84% {
+      transform: translateY(-26%);
+    }
+
+    91% {
+      transform: translateY(-13%);
+    }
+
+    97% {
+      transform: translateY(-0%);
+    }
+  }
+}
+
+.nl-default-btn {
   background: linear-gradient(0deg, #404040 0%, #101010 70%);
   color: #fff;
   padding: 17px 35px;
   box-shadow: 0 20px 30px -10px rgb(0 0 0 / 20%) !important;
   border-color: #101010;
-  @media #{$bp-sm}{
+
+  @media #{$bp-sm} {
     padding: 9px 17px;
   }
-  @media #{$bp-lg}{
+
+  @media #{$bp-lg} {
     padding: 12px 17px;
   }
+
   font-family: 'fSemiBold';
   border-radius: 40px;
+
   // font-weight: 500;
   i.bx.bx-chevrons-right {
     font-size: 25px;
     vertical-align: middle;
-}
   }
+}
+
 .default-btn-card {
   margin-top: 6rem;
-  @media #{$bp-sm}{
+
+  @media #{$bp-sm} {
     margin-top: 3rem;
   }
+
   display: flex;
-    align-items: center;
-    p.banner-tag {
-      padding-left: 13px;
-      color: rgb(155, 154, 151);
-      font-size: 17px;
-      margin-bottom: 0 !important;
+  align-items: center;
+
+  p.banner-tag {
+    padding-left: 13px;
+    color: rgb(155, 154, 151);
+    font-size: 17px;
+    margin-bottom: 0 !important;
   }
 }
+
 .heading {
   padding: 40px 0;
   margin-top: 2rem;
-  @media #{$bp-sm}{
+
+  @media #{$bp-sm} {
     margin-top: 2rem;
   }
 }
+
 .nl-home-card {
   // display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media #{$bp-sm} {
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-.subHeading p{
-  
-}
+
+.subHeading p {}
 
 .truck-card img {
   width: 100%;
@@ -169,8 +204,8 @@
 
 .my-5.flip_container {
   @media #{$bp-sm} {
-  margin: 44px 0 !important;
-}
+    margin: 44px 0 !important;
+  }
 }
 
 
@@ -185,8 +220,8 @@
     background: #F7F8FD;
     /* 16:9 */
     padding-top: 0px;
-        // transform: translateX(12%);
-        transform: translateX(8%);
+    // transform: translateX(12%);
+    transform: translateX(8%);
     height: 0;
     overflow: hidden;
     border-radius: 15px;
@@ -213,6 +248,7 @@
   #superso-ui {
     .superso-hme-video-container {
       transform: translateX(0%);
+
       iframe {
         width: 100%;
         height: 100%;
@@ -229,37 +265,272 @@
 
 // Book Services
 
-  .nl-bookservices-card {
-    position: absolute;
-    background: #fafafa;
-    width: 40%;
-    padding: 40px 30px;
-    top: 0px;
-    left: 60%;
-    min-height: 100%        ;
-    border-radius: 20px;
-    box-shadow: rgb(0 0 0 / 5%) 0 10px 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 5;
-      .input-group-text {
-          padding: 10px;
-          border-radius: 5px 0 0 5px;
-      }
-      .bookservices-submit-btn {
-          background: #28a745;
-          color: #fff;
-          border-radius: 40px;
-          width: 120px;
-          margin: 19px 0;
-          min-height: 43px;
-      }
-      .schedule-slot-card{
-          label {
-              margin-bottom: 7px;
-              font-size: 16px;
-              color: #5a5a5a;
-          }
-      } 
+.nl-bookservices-card {
+  position: absolute;
+  background: #fafafa;
+  width: 40%;
+  padding: 0px 40px 40px 40px;
+  top: 0px;
+  left: 60%;
+  min-height: 100%;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 5%) 0 10px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+  //   input {
+  //     padding: 10px 0;
+  // }
+
+  .input-group-text {
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
   }
+
+  .bookservices-submit-btn {
+    background: #28a745;
+    color: #fff;
+    border-radius: 40px;
+    width: 120px;
+    margin-top: 16px;
+    min-height: 43px;
+  }
+
+  .schedule-slot-card {
+    label {
+      margin-bottom: 7px;
+      font-size: 16px;
+      color: #5a5a5a;
+    }
+  }
+}
+
+button.bookservices-hide-show-icons {
+  border: none;
+  background: transparent;
+  top: -20px;
+  position: relative;
+}
+
+
+
+.services-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 26px;
+
+  .service-card {
+    // flex: 1 1 22%;
+    background: #ebebeb;
+    border-radius: 12px;
+    padding: 9px;
+    text-align: center;
+
+    h1 {
+      font-size: 15px;
+      margin-bottom: 0;
+      color: #000;
+      font-family: 'ABregular' !important;
+    }
+
+    img {
+      width: 62px;
+    }
+  }
+}
+
+.time-slots-btn-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+
+  .btn-secondary {
+    background-color: #c4cdce;
+    border: transparent;
+  }
+
+  .btn-success {
+    border: transparent;
+    background-color: #28a745;
+  }
+
+}
+
+.bookservices-btn {
+  background: linear-gradient(0deg, #404040 0%, #101010 70%);
+  color: #fff;
+  border-radius: 40px;
+  width: 140px;
+  margin-top: 13px;
+  min-height: 43px;
+  float: right;
+}
+
+.services-top-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-slots-container h3 {
+  margin: 26px 0;
+  font-size: 18px;
+}
+
+.time-slots-card {
+  margin-bottom: 15px;
+}
+
+.bookservices-back-btn {
+  background: #c4cdce;
+  color: #fff;
+  border-radius: 40px;
+  width: 120px;
+  margin-top: 16px;
+  min-height: 43px;
+}
+
+.popup-action-btns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+//Baselocation Card
+.base-location-card {
+  .location-name {
+    font-family: 'ABblack' !important;
+    font-size: 1.4rem;
+  }
+
+  .description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .location-active-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0px;
+  }
+
+  .green-active {
+    width: 12px;
+    height: 12px;
+    background: #28a745;
+    border-radius: 15px;
+  }
+  .red-active {
+    width: 12px;
+    height: 12px;
+    background: red;
+    border-radius: 15px;
+  }
+
+  .title {
+    h1 {
+      margin-bottom: 0;
+      font-size: 14px;
+      font-family: 'ABregular' !important;
+    }
+
+  }
+}
+
+
+
+// Add Vehicle section
+.cardactive{
+  background-color:#FFCC33 !important;
+}
+.vehicle-clm {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+svg.svg-inline--fa.fa-crown {
+  font-size: 32px;
+  position: relative;
+  left: -20px;
+  color: #ffbb48;
+}
+h3.subscription-vehicle-name {
+  margin-bottom: 0;
+  font-size: 18px;
+  margin-left: -7px;
+}
+.downarrow-clm {
+  margin-left: 8px;
+}
+.crown-clm {
+  width: 10%;
+}
+.crown-clm img {
+  width: 30px;
+  margin-left: -20px;
+}
+.addvehicle {
+  margin: 20px 0;
+  .top-vehicle-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .popupadd-vehicle-btn {
+    background: rgb(0 0 0 / 87%);
+    color: #fff;
+    border-radius: 9px;
+    width: 106px;
+    margin-top: 0;
+    min-height: 38px;
+    border: transparent;
+    font-size: 15px;
+}
+}
+
+
+
+// Subscription plans 
+
+.subscription-plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+    .subscription-planimg-card{
+      flex-basis: 170px;
+      gap: 15px;
+      margin: 12px 0;
+      background: #ededed;
+      // background: #F5f5f5;
+      padding: 9px 10px;
+      border-radius: 32px;
+      p{
+        width: 122px;
+        padding: 12px;
+        font-size: 16px;
+        line-height: 20px;
+    span {
+      font-family: 'ABblack' !important;
+  }
+      }
+    h1.subscription {
+      margin-top: -38px;
+      text-align: center;
+  }
+    img{
+      width: 102px;
+      border-radius: 23px;
+      margin-top: -20px;
+    }
+  }
+}
