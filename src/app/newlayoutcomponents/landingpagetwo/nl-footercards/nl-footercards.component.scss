@@ -3,6 +3,9 @@
 @import '/src/custom_styles/variables.scss';
 
 #readyassist-ui {
+
+    position :relative;
+    top : 80px;
     .nl-footercards-container {
         .nl-footercards-card {
 
