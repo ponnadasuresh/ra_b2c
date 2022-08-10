@@ -7,7 +7,7 @@
 // }
 
 .wrapper {
-	@media #{$bp-responsive-900} {
+	@media (max-width: 1011px){
 		height: 80px;
 	}
 
@@ -24,7 +24,7 @@
 
 	#show-menu {
 		&:checked~.menu-icon {
-			@media #{$bp-responsive-900} {
+			@media (max-width: 1011px) {
 				i {
 					&::before {
 						content: "\f00d";
@@ -37,7 +37,7 @@
 
 		&:checked~.content {
 			.links {
-				@media #{$bp-responsive-900} {
+				@media (max-width: 1011px){
 					left: 0%;
 				}
 			}
@@ -54,7 +54,7 @@
 		text-align: center;
 		display: none;
 
-		@media #{$bp-responsive-900} {
+		@media (max-width: 1011px) {
 			display: block;
 			float: left;
 			width: auto;
@@ -71,7 +71,7 @@
 		height:100px;
 
 		.content {
-			@media #{$bp-responsive-900} {
+			@media (max-width: 1011px) {
 				position: relative;
 				z-index: -1;
 				top: 12px;
@@ -86,7 +86,7 @@
 				align-items: center;
 				padding-top: 12px;
 
-				@media #{$bp-responsive-900} {
+				@media (max-width: 1011px) {
 					padding-top: 0px;
 				}
 
@@ -134,7 +134,7 @@
 					display: flex;
 					margin-bottom: 0;
 
-					@media #{$bp-responsive-900} {
+					@media (max-width: 1011px) {
 						display: block;
 						position: fixed;
 						background: #fff;
@@ -150,7 +150,7 @@
 					}
 
 					li {
-						@media #{$bp-responsive-900} {
+						@media (max-width: 1011px) {
 							margin: 15px 20px;
 						}
 
@@ -170,7 +170,7 @@
 								padding: 9px 18px;
 							}
 
-							@media #{$bp-responsive-900} {
+							@media (max-width: 1011px) {
 								line-height: 40px;
 								font-size: 20px;
 								display: block;
@@ -499,7 +499,7 @@ nav {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1011px) {
 
 
 

@@ -1,44 +1,44 @@
 <!-- New Menu -->
-  <div class="wrapper">
-    <nav>
-      <input type="checkbox" id="show-menu">
-      <label for="show-menu" class="menu-icon"><i class="fas fa-bars" style="font-size: 23px;"></i></label>
+<div class="wrapper">
+  <nav>
+    <input type="checkbox" id="show-menu">
+    <label for="show-menu" class="menu-icon"><i class="fas fa-bars" style="font-size: 23px;"></i></label>
 
-      <div class="content">
-        <div class="mobile-inline-logo-card">
-          <div class="logo">
-            <a href="#" [routerLink]="['/']">
-              <img clas="desktop-logo" src="./assets/images/main_logo.png" width="250px" alt="" sizes="" srcset="">
-            </a>
+    <div class="content">
+      <div class="mobile-inline-logo-card">
+        <div class="logo">
+          <a href="#" [routerLink]="['/']">
+            <img clas="desktop-logo" src="./assets/images/main_logo.png" width="250px" alt="" sizes="" srcset="">
+          </a>
+        </div>
+        <div class="desktop-menu-card">
+          <div class="menu-list">
+            <ul class="links">
+              <!-- <li><a href="#">Subscription</a></li> -->
+              <li><a href="#" [routerLink]="['blogform']">Blog</a></li>
+              <li>
+                <a href="#" class="desktop-link" [routerLink]="['newaboutus']">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">Contact Us</a>
+
+              </li>
+              <li><a [routerLink]="['grid']" >Grid</a></li>
+              <li><a class="btn" (click)="proceed()">Sign in</a></li>
+            </ul>
           </div>
-          <div class="desktop-menu-card">
-            <div class="menu-list">
-              <ul class="links">
-                <!-- <li><a href="#">Subscription</a></li> -->
-                <li><a href="#" [routerLink]="['blogform']">Blog</a></li>
-                <li>
-                  <a href="#" class="desktop-link" [routerLink]="['newaboutus']">About Us</a>
-                </li>
-                <li>
-                  <a href="#" class="desktop-link">Contact Us</a>
-
-                </li>
-                <li><a [routerLink]="['grid']" >Grid</a></li>
-                <li><a class="btn" (click)="proceed()">Sign in</a></li>
-              </ul>
-            </div>
-            <div class="action-btn">
-              <button class="get-started-btn">
-                <a [routerLink]="['subscriptionplans']">Subscribe Now <span _ngcontent-cpf-c50="" class="angleright">&nbsp;→</span></a>
-              </button>
-              <!-- <a href="https://developer.chrome.com/docs/devtools/issues/">Hiii</a> -->
-            </div>
+          <div class="action-btn">
+            <button class="get-started-btn">
+              <a [routerLink]="['subscriptionplans']">Subscribe Now <span _ngcontent-cpf-c50="" class="angleright">&nbsp;→</span></a>
+            </button>
+            <!-- <a href="https://developer.chrome.com/docs/devtools/issues/">Hiii</a> -->
           </div>
         </div>
-
-
       </div>
 
 
-    </nav>
-  </div>
+    </div>
+
+
+  </nav>
+</div>

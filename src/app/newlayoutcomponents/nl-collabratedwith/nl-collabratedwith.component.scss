@@ -6,7 +6,7 @@
 
 
     .nl-collabrated-container {
-        
+        overflow : hidden;
         .layout-px {
             padding: 250px 0;
             @media #{$bp-lg} {
