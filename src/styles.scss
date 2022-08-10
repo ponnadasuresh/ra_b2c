@@ -29,6 +29,7 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  background-color: red;
   @media #{$bp-sm}{
     scroll-snap-type: none;
 }
