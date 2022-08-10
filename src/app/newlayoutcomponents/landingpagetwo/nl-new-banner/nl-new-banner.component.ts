@@ -9,17 +9,63 @@ export class NlNewBannerComponent implements OnInit {
 
   constructor() { }
 // Book Services 
+serviceEnable:boolean = false;
 isSignIn:string = 'Submit →';
-steps:number = 1;
+steps:number = 2;
 actionButton:boolean = true;
-closepopup: boolean = true;
-previousIcon: boolean = false;
+closepopup: boolean = false;
+previousIcon: boolean = true;
+hide:boolean = true;
+
+subscriptionPlans = [
+  {
+    id:1,
+    title: 'we are a new Startup',
+    img:'./assets/images/ra_towing.svg',
+    isSelect:false
+  },
+  {
+    id:2,
+    title: 'we are a new Startup',
+    img:'./assets/images/ra_towing.svg',
+    isSelect:false
+  },
+  {
+    id:3,
+    title: 'we are a new Startup',
+    img:'./assets/images/ra_towing.svg',
+    isSelect:false
+  },
+  {
+    id:4,
+    title: 'we are a new Startup',
+    img:'./assets/images/ra_towing.svg',
+    isSelect:false
+  }
+]
+
+selectVehicle(v: any) {
+  for (const x of this.subscriptionPlans) {
+    Object.assign(x, {isSelect: false});
+  }
+  this.subscriptionPlans.filter((y: any) => v.id === y.id)[0].isSelect = true;
+}
+
+
+
+
 proceedBtn(){
   this.steps++;
+
+if(this.steps == 1){
+  this.closepopup = true;
+  this.previousIcon = false;
+}
+
   if(this.steps == 2){
     this.isSignIn = 'Proceed →';
     this.previousIcon = true;
-    this.closepopup = false;
+    this.closepopup = true;
   }
   if(this.steps == 3){
     this.actionButton = false;
@@ -28,18 +74,16 @@ proceedBtn(){
 
 }
 previousBtn(){
-  console.log('back');
-  
-this.steps--;
-this.closepopup = true;
-this.previousIcon = false;
-this.isSignIn = 'Submit →'
+  console.log(this.steps)
+  this.steps--;
+
 }
 // closeBtn(){
 //   // booKservices.toggle();
 // }
 
   ngOnInit(): void {
+    console.log(this.steps)
   }
 
 }

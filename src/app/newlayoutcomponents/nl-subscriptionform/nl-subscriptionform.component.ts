@@ -70,10 +70,7 @@ export class NlSubscriptionformComponent implements OnInit {
     this.formModal = new window.bootstrap.Modal(
       document.getElementById('exampleModal'))
   }
-  // testMe(){
-  //   alert('Hiii.......');
-  //   this.signIn = 'Proceed';
-  // }
+
 
   selectVehicle(v: any) {
     for (const x of this.vehiclesList) {
