@@ -6,10 +6,14 @@ import { NlNewaboutusComponent } from './newlayoutcomponents/nl-newaboutus/nl-ne
 import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 import { NlBookServicesComponent } from './newlayoutcomponents/nl-book-services/nl-book-services.component';
 import { NlSigninPopComponent } from './newlayoutcomponents/nl-signin-pop/nl-signin-pop.component';
+import { ContactUsComponent } from './newlayoutcomponents/contact-us/contact-us.component';
 // import { NlSubscriptionConformationComponent } from './newlayoutcomponents/nl-subscription-conformation/nl-subscription-conformation.component';
 const routes: Routes = [
 
-  { path : 'signin', component : NlSigninPopComponent},
+
+
+  // { path: 'contactus', loadChildren: () => import('./newlayoutcomponents/contact-us/contact-us.module').then(m => m.ContactUsModule)  },
+  { path : 'contactus', component:ContactUsComponent},
   { path : 'newaboutus', component:NlNewaboutusComponent},
   { path : 'grid' , component: NlGridComponent},
   { path: '', loadChildren: () => import('./newlayoutcomponents/landingpagetwo/landingpagetwo.module').then(m => m.LandingpagetwoModule)  },

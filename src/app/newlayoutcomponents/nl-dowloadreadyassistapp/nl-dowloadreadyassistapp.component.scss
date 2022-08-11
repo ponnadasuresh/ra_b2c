@@ -3,6 +3,7 @@
 @import '/src/custom_styles/variables.scss';
 
 #readyassist-ui{
+    overflow :hidden;
     height:100vh;
     background-color: #ffcc33;
     .layout-px{
@@ -24,7 +25,16 @@
 
 
 .footer-downloadapp-card{
+
     width: 100%;
+
+    .footer-downloadapp-card-right{
+        img{
+            @media (min-width : 500px) and (max-width : 767px){
+                max-width :400px;
+            }
+        }
+    }
 }
 
 .img-google-play{
