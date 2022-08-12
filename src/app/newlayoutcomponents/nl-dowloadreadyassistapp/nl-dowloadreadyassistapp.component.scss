@@ -5,7 +5,11 @@
 #readyassist-ui{
     overflow :hidden;
     height:100vh;
-    background-color: #ffcc33;
+@media (max-width : 767px){
+    height : auto;
+}
+
+    background-image: linear-gradient(to right,#efbd18,#fc9e08);
     .layout-px{
         padding: 290px 0;
         @media #{$bp-sm} {
@@ -16,9 +20,36 @@
         }
     }
     .footer-downloadapp-container{
+
+        
         
         @media #{$bp-sm} {
             margin-bottom: -18px;
+        }
+
+        .footer-downloadapp-card-clm{
+
+            h1{
+                font-size: 50px;
+                line-height :50px;
+
+                @media (max-width : 767px){
+                    font-size: 30px;
+                    line-height :30px;
+                }
+                
+            }
+
+            p{
+                font-size :22px;
+                font-weight: 1000;
+                line-height :25px;
+
+                @media (max-width : 767px){
+                    font-size: 19px;
+                    line-height :20px;
+                }
+            }
         }
     }
 }
