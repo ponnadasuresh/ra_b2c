@@ -66,6 +66,8 @@ export class NlSubscriptionformComponent implements OnInit {
     },
   ]
 
+
+
   ngOnInit(): void {
     this.formModal = new window.bootstrap.Modal(
       document.getElementById('exampleModal'))
@@ -77,6 +79,10 @@ export class NlSubscriptionformComponent implements OnInit {
       Object.assign(x, {isSelect: false});
     }
     this.vehiclesList.filter((y: any) => v.id === y.id)[0].isSelect = true;
+  }
+
+  YourSubscriptions(){
+
   }
 
   cancelAddvehicle(){

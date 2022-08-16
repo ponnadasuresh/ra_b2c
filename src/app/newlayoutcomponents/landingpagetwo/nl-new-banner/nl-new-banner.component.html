@@ -272,11 +272,36 @@
         </div>
       </section>
 
-      <section *ngIf="hide==false">
+      <section *ngIf="hide">
         <!-- your Subscribtion -->
         <div class="your-subscribtion-container">
           <div class="your-subscribtion-card">
-            <h1></h1>
+            <h1>
+              <span class="back-left-angle"><i class="fa-solid fa-circle-chevron-left"></i></span>
+              Your Subscriptions
+            </h1>
+            <div class="your-subscribtion-inner-card">
+              <div class="your-subscribtion-inner-card-clm">
+                <!-- ./assets/images/nl_ityre.svg  -->
+                <div class="clm-img" *ngFor="let ys of yourSubscriptions"
+                [ngClass]="ys.isSelect ? 'cardactive' : ''" (click)="subscriptionPlansList(ys)"
+                >
+                  <img src="{{ys.src}}" alt="" srcset="">
+                  <h4>{{ys.serviceType}}</h4>
+                  <div class="price-card">
+                   <div class="price-clm">
+                     <span><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;{{ys.price}}</span>
+                    </div>
+                   <div class="price-clm">
+                    <p class="gst-addon">{{ys.gst}}</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
           </div>
         </div>
         <!-- your Subscribtion -->

@@ -429,6 +429,7 @@ button.bookservices-hide-show-icons {
     background: #28a745;
     border-radius: 15px;
   }
+
   .red-active {
     width: 12px;
     height: 12px;
@@ -449,42 +450,51 @@ button.bookservices-hide-show-icons {
 
 
 // Add Vehicle section
-.cardactive{
-  background-color:#FFCC33 !important;
+.cardactive {
+  background-color: #FFCC33 !important;
 }
+
 .vehicle-clm {
   width: 100%;
   align-items: center;
   display: flex;
 }
+
 svg.svg-inline--fa.fa-crown {
   font-size: 32px;
   position: relative;
   left: -20px;
   color: #ffbb48;
 }
+
 h3.subscription-vehicle-name {
   margin-bottom: 0;
   font-size: 18px;
   margin-left: -7px;
 }
+
 .downarrow-clm {
   margin-left: 8px;
 }
+
 .crown-clm {
   width: 10%;
 }
+
 .crown-clm img {
   width: 30px;
   margin-left: -20px;
 }
+
 .addvehicle {
   margin: 20px 0;
+
   .top-vehicle-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .popupadd-vehicle-btn {
     background: rgb(0 0 0 / 87%);
     color: #fff;
@@ -494,7 +504,7 @@ h3.subscription-vehicle-name {
     min-height: 38px;
     border: transparent;
     font-size: 15px;
-}
+  }
 }
 
 
@@ -506,31 +516,111 @@ h3.subscription-vehicle-name {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-    .subscription-planimg-card{
-      flex-basis: 170px;
-      gap: 15px;
-      margin: 12px 0;
-      background: #ededed;
-      // background: #F5f5f5;
-      padding: 9px 10px;
-      border-radius: 32px;
-      p{
-        width: 122px;
-        padding: 12px;
-        font-size: 16px;
-        line-height: 20px;
-    span {
-      font-family: 'ABblack' !important;
-  }
+
+  .subscription-planimg-card {
+    flex-basis: 170px;
+    gap: 15px;
+    margin: 12px 0;
+    background: #ededed;
+    // background: #F5f5f5;
+    padding: 9px 10px;
+    border-radius: 32px;
+
+    p {
+      width: 122px;
+      padding: 12px;
+      font-size: 16px;
+      line-height: 20px;
+
+      span {
+        font-family: 'ABblack' !important;
       }
+    }
+
     h1.subscription {
       margin-top: -38px;
       text-align: center;
-  }
-    img{
+    }
+
+    img {
       width: 102px;
       border-radius: 23px;
       margin-top: -20px;
+    }
+  }
+}
+
+// your Subscription Screen
+.your-subscribtion-container {
+  .your-subscribtion-card {
+    .your-subscribtion-inner-card {
+      margin: 30px 0;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    span.back-left-angle {
+      vertical-align: bottom;
+      margin-right: 20px;
+    }
+
+    .fa-circle-chevron-left {
+      font-size: 24px;
+      color: #727272;
+      vertical-align: middle;
+    }
+
+    .your-subscribtion-inner-card-clm {
+      .clm-img {
+        margin-bottom: 32px;
+        flex-basis: 166px;
+        text-align: center;
+        background: #e5e5e5;
+        padding: 12px;
+        border-radius: 22px;
+        h4 {
+          font-size: 18px;
+      }
+
+        img {
+          width: 50px;
+        }
+
+        .price-card {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .price-clm {
+            .gst-addon {
+              font-size: 12px;
+              color: #505050;
+            }
+           .fa-indian-rupee-sign {
+              font-size: 12px;
+              color: #504949;
+            }
+            span {
+              font-size: 18px;
+              font-weight: bold !important;
+              font-family: 'ABbold';
+            }
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .your-subscribtion-inner-card-clm {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
     }
   }
 }

@@ -44,11 +44,53 @@ subscriptionPlans = [
   }
 ]
 
+yourSubscriptions = [
+  {
+    id:1,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
+  },
+  {
+    id:2,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
+  },
+  {
+    id:3,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
+  },
+  {
+    id:4,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
+  }
+]
+
 selectVehicle(v: any) {
   for (const x of this.subscriptionPlans) {
     Object.assign(x, {isSelect: false});
   }
   this.subscriptionPlans.filter((y: any) => v.id === y.id)[0].isSelect = true;
+}
+
+subscriptionPlansList(s: any){
+  for (const x of this.yourSubscriptions) {
+    Object.assign(x, {isSelect: false});
+  }
+  this.yourSubscriptions.filter((y: any) => s.id === y.id)[0].isSelect = true;
 }
 
 
