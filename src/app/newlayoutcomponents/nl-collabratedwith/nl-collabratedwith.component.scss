@@ -6,7 +6,7 @@
 
 
     .nl-collabrated-container {
-        
+        overflow : hidden;
         .layout-px {
             padding: 250px 0;
             @media #{$bp-lg} {
@@ -44,7 +44,7 @@
 .slide {
     height: auto;
     width: 100px;
-    margin: 0 100px;
+    margin: 0 70px;
     @media #{$bp-sm} {
         margin: 0 30px;
     }
@@ -59,3 +59,24 @@
         transform: translate(calc(-120px * 7));
     }
 }
+
+// .cont2{
+ 
+//     width : 500px;
+//     height :500px;
+ 
+// }
+
+
+// .cont2::before {
+//     content: 'fthgfhtf';
+//     background-image: url("../../../assets/images/nl_footerbg.svg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-color: aqua;
+//     position : absolute;
+//     opacity: 1;
+//     width : inherit;
+//     height : inherit;
+//     z-index: -1;
+// }

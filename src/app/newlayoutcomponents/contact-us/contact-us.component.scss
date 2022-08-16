@@ -1,0 +1,77 @@
+.contact{
+    background-color: #eae7bf17;
+}
+
+address {
+    color: Black;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'ABregular';
+
+}
+
+span.email-seprator {
+    width: 1px;
+    height: 13px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+    color: black
+}
+
+.email a {
+    font-size: 17px;
+    color: black;
+}
+
+.contactus {
+
+height : 100vh;
+
+@media (max-width:1199px)
+{
+    height : auto;
+}
+    
+}
+
+.business {
+
+    border-left: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+
+    @media (max-width : 767px){
+        border-top: 2px solid #ff0000;
+        border-bottom: 2px solid #ff0000;
+        border-left: none;
+        border-right: none;
+    }
+
+
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+
+    @media (max-width : 575px){
+        height: 350px;
+    }
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size :20px;
+}
+
+.comm{
+    font-size :20px;
+}

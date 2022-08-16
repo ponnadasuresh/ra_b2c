@@ -178,15 +178,52 @@
 
 
 
+.main::before{
+    position : absolute;
+    content:'';
+    background-color: black;
+    width : 100%;
+    height : 1400px;
+    z-index:-2;
+
+    @media (min-width : 768px){
+        max-height :500px;
+    }
+    @media (min-width : 576px) and (max-width : 767px){
+        max-height :950px;
+    }
+}
+
+    .footer-bg::before{
+    content : "";
+    position: absolute;
+    width : inherit;
+    height : 1400px;
+    opacity : .1;
+    background-image: url('/assets/images/nl_footerbg.svg');
+    background-repeat: repeat;
+    background-size:1000px;
+    z-index : -1;
+
+    @media (min-width : 768px){
+        max-height :500px;
+    }
+
+    @media (min-width : 576px) and (max-width : 767px){
+        max-height :950px;
+    }
+
+
+    
+    
+}
 
 
 
 .footer-bg {
     
-    background-position: center center;
-    background-size: contain;
-    background: black;
-    // background-image: url('/assets/images/nl_footerbg.svg');
+    
+
     color: white;
 
     .email a{

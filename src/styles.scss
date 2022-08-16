@@ -26,10 +26,10 @@ button{
 }
 html,
 body {
+ 
   height: 100%;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  background-color: red;
   @media #{$bp-sm}{
     scroll-snap-type: none;
 }
@@ -248,14 +248,14 @@ input[type=number] {
            
             background: transparent !important;
            
-            transform: translate(580px, -40px);
-            padding: 5px !important;
-            @media #{$bp-sm}{
-              transform: translate(0, 0);
-            }
-            @media #{$bp-lg}{
-              transform: translate(464px, -30px);
-            }
+            // transform: translate(580px, -40px);
+            // padding: 5px !important;
+            // @media #{$bp-sm}{
+            //   transform: translate(0, 0);
+            // }
+            // @media #{$bp-lg}{
+            //   transform: translate(464px, -30px);
+            // }
           
             // margin-top: -30px !important;
         }

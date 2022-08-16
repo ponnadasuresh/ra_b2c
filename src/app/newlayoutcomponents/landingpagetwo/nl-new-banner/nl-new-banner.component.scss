@@ -3,10 +3,13 @@
 @import '/src/custom_styles/variables.scss';
 
 #readyassist-ui {
+   
+  overflow : hidden;
   .nl-home-container {
+  
     padding: 8rem 0rem;
     // background: #fff9e7;
-    background: #F7F8FD;
+    // background: #F7F8FD;
     font-family: fBold;
 
     @media #{$bp-sm} {
@@ -266,6 +269,7 @@
 // Book Services
 
 .nl-bookservices-card {
+  overflow:hidden;
   position: absolute;
   background: #fafafa;
   width: 40%;
