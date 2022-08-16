@@ -3,6 +3,9 @@
 @import '/src/custom_styles/variables.scss';
 
 #readyassist-ui {
+
+    overflow : hidden;
+   
     .bg-wrapper{
         background: #fafafa;
     }
