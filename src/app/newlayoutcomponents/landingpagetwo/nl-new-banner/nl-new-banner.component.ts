@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NlBookServicesComponent } from '../../nl-book-services/nl-book-services.component';
 
 @Component({
   selector: 'app-nl-new-banner',
@@ -10,12 +11,18 @@ export class NlNewBannerComponent implements OnInit {
   constructor() { }
 // Book Services 
 serviceEnable:boolean = false;
-isSignIn:string = 'Submit →';
+isSignIn:string = 'Proceed →';
 steps:number = 2;
 actionButton:boolean = true;
 closepopup: boolean = false;
 previousIcon: boolean = true;
 hide:boolean = true;
+
+
+map : boolean = true;
+services : boolean = false;
+addVehicle : boolean = false;
+type : boolean = false;
 
 subscriptionPlans = [
   {
@@ -76,6 +83,38 @@ yourSubscriptions = [
     src: './assets/images/nl_ityre.svg',
     gst: '+18% GST',
     isSelect:false
+  },
+  {
+    id:5,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
+  },
+  {
+    id:6,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
+  },
+  {
+    id:7,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
+  },
+  {
+    id:8,
+    serviceType: 'Battery Jumpstart',
+    price: 9234,
+    src: './assets/images/nl_ityre.svg',
+    gst: '+18% GST',
+    isSelect:false
   }
 ]
 
@@ -96,25 +135,44 @@ subscriptionPlansList(s: any){
 
 
 
+// proceedBtn(){
+//   this.steps++;
+
+// if(this.steps == 1){
+//   this.closepopup = true;
+//   this.previousIcon = false;
+// }
+
+//   if(this.steps == 2){
+//     this.isSignIn = 'Proceed →';
+//     this.previousIcon = true;
+//     this.closepopup = true;
+//   }
+//   if(this.steps == 3){
+//     this.actionButton = false;
+//   }
+
+
+// }
+
+
 proceedBtn(){
-  this.steps++;
 
-if(this.steps == 1){
-  this.closepopup = true;
-  this.previousIcon = false;
+  if(this.map==true){
+    this.map=false;
+    this.addVehicle=true;
+    this.services=true;
+  }
+  else{
+      if(this.services==true){
+        this.services=false;
+        this.addVehicle=false;
+        this.type=true;
+        this.isSignIn="Submit →"
+      }
+  }
 }
 
-  if(this.steps == 2){
-    this.isSignIn = 'Proceed →';
-    this.previousIcon = true;
-    this.closepopup = true;
-  }
-  if(this.steps == 3){
-    this.actionButton = false;
-  }
-
-
-}
 previousBtn(){
   console.log(this.steps)
   this.steps--;

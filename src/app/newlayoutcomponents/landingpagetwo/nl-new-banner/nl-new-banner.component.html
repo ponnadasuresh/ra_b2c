@@ -57,264 +57,286 @@
 <!-- Book Services -->
 
 <mat-sidenav #booKservices>
-  <div class="nl-bookservices-card">
-    <!-- form starts here  -->
-    <form action="">
-      <button type="button" class="bookservices-hide-show-icons">
-        <div *ngIf="closepopup"><span class="cancel-popup"><i class="fa-solid fa-xmark"></i></span></div>
-      </button>
-      <!-- step 1 -->
-      <section *ngIf="steps == 1">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fa-solid fa-phone"></i>
-            </span>
-          </div>
-          <input type="number" class="form-control" placeholder="Mobile no" aria-label="Username"
-            aria-describedby="basic-addon1">
-        </div>
 
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fa-solid fa-key"></i>
-            </span>
-          </div>
-          <input type="number" class="form-control" placeholder="OTP" aria-label="OTP" aria-describedby="basic-addon1">
-        </div>
-      </section>
+  <div class="container-fluid nl-bookservices-card pt-3">
 
-      <!-- step 2 -->
-      <section *ngIf="hide">
+      <div class="row g-0 px-3">
+      <!-- form starts here  -->
 
-        <div class="base-location-card">
-          <div class="location-active-container">
-            <div class="green-active"><span></span></div>
-            <div class="title">
-              <h1>Service Location</h1>
-            </div>
-          </div>
-        </div>
+    
+
+        <div class="col-12">
+
+          <form action="">
+
+            <!-- step 1 -->
+            <!-- <section *ngIf="steps == 1">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                </div>
+                <input type="number" class="form-control" placeholder="Mobile no" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+      
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-key"></i>
+                  </span>
+                </div>
+                <input type="number" class="form-control" placeholder="OTP" aria-label="OTP" aria-describedby="basic-addon1">
+              </div>
+            </section> -->
+      
+            <!-- step 2 -->
+            <section *ngIf="hide">
+      
+            <div class="base-location-card">
+                <div class="location-active-container">
+                  <div class="green-active"><span></span></div>
+                  <div class="title">
+                    <h1>Service Location</h1>
+                  </div>
+                </div>
+              </div>
+      
+      
+      
+              <!-- <div class="input-group mb-3">
+                                    <select class="form-select" aria-label="Default select example">
+                                      <option selected>Hero Honda</option>
+                                      <option value="2">Yamaha</option>
+                                      <option value="3">Apache</option>
+                                      <option value="3">Passion Plus</option>
+                                    </select>
+                                  </div> -->
+      
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                </div>
+                <input type="number" class="form-control" placeholder="Base Location" aria-label="base location"
+                  aria-describedby="basic-addon1">
+              </div>
 
 
-
-        <!-- <div class="input-group mb-3">
+              <!-- drop Location  indicator -->
+              <div class="base-location-card">
+                <div class="location-active-container">
+                  <div class="red-active"><span></span></div>
+                  <div class="title">
+                    <h1>Drop Location</h1>
+                  </div>
+                </div>
+              </div>
+              <!-- drop Location  -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                </div>
+                <input type="number" class="form-control" placeholder="Drop Location" aria-label="base location"
+                  aria-describedby="basic-addon1">
+              </div>
+              <div *ngIf="map" class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9191745477256!2d77.63202441399505!3d12.912916219659033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148d860dda35%3A0x6953954fb33ae2dc!2sReadyassist!5e0!3m2!1sen!2sin!4v1660036937034!5m2!1sen!2sin"
+                  width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+      
+      
+      
+      
+              <!-- Add vehicle section  -->
+              <div  class="addvehicle pt-5" *ngIf="addVehicle">
+                        <div class="top-vehicle-header">
+                          <div class="add-vehicle-brn vehicle-clm">
+                            <button  type="button" class="popupadd-vehicle-btn">Add Vehicle</button>
+                          </div>
+                          <div class="vehicle-clm">
+              
+              
+                            <div class="input-group">
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>Hero Honda</option>
+                                <option selected>Royal Enfield Thunderbir</option>
                                 <option value="2">Yamaha</option>
                                 <option value="3">Apache</option>
                                 <option value="3">Passion Plus</option>
                               </select>
-                            </div> -->
-
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fa-solid fa-location-dot"></i>
-            </span>
-          </div>
-          <input type="number" class="form-control" placeholder="Base Location" aria-label="base location"
-            aria-describedby="basic-addon1">
-        </div>
-        <!-- drop Location  indicator -->
-        <div class="base-location-card">
-          <div class="location-active-container">
-            <div class="red-active"><span></span></div>
-            <div class="title">
-              <h1>Drop Location</h1>
-            </div>
-          </div>
-        </div>
-        <!-- drop Location  -->
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fa-solid fa-location-dot"></i>
-            </span>
-          </div>
-          <input type="number" class="form-control" placeholder="Drop Location" aria-label="base location"
-            aria-describedby="basic-addon1">
-        </div>
-        <div class="google-map" class="d-none">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9191745477256!2d77.63202441399505!3d12.912916219659033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148d860dda35%3A0x6953954fb33ae2dc!2sReadyassist!5e0!3m2!1sen!2sin!4v1660036937034!5m2!1sen!2sin"
-            width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <!-- Add vehicle section  -->
-        <!-- <div class="addvehicle">
-                  <div class="top-vehicle-header">
-                    <div class="add-vehicle-brn vehicle-clm">
-                      <button  type="button" class="popupadd-vehicle-btn">Add Vehicle</button>
+                            </div>
+                          </div>
+                        </div>
+              </div>
+              <!-- Add vehicle section  -->
+      
+      
+      
+              
+            </section>
+      
+            <section *ngIf="services">
+              <div>
+                <div class="services">
+                  <div class="services-top-title-container">
+                    <div>
+                      <h1>Choose the Service Category</h1>
                     </div>
-                    <div class="vehicle-clm">
-        
-        
-                      <div class="input-group">
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Royal Enfield Thunderbir</option>
-                          <option value="2">Yamaha</option>
-                          <option value="3">Apache</option>
-                          <option value="3">Passion Plus</option>
-                        </select>
+                  </div>
+      
+                  <p class="small-txt">Pick any one</p>
+                  <div class="services-list-container">
+                    <div class="service-card">
+                      <h1>Flat Tyre Fixing</h1>
+                      <img src="./assets/images/nl_ityre.svg" alt="">
+                    </div>
+                    <div class="service-card">
+                      <h1>Flat Tyre Fixing</h1>
+                      <img src="./assets/images/nl_ityre.svg" alt="">
+                    </div>
+                    <div class="service-card">
+                      <h1>Flat Tyre Fixing</h1>
+                      <img src="./assets/images/nl_ityre.svg" alt="">
+                    </div>
+                    <div class="service-card">
+                      <h1>Flat Tyre Fixing</h1>
+                      <img src="./assets/images/nl_ityre.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- <div class="time-slots-container">
+                  <h3>Select Date / Time</h3>
+                  <div class="time-slots-card">
+                    <div class="date">
+                      <h4>02 April 2022</h4>
+                      <div class="time-slots-btn-container">
+                        <button class="btn btn-secondary">09:30 PM</button>
+                        <button class="btn btn-success">11:30 PM</button>
+                        <button class="btn btn-secondary">02:30 PM</button>
+                        <button class="btn btn-secondary">03:45 PM</button>
+                        <button class="btn btn-secondary">03:45 PM</button>
                       </div>
                     </div>
                   </div>
-                </div> -->
-        <!-- Add vehicle section  -->
-      </section>
-      <section *ngIf="hide">
-        <div *ngIf="serviceEnable">
-          <div class="services">
-            <div class="services-top-title-container">
-              <div>
-                <h1>Choose the Service Category</h1>
-              </div>
-            </div>
-
-            <p class="small-txt">Pick any one</p>
-            <div class="services-list-container">
-              <div class="service-card">
-                <h1>Flat Tyre Fixing</h1>
-                <img src="./assets/images/nl_ityre.svg" alt="">
-              </div>
-              <div class="service-card">
-                <h1>Flat Tyre Fixing</h1>
-                <img src="./assets/images/nl_ityre.svg" alt="">
-              </div>
-              <div class="service-card">
-                <h1>Flat Tyre Fixing</h1>
-                <img src="./assets/images/nl_ityre.svg" alt="">
-              </div>
-              <div class="service-card">
-                <h1>Flat Tyre Fixing</h1>
-                <img src="./assets/images/nl_ityre.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="time-slots-container">
-            <h3>Select Date / Time</h3>
-            <div class="time-slots-card">
-              <div class="date">
-                <h4>02 April 2022</h4>
-                <div class="time-slots-btn-container">
-                  <button class="btn btn-secondary">09:30 PM</button>
-                  <button class="btn btn-success">11:30 PM</button>
-                  <button class="btn btn-secondary">02:30 PM</button>
-                  <button class="btn btn-secondary">03:45 PM</button>
-                  <button class="btn btn-secondary">03:45 PM</button>
-                </div>
-              </div>
-            </div>
-            <div class="time-slots-card">
-              <hr style="margin: 16px 0;">
-              <div class="date">
-                <h4>03 April 2022</h4>
-                <div class="time-slots-btn-container">
-                  <button class="btn btn-secondary">09:30 PM</button>
-                  <button class="btn btn-success">11:30 PM</button>
-                  <button class="btn btn-secondary">02:30 PM</button>
-                  <button class="btn btn-secondary">03:45 PM</button>
-                  <button class="btn btn-secondary">03:45 PM</button>
-                </div>
-              </div>
-            </div>
-            <!-- <button class="bookservices-btn">Book Now →</button> -->
-          </div>
-        </div>
-        <!-- serviceEnable End -->
-
-
-      </section>
-
-      <section *ngIf="hide==false">
-        <!-- subscription list card -->
-        <div class="subscription-list-card">
-          <div class="addvehicle">
-            <div class="top-vehicle-header">
-              <div class="add-vehicle-brn vehicle-clm">
-                <button type="button" class="popupadd-vehicle-btn">Add Vehicle</button>
-              </div>
-              <div class="vehicle-clm">
-                <div class="crown-clm"><img src="./assets/images/crown_ra.svg" alt="" srcset=""></div>
-                <div class="sun=bscription-title">
-                  <h3 class="subscription-vehicle-name">Royal Enfield Thunderbird</h3>
-                </div>
-                <div class="downarrow-clm">
-                  <img src="./assets/images/arrow-circle-down.svg" alt="" srcset="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="subscription-plan-container">
-            <div class="subscription-planimg-card" *ngFor="let sp of subscriptionPlans"
-            [ngClass]="sp.isSelect ? 'cardactive' : ''" (click)="selectVehicle(sp)">
-              <p>{{sp.title}}</p>
-              <img src="{{sp.img}}" alt="" srcset="">
-            </div>
-            <!-- <div class="subscription-planimg-card">
-              <p>We are a new <span>startup</span></p>
-              <img src="./assets/images/ra_towing.svg" alt="" srcset="">
-            </div> -->
-            <!-- <div class="subscription-planimg-card">
-              <p>We are a new <span>startup</span></p>
-              <img src="./assets/images/ra_towing.svg" alt="" srcset="">
-            </div> -->
-            <!-- <div class="subscription-planimg-card">
-              <p>We are a new <span>startup</span></p>
-              <img src="./assets/images/ra_towing.svg" alt="" srcset="">
-            </div> -->
-          </div>
-        </div>
-      </section>
-
-      <section *ngIf="hide">
-        <!-- your Subscribtion -->
-        <div class="your-subscribtion-container">
-          <div class="your-subscribtion-card">
-            <h1>
-              <span class="back-left-angle"><i class="fa-solid fa-circle-chevron-left"></i></span>
-              Your Subscriptions
-            </h1>
-            <div class="your-subscribtion-inner-card">
-              <div class="your-subscribtion-inner-card-clm">
-                <!-- ./assets/images/nl_ityre.svg  -->
-                <div class="clm-img" *ngFor="let ys of yourSubscriptions"
-                [ngClass]="ys.isSelect ? 'cardactive' : ''" (click)="subscriptionPlansList(ys)"
-                >
-                  <img src="{{ys.src}}" alt="" srcset="">
-                  <h4>{{ys.serviceType}}</h4>
-                  <div class="price-card">
-                   <div class="price-clm">
-                     <span><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;{{ys.price}}</span>
+                  <div class="time-slots-card">
+                    <hr style="margin: 16px 0;">
+                    <div class="date">
+                      <h4>03 April 2022</h4>
+                      <div class="time-slots-btn-container">
+                        <button class="btn btn-secondary">09:30 PM</button>
+                        <button class="btn btn-success">11:30 PM</button>
+                        <button class="btn btn-secondary">02:30 PM</button>
+                        <button class="btn btn-secondary">03:45 PM</button>
+                        <button class="btn btn-secondary">03:45 PM</button>
+                      </div>
                     </div>
-                   <div class="price-clm">
-                    <p class="gst-addon">{{ys.gst}}</p>
+                  </div>
+            
+                </div> -->
+              </div>
+              <!-- serviceEnable End -->
+      
+      
+            </section>
+      
+            <section *ngIf="hide==false">
+              <!-- subscription list card -->
+              <div class="subscription-list-card">
+                <div class="addvehicle">
+                  <div class="top-vehicle-header">
+                    <div class="add-vehicle-brn vehicle-clm">
+                      <button type="button" class="popupadd-vehicle-btn">Add Vehicle</button>
+                    </div>
+                    <div class="vehicle-clm">
+                      <div class="crown-clm"><img src="./assets/images/crown_ra.svg" alt="" srcset=""></div>
+                      <div class="sun=bscription-title">
+                        <h3 class="subscription-vehicle-name">Royal Enfield Thunderbird</h3>
+                      </div>
+                      <div class="downarrow-clm">
+                        <img src="./assets/images/arrow-circle-down.svg" alt="" srcset="">
+                      </div>
                     </div>
                   </div>
                 </div>
-
-
-
+      
+                <div class="subscription-plan-container">
+                  <div class="subscription-planimg-card" *ngFor="let sp of subscriptionPlans"
+                  [ngClass]="sp.isSelect ? 'cardactive' : ''" (click)="selectVehicle(sp)">
+                    <p>{{sp.title}}</p>
+                    <img src="{{sp.img}}" alt="" srcset="">
+                  </div>
+                  <!-- <div class="subscription-planimg-card">
+                    <p>We are a new <span>startup</span></p>
+                    <img src="./assets/images/ra_towing.svg" alt="" srcset="">
+                  </div> -->
+                  <!-- <div class="subscription-planimg-card">
+                    <p>We are a new <span>startup</span></p>
+                    <img src="./assets/images/ra_towing.svg" alt="" srcset="">
+                  </div> -->
+                  <!-- <div class="subscription-planimg-card">
+                    <p>We are a new <span>startup</span></p>
+                    <img src="./assets/images/ra_towing.svg" alt="" srcset="">
+                  </div> -->
+                </div>
               </div>
+            </section>
+      
+            <section *ngIf="type">
+        
+              <div class="your-subscribtion-container pt-3">
+                <div class="your-subscribtion-card">
+                  <h1>
+                    <span class="back-left-angle"><i class="fa-solid fa-circle-chevron-left"></i></span>
+                    Your Subscriptions
+                  </h1>
+                  <div class="your-subscribtion-inner-card">
+                    <div class="your-subscribtion-inner-card-clm">
+                
+                      <div class="clm-img" *ngFor="let ys of yourSubscriptions"
+                      [ngClass]="ys.isSelect ? 'cardactive' : ''" (click)="subscriptionPlansList(ys)"
+                      >
+                        <img src="{{ys.src}}" alt="" srcset="">
+                        <h4>{{ys.serviceType}}</h4>
+                        <div class="price-card">
+                        <div class="price-clm">
+                          <span><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;{{ys.price}}</span>
+                          </div>
+                        <div class="price-clm">
+                          <p class="gst-addon">{{ys.gst}}</p>
+                          </div>
+                        </div>
+                      </div>
+      
+      
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </section>
+      
+            <div class="d-flex justify-content-between pt-3">
+              <button class="btn bookservices-back-btn">&#8592; &nbsp; Back</button>
+              <button *ngIf="actionButton" class="btn bookservices-submit-btn" (click)="proceedBtn()">{{isSignIn}}</button>
             </div>
-          </div>
+      
+      
+          </form>
         </div>
-        <!-- your Subscribtion -->
-      </section>
-
-      <div class="popup-action-btns-container d-flex">
-        <button class="btn bookservices-back-btn">&#8592; &nbsp; Back</button>
-        <button *ngIf="actionButton" class="btn bookservices-submit-btn" (click)="proceedBtn()">{{isSignIn}}</button>
-      </div>
+     
+    </div>
 
 
-    </form>
   </div>
+  
   <!-- form starts here  -->
 </mat-sidenav>
 <!-- Book Services -->

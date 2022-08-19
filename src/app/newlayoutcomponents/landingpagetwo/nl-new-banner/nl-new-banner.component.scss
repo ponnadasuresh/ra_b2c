@@ -271,9 +271,8 @@
 .nl-bookservices-card {
   overflow:hidden;
   position: absolute;
-  background: #fafafa;
+  background: rgb(255, 248, 240);
   width: 40%;
-  padding: 0px 40px 40px 40px;
   top: 0px;
   left: 60%;
   min-height: 100%;
@@ -281,7 +280,6 @@
   box-shadow: rgb(0 0 0 / 5%) 0 10px 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   z-index: 5;
   //   input {
   //     padding: 10px 0;
@@ -396,6 +394,7 @@ button.bookservices-hide-show-icons {
   width: 120px;
   margin-top: 16px;
   min-height: 43px;
+
 }
 
 .popup-action-btns-container {
@@ -628,3 +627,17 @@ h3.subscription-vehicle-name {
     }
   }
 }
+
+
+
+
+//my css
+
+.head{
+  font-size : 50px;
+}
+
+.container-fluid{
+  height : 100vh;
+}
+

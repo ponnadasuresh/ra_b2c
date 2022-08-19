@@ -7,6 +7,56 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class NlSubscriptionplanComponent implements OnInit {
 
+  
+
+  plans = [
+    
+    {
+    name : "Monkey D Luffy",
+    price : 300,
+    accomodation : true,
+    taxi : true,
+    incidental : false,
+    insurance : false,
+    tow : true
+  },
+
+  {
+    name : "Monkey D Garp",
+    price : 100,
+    accomodation : true,
+    taxi : true,
+    incidental : true,
+    insurance : false,
+    tow : true
+  },
+
+  {
+    name : "Rocks D Xebec",
+    price : 200,
+    accomodation : true,
+    taxi : true,
+    incidental : false,
+    insurance : true,
+    tow : true
+  },
+
+  {
+    name : "HawkEye Mihawk",
+    price : 400,
+    accomodation : true,
+    taxi : true,
+    incidental : false,
+    insurance : false,
+    tow : false
+  }
+
+
+];
+
+
+
+
   constructor() { }
   subscriptionplans: OwlOptions = {
     loop: true,
@@ -25,10 +75,14 @@ export class NlSubscriptionplanComponent implements OnInit {
         items: 1
       },
       740: {
-        items: 3
+        items: 2
       },
       940: {
-        items: 4  
+        items: 3
+      },
+
+      1200: {
+        items : 4
       }
     },
     nav: false

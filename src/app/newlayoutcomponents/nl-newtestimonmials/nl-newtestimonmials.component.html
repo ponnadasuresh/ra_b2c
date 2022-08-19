@@ -1,108 +1,37 @@
-<div id="readyassist-ui">
-    <div class="testimonilas-container layout-padding">
-        <div class="layout-px">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="main-title">
-                    <h1>Leading to Future.</h1>
-                </div>
-            </div>
-            <div class="col-sm-12 feature-description">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi veritatis debitis doloremque, veniam nesciunt.
-                </p>
-            </div> 
+<div class="container-fluid pt-0 pt-sm-5">
+
+    <div class="row justify-content-center pt-5">
+        <div class="col-10 text-center pb-4">
+            <h2>Testimonials</h2>
         </div>
 
-        <div class="testimonial-card">
-            <!-- owl carousel starts -->
+       <div class="col-11 pb-3 text-center">
+        <p class="head">This segment is about anime, If not interested just leave, Please....</p>
+       </div>
+        
+
+        <div class="col-11">
+
             <owl-carousel-o [options]="testimonials">
-                <ng-template carouselSlide>
-                    <!-- Slide 1 -->
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12 testimonial-subcard">
-                            <div class="bluecard">
-                                <div class="avatar">
-                                    <img src="https://i.imgur.com/HjKTNkG.jpg" width="250px" alt="" srcset="">
-                                </div>
-                                <div class="card-decription">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, possimus tenetur. Accusamus quis sed, impedit id eaque autem cumque minima tempore laboriosam architecto consequuntur consectetur quas quam fugiat, temporibus distinctio!</p>
-                                    <div class="avatar-position">
-                                        <p class="name">Will Smith</p>
-                                        <p class="occupation">Movie Actor</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            
+    
+                <ng-template  carouselSlide *ngFor="let r of reviews">
+                    <div class="cardSection align-items-center p-4 d-flex flex-column">
+                        <div class="p-3  review bubble align-items-center d-flex justify-content-center" style="border-radius: 10px;background-color: bisque; min-height : 350px; min-width :100%; font-size: 100%;">
+                            <p class="text-center">{{r['review']}}</p>
                         </div>
-                        <div class="col-lg-6 col-sm-12 testimonial-subcard">
-                            <div class="bluecard">
-                                <div class="avatar">
-                                    <img src="https://i.imgur.com/HjKTNkG.jpg" width="250px" alt="" srcset="">
-                                </div>
-                                <div class="card-decription">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, possimus tenetur. Accusamus quis sed, impedit id eaque autem cumque minima tempore laboriosam architecto consequuntur consectetur quas quam fugiat, temporibus distinctio!</p>
-                                    <div class="avatar-position">
-                                        <p class="name">Will Smith</p>
-                                        <p class="occupation">Movie Actor</p>
-                                    </div>
-                                </div>
-
+                        <div class="mt-3 pt-3 mb-2">
+                            <div style="width : 85px; height : 85px; overflow:hidden; border-radius: 50%; border : 3px solid bisque">
+                                <img src="{{r.image}}">
                             </div>
-                            
                         </div>
+                        <div class="text-center"><h3>{{r.name}}</h3><p>{{r.info}}</p></div>
                     </div>
-                </ng-template>  
-                <ng-template carouselSlide>
-                    <!-- Slide 2 -->
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12 testimonial-subcard">
-                            <div class="bluecard">
-                                <div class="avatar">
-                                    <img src="https://i.imgur.com/HjKTNkG.jpg" width="250px" alt="" srcset="">
-                                </div>
-                                <div class="card-decription">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, possimus tenetur. Accusamus quis sed, impedit id eaque autem cumque minima tempore laboriosam architecto consequuntur consectetur quas quam fugiat, temporibus distinctio!</p>
-                                    <div class="avatar-position">
-                                        <p class="name">Will Smith</p>
-                                        <p class="occupation">Movie Actor</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-6 col-sm-12 testimonial-subcard">
-                            <div class="bluecard">
-                                <div class="avatar">
-                                    <img src="https://i.imgur.com/HjKTNkG.jpg" width="250px" alt="" srcset="">
-                                </div>
-                                <div class="card-decription">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, possimus tenetur. Accusamus quis sed, impedit id eaque autem cumque minima tempore laboriosam architecto consequuntur consectetur quas quam fugiat, temporibus distinctio!</p>
-                                    <div class="avatar-position">
-                                        <p class="name">Will Smith</p>
-                                        <p class="occupation">Movie Actor</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                        </div>
-                    </div>
-                </ng-template>  
-                <!-- <ng-template carouselSlide>Slide 3</ng-template>   -->
-              </owl-carousel-o>
-            <!-- owl carousel ends -->
+                </ng-template>
+    
+            </owl-carousel-o>
         </div>
     </div>
-    </div>  
 
-    <!-- Client Scrolling -->
-    <div>
-        <app-nl-collabratedwith></app-nl-collabratedwith>
-    </div>
-    <!-- Client Scrolling
-     -->
+    
+
 </div>
-
