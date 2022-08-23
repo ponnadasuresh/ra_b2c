@@ -1,132 +1,55 @@
-<div id="readyassist-ui">
-    <div class="servicepartner-bg">
-        <div class="nl-subscriptionplans-container layout-padding">
-            <div class="nl-subscriptionplans-card layout-px">
-                <h1>Subscription <span>Plans</span></h1>
-                <p>We bring you the best price plans</p>
+
+<div class="container-fluid pt-1 pt-sm-5 align-items-center">
+	
+	<div class="row justify-content-center align-self-center g-0" style="position : relative; top : 10%;">
+
+		<div class="col-11 d-flex flex-column justify-content-center pb-0 pt-3">
+
+			<h1 class="pb-3">Subscription <span>Plans</span></h1>
+
+                <p class="text-center">We bring you the best price plans</p>
+		</div>
+
+		<div class="col-xl-10 col-xxl-10">
+
+			<owl-carousel-o [options]="subscriptionplans">
+
+					<ng-template  carouselSlide *ngFor="let plan of plans">
+
+						<div class="row justify-content-center g-0">
+
+							<div class="cards col-11 col-sm-10 col-md-10 col-lg-11 col-xxl-11 mt-3 mt-md-4 pt-1 pt-sm-3">
+
+								<div class="content">
+									<div class="col-12 titlediv px-4 py-0  py-sm-2 py-md-1">
+										<h2 class="title pb-2 pb-md-1">{{plan.name}}</h2>
+										<h3 class="price pb-md-0">₹{{plan.price}}<span>/per year</span></h3>
+										<div class="col-7 px-2 text-center tag" style="border-radius : 15px;">
+											<p>Save price : ₹200</p>
+										</div>
+										
+									</div>
+									<div class="col-12 pt-3 py-3 px-4 bodydiv">
+										<p><i class='bx bx-check'></i> Free accommodation</p>
+										<p><i class='bx bx-check'></i> One time Taxi Support</p>
+										<p><i class='bx bx-x'></i> Incidental Charges</p>
+										<p><i class='bx bx-x'></i> No insurance</p>
+										<p><i class='bx bx-check'></i> Towing Services</p>
+									</div>
+								</div>
+
+								<div class="col-8 px-4 pb-4">
+									<button class="py-3 buyBtn">Buy Now</button>
+								</div>
 
 
-                <div class="nl-subscriptionpalns-clm-card">
-                    <!-- col-1 -->
-                    <owl-carousel-o [options]="subscriptionplans">
-                        <ng-template carouselSlide>
-                            <div class="package-card">
-                            <div class="subscrition-icon">
-                                <!-- <i class=" subscrp-badge fa-solid fa-circle-dollar"></i> -->
-                                <i class="fa fa-inr subscrp-badge" aria-hidden="true"></i>
-                                <span class="package-price">699</span>
-                                
-                            </div>
-                            <div class="nl-subscriptionpalns-clm">
-                                <div class="nl-subscription-clm-toptitle">
-                                    <div class="nl-subscription-clm">
-                                        <h2>4W Freedom Plan</h2>
-                                    </div>
-                                </div>
-                                <div class="nl-subscription-list-card">
-                                    <p><i class='bx bx-check'></i> Free accommodation</p>
-                                    <p><i class='bx bx-check'></i> One time Taxi Support</p>
-                                    <p><i class='bx bx-x'></i> incidental Charges</p>
-                                    <p><i class='bx bx-x'></i> No insurance</p>
-                                    <p><i class='bx bx-check'></i> Towing Services</p>
-                                </div>
-                                <div class="purchase-btn">
-                                    <button>Purchase Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        </ng-template>
+							</div>
 
-                        <ng-template carouselSlide>
-                            <div class="package-card">
-                            <div class="subscrition-icon">
-                                <!-- <i class=" subscrp-badge fa-solid fa-circle-dollar"></i> -->
-                                <i class="fa fa-inr subscrp-badge" aria-hidden="true"></i>
-                                <span class="package-price">2749</span>
-                                
-                            </div>
-                            <div class="nl-subscriptionpalns-clm">
-                                <div class="nl-subscription-clm-toptitle">
-                                    <div class="nl-subscription-clm">
-                                        <h2>Car Pro</h2>
-                                    </div>
-                                </div>
-                                <div class="nl-subscription-list-card">
-                                    <p><i class='bx bx-check'></i> Free accommodation</p>
-                                    <p><i class='bx bx-check'></i> One time Taxi Support</p>
-                                    <p><i class='bx bx-x'></i> incidental Charges</p>
-                                    <p><i class='bx bx-x'></i> No insurance</p>
-                                    <p><i class='bx bx-check'></i> Towing Services</p>
-                                </div>
-                                <div class="purchase-btn">
-                                    <button>Purchase Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        </ng-template>
-                        <ng-template carouselSlide>
-                            <div class="package-card">
-                            <div class="subscrition-icon">
-                                <!-- <i class=" subscrp-badge fa-solid fa-circle-dollar"></i> -->
-                                <i class="fa fa-inr subscrp-badge" aria-hidden="true"></i>
-                                <span class="package-price">1699</span>
-                                
-                            </div>
-                            <div class="nl-subscriptionpalns-clm">
-                                <div class="nl-subscription-clm-toptitle">
-                                    <div class="nl-subscription-clm">
-                                        <h2>Car Basic</h2>
-                                    </div>
-                                </div>
-                                <div class="nl-subscription-list-card">
-                                    <p><i class='bx bx-check'></i> Free accommodation</p>
-                                    <p><i class='bx bx-check'></i> One time Taxi Support</p>
-                                    <p><i class='bx bx-x'></i> incidental Charges</p>
-                                    <p><i class='bx bx-x'></i> No insurance</p>
-                                    <p><i class='bx bx-check'></i> Towing Services</p>
-                                </div>
-                                <div class="purchase-btn">
-                                    <button>Purchase Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        </ng-template>
-                        <ng-template carouselSlide>
-                            <div class="package-card">
-                            <div class="subscrition-icon">
-                                <!-- <i class=" subscrp-badge fa-solid fa-circle-dollar"></i> -->
-                                <i class="fa fa-inr subscrp-badge" aria-hidden="true"></i>
-                                <span class="package-price">1299</span>
-                                
-                            </div>
-                            <div class="nl-subscriptionpalns-clm">
-                                <div class="nl-subscription-clm-toptitle">
-                                    <div class="nl-subscription-clm">
-                                        <h2>4W Freedom Plan</h2>
-                                    </div>
-                                </div>
-                                <div class="nl-subscription-list-card">
-                                    <p><i class='bx bx-check'></i> Free accommodation</p>
-                                    <p><i class='bx bx-check'></i> One time Taxi Support</p>
-                                    <p><i class='bx bx-x'></i> incidental Charges</p>
-                                    <p><i class='bx bx-x'></i> No insurance</p>
-                                    <p><i class='bx bx-check'></i> Towing Services</p>
-                                </div>
-                                <div class="purchase-btn">
-                                    <button>Purchase Now</button>
-                                </div>
-                            </div>
-                            </div>
-                        </ng-template>
+						</div>
 
+					</ng-template>
 
-
-
-
-
-                    </owl-carousel-o>
-                </div>
-            </div>
-        </div>
-    </div>
+			</owl-carousel-o>
+		</div>
+	</div>
 </div>
